@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlockBreaker
 {
-    public class Blocks
+    public class Block
     {
         private int _blockID;
         private double _breakTime;
@@ -25,6 +25,11 @@ namespace BlockBreaker
             get { return _amount; }
             set { _amount = value; }
         }
+        public string preferredTool
+        {
+            get { return _preferredTool; }
+            set { _preferredTool = value; }
+        }
         public int dropAmount
         {
             get { return _dropAmount; }
@@ -35,7 +40,7 @@ namespace BlockBreaker
             get { return _breakLevel; }
             set { _breakLevel = value; }
         }
-        public Blocks(int blockID, double breakTime, string preferredTool, int dropAmount, int breakLevel)
+        public Block(int blockID, double breakTime, string preferredTool, int dropAmount, int breakLevel)
         {
             _blockID = blockID;
             _breakTime = breakTime;
@@ -44,12 +49,6 @@ namespace BlockBreaker
             _dropAmount = dropAmount;
             _breakLevel = breakLevel;
         }
-        public void BreakBlock()
-        {
-            if (breakLevel == 1)
-            {
-                amount += dropAmount;
-            }
-        }
+        
     }
 }

@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace BlockBreaker
 {
-    static class Program
+    class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -19,22 +19,47 @@ namespace BlockBreaker
             Application.Run(new Form1());
 
             #region Initialize Blocks
-            //Blocks(BlockID, BreakTime, Tool, DropAmount, BreakLevel)
+            //Block(BlockID, BreakTime, Tool, DropAmount, BreakLevel)
             //BreakLevel - 0=fist 1=wood 2=stone 3=iron 4=diamond
             //DropAmount - = amount or -1 if random in a range
-            Blocks oakLog = new Blocks(1, 3, "Axe", 1, 0);
-            Blocks stone = new Blocks(2, 7.5, "Pickaxe", 1, 1);
-            Blocks dirt = new Blocks(3, 0.75, "Shovel", 1, 0);
-            Blocks ironOre = new Blocks(4, 15, "Pickaxe", 1, 2);
-            Blocks coalOre = new Blocks(5, 15, "Pickaxe", 1, 1);
+            Block oakLog = new Block(1, 3, "Axe", 1, 0);
+            Block stone = new Block(2, 7.5, "Pickaxe", 1, 1);
+            Block dirt = new Block(3, 0.75, "Shovel", 1, 0);
+            Block ironOre = new Block(4, 15, "Pickaxe", 1, 2);
+            Block coalOre = new Block(5, 15, "Pickaxe", 1, 1);
 
-            List<Blocks> blocks = new List<Blocks>();
+            List<Block> blocks = new List<Block>();
             blocks.Add(oakLog);
             blocks.Add(stone);
             blocks.Add(dirt);
             blocks.Add(ironOre);
             blocks.Add(coalOre);
             #endregion
+
+            #region Initialize Tools
+            //Tool(Durability, ToolType, ToolLevel)
+            //ToolLevel - 0=fist 1=wood 2=stone 3=iron 4=diamond
+            Tool pickaxe = new Tool(0, "Pickaxe", 0);
+            Tool axe = new Tool(0, "Axe", 0);
+            Tool shovel = new Tool(0, "Shovel", 0);
+            Tool hoe = new Tool(0, "Hoe", 0);
+
+            var tools = new Dictionary<string, Tool>();
+            tools["pickaxe"] = pickaxe;
+            tools["axe"] = axe;
+            tools["shovel"] = shovel;
+            tools["hoe"] = hoe;
+            #endregion
+        }
+        void BreakBlock(Block block, Dictionary<string,Tool> tools)
+        {
+            Tool tool = tools[block.preferredTool]; 
+            if (block.breakLevel == tool.toolLevel)
+            {
+                block.amount += block.dropAmount;
+                tool.durability -= 1;
+                //Display new block
+            }
         }
     }
 }
