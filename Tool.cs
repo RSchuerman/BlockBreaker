@@ -11,6 +11,7 @@ namespace BlockBreaker
         private int _durability;
         private string _toolType;
         private int _toolLevel;
+        private string _imageName;
         public int durability
         {
             get { return _durability; }
@@ -25,6 +26,25 @@ namespace BlockBreaker
         {
             get { return _toolLevel; }
             set { _toolLevel = value; }
+        }
+        public string imageName
+        {
+            get
+            {
+                if (toolLevel == 0)
+                    return "inventorySlot.png";
+                else if (toolLevel == 1)
+                    return "wooden" + toolType + ".png";
+                else if (toolLevel == 2)
+                    return "stone" + toolType + ".png";
+                else if (toolLevel == 3)
+                    return "iron" + toolType + ".png";
+                else if (toolLevel == 4)
+                    return "diamond" + toolType + ".png";
+                else
+                    return "inventorySlot.png";
+            }
+            set { _imageName = value; }
         }
         public Tool(int durability, string toolType, int toolLevel)
         {

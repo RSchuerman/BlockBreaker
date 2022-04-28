@@ -29,7 +29,6 @@ namespace BlockBreaker
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button_breakBlock = new System.Windows.Forms.Button();
             this.progressBar_breaking = new System.Windows.Forms.ProgressBar();
             this.pictureBox_pickaxe = new System.Windows.Forms.PictureBox();
@@ -54,12 +53,11 @@ namespace BlockBreaker
             // 
             // button_breakBlock
             // 
-            this.button_breakBlock.Image = ((System.Drawing.Image)(resources.GetObject("button_breakBlock.Image")));
             this.button_breakBlock.Location = new System.Drawing.Point(106, 33);
+            this.button_breakBlock.Margin = new System.Windows.Forms.Padding(0);
             this.button_breakBlock.Name = "button_breakBlock";
             this.button_breakBlock.Size = new System.Drawing.Size(256, 256);
             this.button_breakBlock.TabIndex = 0;
-            this.button_breakBlock.Text = "BLOCK";
             this.button_breakBlock.UseVisualStyleBackColor = true;
             this.button_breakBlock.Click += new System.EventHandler(this.button_breakBlock_CLICK);
             // 

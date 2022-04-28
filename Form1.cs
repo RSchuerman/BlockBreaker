@@ -18,11 +18,11 @@ namespace BlockBreaker
         //Block(BlockID, BreakTime, Tool, DropAmount, BreakLevel, imageName)
         //BreakLevel - 0=fist 1=wood 2=stone 3=iron 4=diamond
         //DropAmount - = amount or -1 if random in a range
-        static Block oakLog = new Block(1, 3, "axe", 1, 0, "dirtBlock.png");
-        static Block stone = new Block(2, 7.5, "pickaxe", 1, 1, "dirtBlock.png");
-        static Block dirt = new Block(3, 0.75, "shovel", 1, 0, "dirtBlock.png");
-        static Block ironOre = new Block(4, 15, "pickaxe", 1, 2, "dirtBlock.png");
-        static Block coalOre = new Block(5, 15, "pickaxe", 1, 1, "dirtBlock.png");
+        static Block oakLog = new Block(1, 3, "axe", 1, 0, "logs/oakLog.png");
+        static Block stone = new Block(2, 7.5, "pickaxe", 1, 1, "stone.png");
+        static Block dirt = new Block(3, 0.75, "shovel", 1, 0, "dirt.png");
+        static Block ironOre = new Block(4, 15, "pickaxe", 1, 2, "ores/ironOre.png");
+        static Block coalOre = new Block(5, 15, "pickaxe", 1, 1, "ores/coalOre.png");
 
         Dictionary<int, Block> blocks = new Dictionary<int, Block>()
         {
@@ -55,6 +55,7 @@ namespace BlockBreaker
         {
             InitializeComponent();
             displayBlock();
+            displayTools();
         }
 
         private void button_breakBlock_CLICK(object sender, EventArgs e)
@@ -65,8 +66,9 @@ namespace BlockBreaker
         {
             Random rnd = new Random();
             currentBlock = rnd.Next(1,6);
-            Image currentBlockImage = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/" + blocks[currentBlock].imageName);
+            Image currentBlockImage = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/blocks/" + blocks[currentBlock].imageName);
             button_breakBlock.Image = currentBlockImage;
+            textBox1.Text = (blocks[currentBlock].amount).ToString();
         }
         void breakBlock()
         {
@@ -80,10 +82,11 @@ namespace BlockBreaker
         }
         void displayTools()
         {
-            pictureBox_pickaxe.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/pickaxes/" + blocks[currentBlock].imageName);
-            pictureBox_axe.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/axes/" + blocks[currentBlock].imageName);
-            pictureBox_shovel.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/shovels/" + blocks[currentBlock].imageName);
-            pictureBox_hoe.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/hoes/" + blocks[currentBlock].imageName);
+            pictureBox_pickaxe.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/tools/pickaxes/" + pickaxe.imageName);
+            pictureBox_axe.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/tools/axes/" + axe.imageName);
+            pictureBox_shovel.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/tools/shovels/" + shovel.imageName);
+            pictureBox_hoe.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/tools/hoes/" + hoe.imageName);
         }
+
     }
 }
