@@ -38,7 +38,16 @@ namespace BlockBreaker
         }
         public int dropAmount
         {
-            get { return _dropAmount; }
+            get 
+            {
+                if (_dropAmount == -1)
+                {
+                    Random rnd = new Random();
+                    return rnd.Next(4, 5);
+                }
+                else
+                    return _dropAmount;
+            }
             set { _dropAmount = value; }
         }
         public int breakLevel
