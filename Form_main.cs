@@ -11,7 +11,7 @@ using System.Timers;
 
 namespace BlockBreaker
 {
-    public partial class Form1 : Form
+    public partial class Form_main : Form
     {
         int currentBlock;
         List<Block> availableBlocks = new List<Block>();
@@ -75,7 +75,7 @@ namespace BlockBreaker
         };
         #endregion
 
-        public Form1()
+        public Form_main()
         {
             InitializeComponent();
             updateBlocks();
@@ -267,6 +267,13 @@ namespace BlockBreaker
                 oakLog.breakTime = 3;
             }
             #endregion
+        }
+
+        private void button_crafting_Click(object sender, EventArgs e)
+        {
+            Form_crafting craftingForm = new Form_crafting();
+            craftingForm.Show();
+            this.Hide();
         }
     }
 }

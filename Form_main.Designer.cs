@@ -1,7 +1,7 @@
 ﻿
 namespace BlockBreaker
 {
-    partial class Form1
+    partial class Form_main
     {
         /// <summary>
         /// Required designer variable.
@@ -117,6 +117,7 @@ namespace BlockBreaker
             this.button_crafting.TabIndex = 8;
             this.button_crafting.Text = "CRAFTING";
             this.button_crafting.UseVisualStyleBackColor = true;
+            this.button_crafting.Click += new System.EventHandler(this.button_crafting_Click);
             // 
             // button_smelting
             // 
