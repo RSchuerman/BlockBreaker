@@ -21,7 +21,11 @@ namespace BlockBreaker
         {
             Form_main mainForm = new Form_main();
             mainForm.Show();
-            this.Hide();
+        }
+
+        private void button_end_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
         }
     }
 }

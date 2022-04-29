@@ -43,6 +43,7 @@ namespace BlockBreaker
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button_end = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickaxe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_axe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_shovel)).BeginInit();
@@ -175,18 +176,29 @@ namespace BlockBreaker
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 14;
             // 
-            // Form1
+            // button_end
+            // 
+            this.button_end.Location = new System.Drawing.Point(498, 30);
+            this.button_end.Name = "button_end";
+            this.button_end.Size = new System.Drawing.Size(41, 43);
+            this.button_end.TabIndex = 15;
+            this.button_end.Text = "END";
+            this.button_end.UseVisualStyleBackColor = true;
+            this.button_end.Click += new System.EventHandler(this.button_end_Click);
+            // 
+            // Form_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 451);
+            this.Controls.Add(this.button_end);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button_inventory);
             this.Controls.Add(this.progressBar_breaking);
             this.Controls.Add(this.button_breakBlock);
-            this.Name = "Form1";
+            this.Name = "Form_main";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickaxe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_axe)).EndInit();
@@ -215,6 +227,7 @@ namespace BlockBreaker
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button_end;
     }
 }
 
