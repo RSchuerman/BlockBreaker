@@ -29,44 +29,71 @@ namespace BlockBreaker
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_oakPlanks = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
             this.button_end = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button42 = new System.Windows.Forms.Button();
-            this.button44 = new System.Windows.Forms.Button();
-            this.button45 = new System.Windows.Forms.Button();
-            this.button55 = new System.Windows.Forms.Button();
-            this.button56 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
-            this.button59 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
+            this.button_sprucePlanks = new System.Windows.Forms.Button();
+            this.button_acaciaPlanks = new System.Windows.Forms.Button();
+            this.button_stick = new System.Windows.Forms.Button();
+            this.button_stonePickaxe = new System.Windows.Forms.Button();
+            this.button_stoneShovel = new System.Windows.Forms.Button();
+            this.button_diamondPickaxe = new System.Windows.Forms.Button();
+            this.button_diamondShovel = new System.Windows.Forms.Button();
+            this.button_diamondHoe = new System.Windows.Forms.Button();
+            this.button_diamondAxe = new System.Windows.Forms.Button();
+            this.button_stoneHoe = new System.Windows.Forms.Button();
+            this.button_stoneAxe = new System.Windows.Forms.Button();
+            this.button_wheat = new System.Windows.Forms.Button();
+            this.button_darkOakPlanks = new System.Windows.Forms.Button();
+            this.button_junglePlanks = new System.Windows.Forms.Button();
+            this.button_birchPlanks = new System.Windows.Forms.Button();
+            this.button_ironShovel = new System.Windows.Forms.Button();
+            this.button_ironPickaxe = new System.Windows.Forms.Button();
+            this.button_bread = new System.Windows.Forms.Button();
+            this.button_woodenShovel = new System.Windows.Forms.Button();
+            this.button_woodenPickaxe = new System.Windows.Forms.Button();
+            this.button_ironHoe = new System.Windows.Forms.Button();
+            this.button_ironAxe = new System.Windows.Forms.Button();
+            this.button_haybale = new System.Windows.Forms.Button();
+            this.button_woodenHoe = new System.Windows.Forms.Button();
+            this.button_woodenAxe = new System.Windows.Forms.Button();
+            this.label_oakPlanks = new System.Windows.Forms.Label();
+            this.label_birchPlanks = new System.Windows.Forms.Label();
+            this.label_junglePlanks = new System.Windows.Forms.Label();
+            this.label_sprucePlanks = new System.Windows.Forms.Label();
+            this.label_darkOakPlanks = new System.Windows.Forms.Label();
+            this.label_acaciaPlanks = new System.Windows.Forms.Label();
+            this.label_woodenPickaxe = new System.Windows.Forms.Label();
+            this.label_haybale = new System.Windows.Forms.Label();
+            this.label_woodenAxe = new System.Windows.Forms.Label();
+            this.label_wheat = new System.Windows.Forms.Label();
+            this.label_woodenShovel = new System.Windows.Forms.Label();
+            this.label_bread = new System.Windows.Forms.Label();
+            this.label_ironPickaxe = new System.Windows.Forms.Label();
+            this.label_stonePickaxe = new System.Windows.Forms.Label();
+            this.label_ironAxe = new System.Windows.Forms.Label();
+            this.label_stoneAxe = new System.Windows.Forms.Label();
+            this.label_ironShovel = new System.Windows.Forms.Label();
+            this.label_stoneShovel = new System.Windows.Forms.Label();
+            this.label_stoneHoe = new System.Windows.Forms.Label();
+            this.label_woodenHoe = new System.Windows.Forms.Label();
+            this.label_diamondHoe = new System.Windows.Forms.Label();
+            this.label_ironHoe = new System.Windows.Forms.Label();
+            this.label_diamondShovel = new System.Windows.Forms.Label();
+            this.label_stick = new System.Windows.Forms.Label();
+            this.label_diamondAxe = new System.Windows.Forms.Label();
+            this.label_diamondPickaxe = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // button_oakPlanks
             // 
-            this.button1.Location = new System.Drawing.Point(36, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(64, 64);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "OakPlanks";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_oakPlanks.Location = new System.Drawing.Point(36, 25);
+            this.button_oakPlanks.Name = "button_oakPlanks";
+            this.button_oakPlanks.Size = new System.Drawing.Size(64, 64);
+            this.button_oakPlanks.TabIndex = 0;
+            this.button_oakPlanks.Text = "OakPlanks";
+            this.button_oakPlanks.UseVisualStyleBackColor = true;
+            this.button_oakPlanks.Click += new System.EventHandler(this.button_oakPlanks_Click);
             // 
             // button_exit
             // 
@@ -88,299 +115,586 @@ namespace BlockBreaker
             this.button_end.UseVisualStyleBackColor = true;
             this.button_end.Click += new System.EventHandler(this.button_end_Click);
             // 
-            // button2
+            // button_sprucePlanks
             // 
-            this.button2.Location = new System.Drawing.Point(36, 95);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(64, 64);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "spruce planks";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_sprucePlanks.Location = new System.Drawing.Point(36, 95);
+            this.button_sprucePlanks.Name = "button_sprucePlanks";
+            this.button_sprucePlanks.Size = new System.Drawing.Size(64, 64);
+            this.button_sprucePlanks.TabIndex = 17;
+            this.button_sprucePlanks.Text = "spruce planks";
+            this.button_sprucePlanks.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button_acaciaPlanks
             // 
-            this.button3.Location = new System.Drawing.Point(36, 165);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(64, 64);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "acacia planks";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button_acaciaPlanks.Location = new System.Drawing.Point(36, 165);
+            this.button_acaciaPlanks.Name = "button_acaciaPlanks";
+            this.button_acaciaPlanks.Size = new System.Drawing.Size(64, 64);
+            this.button_acaciaPlanks.TabIndex = 18;
+            this.button_acaciaPlanks.Text = "acacia planks";
+            this.button_acaciaPlanks.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // button_stick
             // 
-            this.button4.Location = new System.Drawing.Point(36, 235);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 64);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "stick";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button_stick.Location = new System.Drawing.Point(36, 235);
+            this.button_stick.Name = "button_stick";
+            this.button_stick.Size = new System.Drawing.Size(64, 64);
+            this.button_stick.TabIndex = 19;
+            this.button_stick.Text = "stick";
+            this.button_stick.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button_stonePickaxe
             // 
-            this.button5.Location = new System.Drawing.Point(316, 25);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(64, 64);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "stone pick";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button_stonePickaxe.Location = new System.Drawing.Point(316, 25);
+            this.button_stonePickaxe.Name = "button_stonePickaxe";
+            this.button_stonePickaxe.Size = new System.Drawing.Size(64, 64);
+            this.button_stonePickaxe.TabIndex = 20;
+            this.button_stonePickaxe.Text = "stone pick";
+            this.button_stonePickaxe.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // button_stoneShovel
             // 
-            this.button6.Location = new System.Drawing.Point(316, 165);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(64, 64);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "stone shovel";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button_stoneShovel.Location = new System.Drawing.Point(316, 165);
+            this.button_stoneShovel.Name = "button_stoneShovel";
+            this.button_stoneShovel.Size = new System.Drawing.Size(64, 64);
+            this.button_stoneShovel.TabIndex = 21;
+            this.button_stoneShovel.Text = "stone shovel";
+            this.button_stoneShovel.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // button_diamondPickaxe
             // 
-            this.button9.Location = new System.Drawing.Point(456, 25);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(64, 64);
-            this.button9.TabIndex = 24;
-            this.button9.Text = "diamond pick";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button_diamondPickaxe.Location = new System.Drawing.Point(456, 25);
+            this.button_diamondPickaxe.Name = "button_diamondPickaxe";
+            this.button_diamondPickaxe.Size = new System.Drawing.Size(64, 64);
+            this.button_diamondPickaxe.TabIndex = 24;
+            this.button_diamondPickaxe.Text = "diamond pick";
+            this.button_diamondPickaxe.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // button_diamondShovel
             // 
-            this.button10.Location = new System.Drawing.Point(456, 165);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(64, 64);
-            this.button10.TabIndex = 25;
-            this.button10.Text = "diamond shovel";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button_diamondShovel.Location = new System.Drawing.Point(456, 165);
+            this.button_diamondShovel.Name = "button_diamondShovel";
+            this.button_diamondShovel.Size = new System.Drawing.Size(64, 64);
+            this.button_diamondShovel.TabIndex = 25;
+            this.button_diamondShovel.Text = "diamond shovel";
+            this.button_diamondShovel.UseVisualStyleBackColor = true;
             // 
-            // button21
+            // button_diamondHoe
             // 
-            this.button21.Location = new System.Drawing.Point(456, 235);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(64, 64);
-            this.button21.TabIndex = 40;
-            this.button21.Text = "diamond hoe";
-            this.button21.UseVisualStyleBackColor = true;
+            this.button_diamondHoe.Location = new System.Drawing.Point(456, 235);
+            this.button_diamondHoe.Name = "button_diamondHoe";
+            this.button_diamondHoe.Size = new System.Drawing.Size(64, 64);
+            this.button_diamondHoe.TabIndex = 40;
+            this.button_diamondHoe.Text = "diamond hoe";
+            this.button_diamondHoe.UseVisualStyleBackColor = true;
             // 
-            // button22
+            // button_diamondAxe
             // 
-            this.button22.Location = new System.Drawing.Point(456, 95);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(64, 64);
-            this.button22.TabIndex = 39;
-            this.button22.Text = "diamond axe";
-            this.button22.UseVisualStyleBackColor = true;
+            this.button_diamondAxe.Location = new System.Drawing.Point(456, 95);
+            this.button_diamondAxe.Name = "button_diamondAxe";
+            this.button_diamondAxe.Size = new System.Drawing.Size(64, 64);
+            this.button_diamondAxe.TabIndex = 39;
+            this.button_diamondAxe.Text = "diamond axe";
+            this.button_diamondAxe.UseVisualStyleBackColor = true;
             // 
-            // button25
+            // button_stoneHoe
             // 
-            this.button25.Location = new System.Drawing.Point(316, 235);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(64, 64);
-            this.button25.TabIndex = 36;
-            this.button25.Text = "stone hoe";
-            this.button25.UseVisualStyleBackColor = true;
+            this.button_stoneHoe.Location = new System.Drawing.Point(316, 235);
+            this.button_stoneHoe.Name = "button_stoneHoe";
+            this.button_stoneHoe.Size = new System.Drawing.Size(64, 64);
+            this.button_stoneHoe.TabIndex = 36;
+            this.button_stoneHoe.Text = "stone hoe";
+            this.button_stoneHoe.UseVisualStyleBackColor = true;
             // 
-            // button26
+            // button_stoneAxe
             // 
-            this.button26.Location = new System.Drawing.Point(316, 95);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(64, 64);
-            this.button26.TabIndex = 35;
-            this.button26.Text = "stone axe";
-            this.button26.UseVisualStyleBackColor = true;
+            this.button_stoneAxe.Location = new System.Drawing.Point(316, 95);
+            this.button_stoneAxe.Name = "button_stoneAxe";
+            this.button_stoneAxe.Size = new System.Drawing.Size(64, 64);
+            this.button_stoneAxe.TabIndex = 35;
+            this.button_stoneAxe.Text = "stone axe";
+            this.button_stoneAxe.UseVisualStyleBackColor = true;
             // 
-            // button27
+            // button_wheat
             // 
-            this.button27.Location = new System.Drawing.Point(176, 95);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(64, 64);
-            this.button27.TabIndex = 34;
-            this.button27.Text = "wheat";
-            this.button27.UseVisualStyleBackColor = true;
+            this.button_wheat.Location = new System.Drawing.Point(176, 95);
+            this.button_wheat.Name = "button_wheat";
+            this.button_wheat.Size = new System.Drawing.Size(64, 64);
+            this.button_wheat.TabIndex = 34;
+            this.button_wheat.Text = "wheat";
+            this.button_wheat.UseVisualStyleBackColor = true;
             // 
-            // button28
+            // button_darkOakPlanks
             // 
-            this.button28.Location = new System.Drawing.Point(106, 165);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(64, 64);
-            this.button28.TabIndex = 33;
-            this.button28.Text = "dark oak planks";
-            this.button28.UseVisualStyleBackColor = true;
+            this.button_darkOakPlanks.Location = new System.Drawing.Point(106, 165);
+            this.button_darkOakPlanks.Name = "button_darkOakPlanks";
+            this.button_darkOakPlanks.Size = new System.Drawing.Size(64, 64);
+            this.button_darkOakPlanks.TabIndex = 33;
+            this.button_darkOakPlanks.Text = "dark oak planks";
+            this.button_darkOakPlanks.UseVisualStyleBackColor = true;
             // 
-            // button29
+            // button_junglePlanks
             // 
-            this.button29.Location = new System.Drawing.Point(106, 95);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(64, 64);
-            this.button29.TabIndex = 32;
-            this.button29.Text = "jungle planks";
-            this.button29.UseVisualStyleBackColor = true;
+            this.button_junglePlanks.Location = new System.Drawing.Point(106, 95);
+            this.button_junglePlanks.Name = "button_junglePlanks";
+            this.button_junglePlanks.Size = new System.Drawing.Size(64, 64);
+            this.button_junglePlanks.TabIndex = 32;
+            this.button_junglePlanks.Text = "jungle planks";
+            this.button_junglePlanks.UseVisualStyleBackColor = true;
             // 
-            // button30
+            // button_birchPlanks
             // 
-            this.button30.Location = new System.Drawing.Point(106, 25);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(64, 64);
-            this.button30.TabIndex = 31;
-            this.button30.Text = "birch Planks";
-            this.button30.UseVisualStyleBackColor = true;
+            this.button_birchPlanks.Location = new System.Drawing.Point(106, 25);
+            this.button_birchPlanks.Name = "button_birchPlanks";
+            this.button_birchPlanks.Size = new System.Drawing.Size(64, 64);
+            this.button_birchPlanks.TabIndex = 31;
+            this.button_birchPlanks.Text = "birch Planks";
+            this.button_birchPlanks.UseVisualStyleBackColor = true;
             // 
-            // button40
+            // button_ironShovel
             // 
-            this.button40.Location = new System.Drawing.Point(386, 165);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(64, 64);
-            this.button40.TabIndex = 51;
-            this.button40.Text = "iron shovel";
-            this.button40.UseVisualStyleBackColor = true;
+            this.button_ironShovel.Location = new System.Drawing.Point(386, 165);
+            this.button_ironShovel.Name = "button_ironShovel";
+            this.button_ironShovel.Size = new System.Drawing.Size(64, 64);
+            this.button_ironShovel.TabIndex = 51;
+            this.button_ironShovel.Text = "iron shovel";
+            this.button_ironShovel.UseVisualStyleBackColor = true;
             // 
-            // button41
+            // button_ironPickaxe
             // 
-            this.button41.Location = new System.Drawing.Point(386, 25);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(64, 64);
-            this.button41.TabIndex = 50;
-            this.button41.Text = "iron pick";
-            this.button41.UseVisualStyleBackColor = true;
+            this.button_ironPickaxe.Location = new System.Drawing.Point(386, 25);
+            this.button_ironPickaxe.Name = "button_ironPickaxe";
+            this.button_ironPickaxe.Size = new System.Drawing.Size(64, 64);
+            this.button_ironPickaxe.TabIndex = 50;
+            this.button_ironPickaxe.Text = "iron pick";
+            this.button_ironPickaxe.UseVisualStyleBackColor = true;
             // 
-            // button42
+            // button_bread
             // 
-            this.button42.Location = new System.Drawing.Point(176, 165);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(64, 64);
-            this.button42.TabIndex = 49;
-            this.button42.Text = "bread";
-            this.button42.UseVisualStyleBackColor = true;
+            this.button_bread.Location = new System.Drawing.Point(176, 165);
+            this.button_bread.Name = "button_bread";
+            this.button_bread.Size = new System.Drawing.Size(64, 64);
+            this.button_bread.TabIndex = 49;
+            this.button_bread.Text = "bread";
+            this.button_bread.UseVisualStyleBackColor = true;
             // 
-            // button44
+            // button_woodenShovel
             // 
-            this.button44.Location = new System.Drawing.Point(246, 165);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(64, 64);
-            this.button44.TabIndex = 47;
-            this.button44.Text = "wood shovel";
-            this.button44.UseVisualStyleBackColor = true;
+            this.button_woodenShovel.Location = new System.Drawing.Point(246, 165);
+            this.button_woodenShovel.Name = "button_woodenShovel";
+            this.button_woodenShovel.Size = new System.Drawing.Size(64, 64);
+            this.button_woodenShovel.TabIndex = 47;
+            this.button_woodenShovel.Text = "wood shovel";
+            this.button_woodenShovel.UseVisualStyleBackColor = true;
             // 
-            // button45
+            // button_woodenPickaxe
             // 
-            this.button45.Location = new System.Drawing.Point(246, 25);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(64, 64);
-            this.button45.TabIndex = 46;
-            this.button45.Text = "wood pick";
-            this.button45.UseVisualStyleBackColor = true;
+            this.button_woodenPickaxe.Location = new System.Drawing.Point(246, 25);
+            this.button_woodenPickaxe.Name = "button_woodenPickaxe";
+            this.button_woodenPickaxe.Size = new System.Drawing.Size(64, 64);
+            this.button_woodenPickaxe.TabIndex = 46;
+            this.button_woodenPickaxe.Text = "wood pick";
+            this.button_woodenPickaxe.UseVisualStyleBackColor = true;
             // 
-            // button55
+            // button_ironHoe
             // 
-            this.button55.Location = new System.Drawing.Point(386, 235);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(64, 64);
-            this.button55.TabIndex = 66;
-            this.button55.Text = "iron hoe";
-            this.button55.UseVisualStyleBackColor = true;
+            this.button_ironHoe.Location = new System.Drawing.Point(386, 235);
+            this.button_ironHoe.Name = "button_ironHoe";
+            this.button_ironHoe.Size = new System.Drawing.Size(64, 64);
+            this.button_ironHoe.TabIndex = 66;
+            this.button_ironHoe.Text = "iron hoe";
+            this.button_ironHoe.UseVisualStyleBackColor = true;
             // 
-            // button56
+            // button_ironAxe
             // 
-            this.button56.Location = new System.Drawing.Point(386, 95);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(64, 64);
-            this.button56.TabIndex = 65;
-            this.button56.Text = "iron axe";
-            this.button56.UseVisualStyleBackColor = true;
+            this.button_ironAxe.Location = new System.Drawing.Point(386, 95);
+            this.button_ironAxe.Name = "button_ironAxe";
+            this.button_ironAxe.Size = new System.Drawing.Size(64, 64);
+            this.button_ironAxe.TabIndex = 65;
+            this.button_ironAxe.Text = "iron axe";
+            this.button_ironAxe.UseVisualStyleBackColor = true;
             // 
-            // button57
+            // button_haybale
             // 
-            this.button57.Location = new System.Drawing.Point(176, 25);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(64, 64);
-            this.button57.TabIndex = 64;
-            this.button57.Text = "haybale";
-            this.button57.UseVisualStyleBackColor = true;
+            this.button_haybale.Location = new System.Drawing.Point(176, 25);
+            this.button_haybale.Name = "button_haybale";
+            this.button_haybale.Size = new System.Drawing.Size(64, 64);
+            this.button_haybale.TabIndex = 64;
+            this.button_haybale.Text = "haybale";
+            this.button_haybale.UseVisualStyleBackColor = true;
             // 
-            // button59
+            // button_woodenHoe
             // 
-            this.button59.Location = new System.Drawing.Point(246, 235);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(64, 64);
-            this.button59.TabIndex = 62;
-            this.button59.Text = "wood hoe";
-            this.button59.UseVisualStyleBackColor = true;
+            this.button_woodenHoe.Location = new System.Drawing.Point(246, 235);
+            this.button_woodenHoe.Name = "button_woodenHoe";
+            this.button_woodenHoe.Size = new System.Drawing.Size(64, 64);
+            this.button_woodenHoe.TabIndex = 62;
+            this.button_woodenHoe.Text = "wood hoe";
+            this.button_woodenHoe.UseVisualStyleBackColor = true;
             // 
-            // button60
+            // button_woodenAxe
             // 
-            this.button60.Location = new System.Drawing.Point(246, 95);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(64, 64);
-            this.button60.TabIndex = 61;
-            this.button60.Text = "wood axe";
-            this.button60.UseVisualStyleBackColor = true;
+            this.button_woodenAxe.Location = new System.Drawing.Point(246, 95);
+            this.button_woodenAxe.Name = "button_woodenAxe";
+            this.button_woodenAxe.Size = new System.Drawing.Size(64, 64);
+            this.button_woodenAxe.TabIndex = 61;
+            this.button_woodenAxe.Text = "wood axe";
+            this.button_woodenAxe.UseVisualStyleBackColor = true;
+            // 
+            // label_oakPlanks
+            // 
+            this.label_oakPlanks.AutoSize = true;
+            this.label_oakPlanks.Location = new System.Drawing.Point(87, 76);
+            this.label_oakPlanks.Name = "label_oakPlanks";
+            this.label_oakPlanks.Size = new System.Drawing.Size(13, 13);
+            this.label_oakPlanks.TabIndex = 67;
+            this.label_oakPlanks.Text = "0";
+            // 
+            // label_birchPlanks
+            // 
+            this.label_birchPlanks.AutoSize = true;
+            this.label_birchPlanks.Location = new System.Drawing.Point(157, 76);
+            this.label_birchPlanks.Name = "label_birchPlanks";
+            this.label_birchPlanks.Size = new System.Drawing.Size(13, 13);
+            this.label_birchPlanks.TabIndex = 68;
+            this.label_birchPlanks.Text = "0";
+            // 
+            // label_junglePlanks
+            // 
+            this.label_junglePlanks.AutoSize = true;
+            this.label_junglePlanks.Location = new System.Drawing.Point(157, 146);
+            this.label_junglePlanks.Name = "label_junglePlanks";
+            this.label_junglePlanks.Size = new System.Drawing.Size(13, 13);
+            this.label_junglePlanks.TabIndex = 70;
+            this.label_junglePlanks.Text = "0";
+            // 
+            // label_sprucePlanks
+            // 
+            this.label_sprucePlanks.AutoSize = true;
+            this.label_sprucePlanks.Location = new System.Drawing.Point(87, 146);
+            this.label_sprucePlanks.Name = "label_sprucePlanks";
+            this.label_sprucePlanks.Size = new System.Drawing.Size(13, 13);
+            this.label_sprucePlanks.TabIndex = 69;
+            this.label_sprucePlanks.Text = "0";
+            // 
+            // label_darkOakPlanks
+            // 
+            this.label_darkOakPlanks.AutoSize = true;
+            this.label_darkOakPlanks.Location = new System.Drawing.Point(157, 216);
+            this.label_darkOakPlanks.Name = "label_darkOakPlanks";
+            this.label_darkOakPlanks.Size = new System.Drawing.Size(13, 13);
+            this.label_darkOakPlanks.TabIndex = 72;
+            this.label_darkOakPlanks.Text = "0";
+            // 
+            // label_acaciaPlanks
+            // 
+            this.label_acaciaPlanks.AutoSize = true;
+            this.label_acaciaPlanks.Location = new System.Drawing.Point(87, 216);
+            this.label_acaciaPlanks.Name = "label_acaciaPlanks";
+            this.label_acaciaPlanks.Size = new System.Drawing.Size(13, 13);
+            this.label_acaciaPlanks.TabIndex = 71;
+            this.label_acaciaPlanks.Text = "0";
+            // 
+            // label_woodenPickaxe
+            // 
+            this.label_woodenPickaxe.AutoSize = true;
+            this.label_woodenPickaxe.Location = new System.Drawing.Point(297, 76);
+            this.label_woodenPickaxe.Name = "label_woodenPickaxe";
+            this.label_woodenPickaxe.Size = new System.Drawing.Size(13, 13);
+            this.label_woodenPickaxe.TabIndex = 74;
+            this.label_woodenPickaxe.Text = "0";
+            // 
+            // label_haybale
+            // 
+            this.label_haybale.AutoSize = true;
+            this.label_haybale.Location = new System.Drawing.Point(227, 76);
+            this.label_haybale.Name = "label_haybale";
+            this.label_haybale.Size = new System.Drawing.Size(13, 13);
+            this.label_haybale.TabIndex = 73;
+            this.label_haybale.Text = "0";
+            // 
+            // label_woodenAxe
+            // 
+            this.label_woodenAxe.AutoSize = true;
+            this.label_woodenAxe.Location = new System.Drawing.Point(297, 146);
+            this.label_woodenAxe.Name = "label_woodenAxe";
+            this.label_woodenAxe.Size = new System.Drawing.Size(13, 13);
+            this.label_woodenAxe.TabIndex = 76;
+            this.label_woodenAxe.Text = "0";
+            // 
+            // label_wheat
+            // 
+            this.label_wheat.AutoSize = true;
+            this.label_wheat.Location = new System.Drawing.Point(227, 146);
+            this.label_wheat.Name = "label_wheat";
+            this.label_wheat.Size = new System.Drawing.Size(13, 13);
+            this.label_wheat.TabIndex = 75;
+            this.label_wheat.Text = "0";
+            // 
+            // label_woodenShovel
+            // 
+            this.label_woodenShovel.AutoSize = true;
+            this.label_woodenShovel.Location = new System.Drawing.Point(297, 216);
+            this.label_woodenShovel.Name = "label_woodenShovel";
+            this.label_woodenShovel.Size = new System.Drawing.Size(13, 13);
+            this.label_woodenShovel.TabIndex = 78;
+            this.label_woodenShovel.Text = "0";
+            // 
+            // label_bread
+            // 
+            this.label_bread.AutoSize = true;
+            this.label_bread.Location = new System.Drawing.Point(227, 216);
+            this.label_bread.Name = "label_bread";
+            this.label_bread.Size = new System.Drawing.Size(13, 13);
+            this.label_bread.TabIndex = 77;
+            this.label_bread.Text = "0";
+            // 
+            // label_ironPickaxe
+            // 
+            this.label_ironPickaxe.AutoSize = true;
+            this.label_ironPickaxe.Location = new System.Drawing.Point(437, 76);
+            this.label_ironPickaxe.Name = "label_ironPickaxe";
+            this.label_ironPickaxe.Size = new System.Drawing.Size(13, 13);
+            this.label_ironPickaxe.TabIndex = 80;
+            this.label_ironPickaxe.Text = "0";
+            // 
+            // label_stonePickaxe
+            // 
+            this.label_stonePickaxe.AutoSize = true;
+            this.label_stonePickaxe.Location = new System.Drawing.Point(367, 76);
+            this.label_stonePickaxe.Name = "label_stonePickaxe";
+            this.label_stonePickaxe.Size = new System.Drawing.Size(13, 13);
+            this.label_stonePickaxe.TabIndex = 79;
+            this.label_stonePickaxe.Text = "0";
+            // 
+            // label_ironAxe
+            // 
+            this.label_ironAxe.AutoSize = true;
+            this.label_ironAxe.Location = new System.Drawing.Point(437, 146);
+            this.label_ironAxe.Name = "label_ironAxe";
+            this.label_ironAxe.Size = new System.Drawing.Size(13, 13);
+            this.label_ironAxe.TabIndex = 82;
+            this.label_ironAxe.Text = "0";
+            // 
+            // label_stoneAxe
+            // 
+            this.label_stoneAxe.AutoSize = true;
+            this.label_stoneAxe.Location = new System.Drawing.Point(367, 146);
+            this.label_stoneAxe.Name = "label_stoneAxe";
+            this.label_stoneAxe.Size = new System.Drawing.Size(13, 13);
+            this.label_stoneAxe.TabIndex = 81;
+            this.label_stoneAxe.Text = "0";
+            // 
+            // label_ironShovel
+            // 
+            this.label_ironShovel.AutoSize = true;
+            this.label_ironShovel.Location = new System.Drawing.Point(437, 216);
+            this.label_ironShovel.Name = "label_ironShovel";
+            this.label_ironShovel.Size = new System.Drawing.Size(13, 13);
+            this.label_ironShovel.TabIndex = 84;
+            this.label_ironShovel.Text = "0";
+            // 
+            // label_stoneShovel
+            // 
+            this.label_stoneShovel.AutoSize = true;
+            this.label_stoneShovel.Location = new System.Drawing.Point(367, 216);
+            this.label_stoneShovel.Name = "label_stoneShovel";
+            this.label_stoneShovel.Size = new System.Drawing.Size(13, 13);
+            this.label_stoneShovel.TabIndex = 83;
+            this.label_stoneShovel.Text = "0";
+            // 
+            // label_stoneHoe
+            // 
+            this.label_stoneHoe.AutoSize = true;
+            this.label_stoneHoe.Location = new System.Drawing.Point(367, 286);
+            this.label_stoneHoe.Name = "label_stoneHoe";
+            this.label_stoneHoe.Size = new System.Drawing.Size(13, 13);
+            this.label_stoneHoe.TabIndex = 86;
+            this.label_stoneHoe.Text = "0";
+            // 
+            // label_woodenHoe
+            // 
+            this.label_woodenHoe.AutoSize = true;
+            this.label_woodenHoe.Location = new System.Drawing.Point(297, 286);
+            this.label_woodenHoe.Name = "label_woodenHoe";
+            this.label_woodenHoe.Size = new System.Drawing.Size(13, 13);
+            this.label_woodenHoe.TabIndex = 85;
+            this.label_woodenHoe.Text = "0";
+            // 
+            // label_diamondHoe
+            // 
+            this.label_diamondHoe.AutoSize = true;
+            this.label_diamondHoe.Location = new System.Drawing.Point(507, 286);
+            this.label_diamondHoe.Name = "label_diamondHoe";
+            this.label_diamondHoe.Size = new System.Drawing.Size(13, 13);
+            this.label_diamondHoe.TabIndex = 88;
+            this.label_diamondHoe.Text = "0";
+            // 
+            // label_ironHoe
+            // 
+            this.label_ironHoe.AutoSize = true;
+            this.label_ironHoe.Location = new System.Drawing.Point(437, 286);
+            this.label_ironHoe.Name = "label_ironHoe";
+            this.label_ironHoe.Size = new System.Drawing.Size(13, 13);
+            this.label_ironHoe.TabIndex = 87;
+            this.label_ironHoe.Text = "0";
+            // 
+            // label_diamondShovel
+            // 
+            this.label_diamondShovel.AutoSize = true;
+            this.label_diamondShovel.Location = new System.Drawing.Point(507, 216);
+            this.label_diamondShovel.Name = "label_diamondShovel";
+            this.label_diamondShovel.Size = new System.Drawing.Size(13, 13);
+            this.label_diamondShovel.TabIndex = 90;
+            this.label_diamondShovel.Text = "0";
+            // 
+            // label_stick
+            // 
+            this.label_stick.AutoSize = true;
+            this.label_stick.Location = new System.Drawing.Point(87, 286);
+            this.label_stick.Name = "label_stick";
+            this.label_stick.Size = new System.Drawing.Size(13, 13);
+            this.label_stick.TabIndex = 89;
+            this.label_stick.Text = "0";
+            // 
+            // label_diamondAxe
+            // 
+            this.label_diamondAxe.AutoSize = true;
+            this.label_diamondAxe.Location = new System.Drawing.Point(507, 146);
+            this.label_diamondAxe.Name = "label_diamondAxe";
+            this.label_diamondAxe.Size = new System.Drawing.Size(13, 13);
+            this.label_diamondAxe.TabIndex = 91;
+            this.label_diamondAxe.Text = "0";
+            // 
+            // label_diamondPickaxe
+            // 
+            this.label_diamondPickaxe.AutoSize = true;
+            this.label_diamondPickaxe.Location = new System.Drawing.Point(507, 76);
+            this.label_diamondPickaxe.Name = "label_diamondPickaxe";
+            this.label_diamondPickaxe.Size = new System.Drawing.Size(13, 13);
+            this.label_diamondPickaxe.TabIndex = 92;
+            this.label_diamondPickaxe.Text = "0";
             // 
             // Form_crafting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 336);
-            this.Controls.Add(this.button55);
-            this.Controls.Add(this.button56);
-            this.Controls.Add(this.button57);
-            this.Controls.Add(this.button59);
-            this.Controls.Add(this.button60);
-            this.Controls.Add(this.button40);
-            this.Controls.Add(this.button41);
-            this.Controls.Add(this.button42);
-            this.Controls.Add(this.button44);
-            this.Controls.Add(this.button45);
-            this.Controls.Add(this.button21);
-            this.Controls.Add(this.button22);
-            this.Controls.Add(this.button25);
-            this.Controls.Add(this.button26);
-            this.Controls.Add(this.button27);
-            this.Controls.Add(this.button28);
-            this.Controls.Add(this.button29);
-            this.Controls.Add(this.button30);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label_diamondPickaxe);
+            this.Controls.Add(this.label_diamondAxe);
+            this.Controls.Add(this.label_diamondShovel);
+            this.Controls.Add(this.label_stick);
+            this.Controls.Add(this.label_diamondHoe);
+            this.Controls.Add(this.label_ironHoe);
+            this.Controls.Add(this.label_stoneHoe);
+            this.Controls.Add(this.label_woodenHoe);
+            this.Controls.Add(this.label_ironShovel);
+            this.Controls.Add(this.label_stoneShovel);
+            this.Controls.Add(this.label_ironAxe);
+            this.Controls.Add(this.label_stoneAxe);
+            this.Controls.Add(this.label_ironPickaxe);
+            this.Controls.Add(this.label_stonePickaxe);
+            this.Controls.Add(this.label_woodenShovel);
+            this.Controls.Add(this.label_bread);
+            this.Controls.Add(this.label_woodenAxe);
+            this.Controls.Add(this.label_wheat);
+            this.Controls.Add(this.label_woodenPickaxe);
+            this.Controls.Add(this.label_haybale);
+            this.Controls.Add(this.label_darkOakPlanks);
+            this.Controls.Add(this.label_acaciaPlanks);
+            this.Controls.Add(this.label_junglePlanks);
+            this.Controls.Add(this.label_sprucePlanks);
+            this.Controls.Add(this.label_birchPlanks);
+            this.Controls.Add(this.label_oakPlanks);
+            this.Controls.Add(this.button_ironHoe);
+            this.Controls.Add(this.button_ironAxe);
+            this.Controls.Add(this.button_haybale);
+            this.Controls.Add(this.button_woodenHoe);
+            this.Controls.Add(this.button_woodenAxe);
+            this.Controls.Add(this.button_ironShovel);
+            this.Controls.Add(this.button_ironPickaxe);
+            this.Controls.Add(this.button_bread);
+            this.Controls.Add(this.button_woodenShovel);
+            this.Controls.Add(this.button_woodenPickaxe);
+            this.Controls.Add(this.button_diamondHoe);
+            this.Controls.Add(this.button_diamondAxe);
+            this.Controls.Add(this.button_stoneHoe);
+            this.Controls.Add(this.button_stoneAxe);
+            this.Controls.Add(this.button_wheat);
+            this.Controls.Add(this.button_darkOakPlanks);
+            this.Controls.Add(this.button_junglePlanks);
+            this.Controls.Add(this.button_birchPlanks);
+            this.Controls.Add(this.button_diamondShovel);
+            this.Controls.Add(this.button_diamondPickaxe);
+            this.Controls.Add(this.button_stoneShovel);
+            this.Controls.Add(this.button_stonePickaxe);
+            this.Controls.Add(this.button_stick);
+            this.Controls.Add(this.button_acaciaPlanks);
+            this.Controls.Add(this.button_sprucePlanks);
             this.Controls.Add(this.button_end);
             this.Controls.Add(this.button_exit);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_oakPlanks);
             this.Name = "Form_crafting";
             this.Text = "Crafting";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_oakPlanks;
         private System.Windows.Forms.Button button_exit;
         private System.Windows.Forms.Button button_end;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.Button button44;
-        private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button55;
-        private System.Windows.Forms.Button button56;
-        private System.Windows.Forms.Button button57;
-        private System.Windows.Forms.Button button59;
-        private System.Windows.Forms.Button button60;
+        private System.Windows.Forms.Button button_sprucePlanks;
+        private System.Windows.Forms.Button button_acaciaPlanks;
+        private System.Windows.Forms.Button button_stick;
+        private System.Windows.Forms.Button button_stonePickaxe;
+        private System.Windows.Forms.Button button_stoneShovel;
+        private System.Windows.Forms.Button button_diamondPickaxe;
+        private System.Windows.Forms.Button button_diamondShovel;
+        private System.Windows.Forms.Button button_diamondHoe;
+        private System.Windows.Forms.Button button_diamondAxe;
+        private System.Windows.Forms.Button button_stoneHoe;
+        private System.Windows.Forms.Button button_stoneAxe;
+        private System.Windows.Forms.Button button_wheat;
+        private System.Windows.Forms.Button button_darkOakPlanks;
+        private System.Windows.Forms.Button button_junglePlanks;
+        private System.Windows.Forms.Button button_birchPlanks;
+        private System.Windows.Forms.Button button_ironShovel;
+        private System.Windows.Forms.Button button_ironPickaxe;
+        private System.Windows.Forms.Button button_bread;
+        private System.Windows.Forms.Button button_woodenShovel;
+        private System.Windows.Forms.Button button_woodenPickaxe;
+        private System.Windows.Forms.Button button_ironHoe;
+        private System.Windows.Forms.Button button_ironAxe;
+        private System.Windows.Forms.Button button_haybale;
+        private System.Windows.Forms.Button button_woodenHoe;
+        private System.Windows.Forms.Button button_woodenAxe;
+        private System.Windows.Forms.Label label_oakPlanks;
+        private System.Windows.Forms.Label label_birchPlanks;
+        private System.Windows.Forms.Label label_junglePlanks;
+        private System.Windows.Forms.Label label_sprucePlanks;
+        private System.Windows.Forms.Label label_darkOakPlanks;
+        private System.Windows.Forms.Label label_acaciaPlanks;
+        private System.Windows.Forms.Label label_woodenPickaxe;
+        private System.Windows.Forms.Label label_haybale;
+        private System.Windows.Forms.Label label_woodenAxe;
+        private System.Windows.Forms.Label label_wheat;
+        private System.Windows.Forms.Label label_woodenShovel;
+        private System.Windows.Forms.Label label_bread;
+        private System.Windows.Forms.Label label_ironPickaxe;
+        private System.Windows.Forms.Label label_stonePickaxe;
+        private System.Windows.Forms.Label label_ironAxe;
+        private System.Windows.Forms.Label label_stoneAxe;
+        private System.Windows.Forms.Label label_ironShovel;
+        private System.Windows.Forms.Label label_stoneShovel;
+        private System.Windows.Forms.Label label_stoneHoe;
+        private System.Windows.Forms.Label label_woodenHoe;
+        private System.Windows.Forms.Label label_diamondHoe;
+        private System.Windows.Forms.Label label_ironHoe;
+        private System.Windows.Forms.Label label_diamondShovel;
+        private System.Windows.Forms.Label label_stick;
+        private System.Windows.Forms.Label label_diamondAxe;
+        private System.Windows.Forms.Label label_diamondPickaxe;
     }
 }

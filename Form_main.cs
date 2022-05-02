@@ -17,7 +17,7 @@ namespace BlockBreaker
         List<Block> availableBlocks = new List<Block>();
 
         #region Initialize Blocks
-        //Block(BlockID, BreakTime, Tool, DropAmount, BreakLevel, imageName)
+        //Block(ItemID, BreakTime, Tool, DropAmount, BreakLevel, ImageName)
         //BreakLevel - 0=fist 1=wood 2=stone 3=iron 4=diamond
         //DropAmount - = amount or -1 if random in a range
         static Block oakLog = new Block(1, 3, "axe", 1, 0, "logs/oakLog.png");
@@ -40,31 +40,31 @@ namespace BlockBreaker
 
         Dictionary<int, Block> blocks = new Dictionary<int, Block>()
         {
-            {oakLog.blockID, oakLog},
-            {birchLog.blockID, birchLog},
-            {spruceLog.blockID, spruceLog},
-            {acaciaLog.blockID, acaciaLog},
-            {jungleLog.blockID, jungleLog},
-            {darkOakLog.blockID, darkOakLog},
-            {stone.blockID, stone},
-            {dirt.blockID, dirt},
-            {ironOre.blockID, ironOre},
-            {coalOre.blockID, coalOre},
-            {goldOre.blockID, goldOre},
-            {diamondOre.blockID, diamondOre},
-            {lapisOre.blockID, lapisOre},
-            {redstoneOre.blockID, redstoneOre},
-            {emeraldOre.blockID, emeraldOre}
+            {oakLog.itemID, oakLog},
+            {birchLog.itemID, birchLog},
+            {spruceLog.itemID, spruceLog},
+            {acaciaLog.itemID, acaciaLog},
+            {jungleLog.itemID, jungleLog},
+            {darkOakLog.itemID, darkOakLog},
+            {stone.itemID, stone},
+            {dirt.itemID, dirt},
+            {ironOre.itemID, ironOre},
+            {coalOre.itemID, coalOre},
+            {goldOre.itemID, goldOre},
+            {diamondOre.itemID, diamondOre},
+            {lapisOre.itemID, lapisOre},
+            {redstoneOre.itemID, redstoneOre},
+            {emeraldOre.itemID, emeraldOre}
         };
         #endregion
 
         #region Initialize Tools
         //Tool(Durability, ToolType, ToolLevel)
         //ToolLevel - 0=fist 1=wood 2=stone 3=iron 4=diamond
-        static Tool pickaxe = new Tool(0, "pickaxe", 0);
-        static Tool axe = new Tool(0, "axe", 0);
-        static Tool shovel = new Tool(0, "shovel", 0);
-        static Tool hoe = new Tool(0, "hoe", 0);
+        static Tool pickaxe = new Tool(0, "pickaxe");
+        static Tool axe = new Tool(0, "axe");
+        static Tool shovel = new Tool(0, "shovel");
+        static Tool hoe = new Tool(0, "hoe");
 
         Dictionary<string, Tool> tools = new Dictionary<string, Tool>()
         {

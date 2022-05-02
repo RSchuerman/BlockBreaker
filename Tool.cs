@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace BlockBreaker
 {
-    class Tool
+    class Tool : Item
     {
         private int _durability;
         private string _toolType;
         private int _toolLevel;
-        private string _imageName;
         public int durability
         {
             get { return _durability; }
@@ -27,7 +26,7 @@ namespace BlockBreaker
             get { return _toolLevel; }
             set { _toolLevel = value; }
         }
-        public string imageName
+        override public string imageName
         {
             get
             {
@@ -44,9 +43,8 @@ namespace BlockBreaker
                 else
                     return "inventorySlot.png";
             }
-            set { _imageName = value; }
         }
-        public Tool(int durability, string toolType, int toolLevel)
+        public Tool(int durability, string toolType)
         {
             _durability = durability;
             _toolType = toolType;
