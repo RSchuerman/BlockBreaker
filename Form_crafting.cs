@@ -12,9 +12,7 @@ namespace BlockBreaker
 {
     public partial class Form_crafting : Form
     {
-        #region Initialize Items
-        static Item oakPlank = new Item(1, "logs/oakPlank.png");
-        #endregion
+        
         public Form_crafting()
         {
             InitializeComponent();
@@ -153,5 +151,10 @@ namespace BlockBreaker
         }
         #endregion
 
+        void updateLabels()
+        {
+            //label_acaciaPlanks = oakPlanks.amount.ToString();
+
+        }
     }
 }

@@ -44,11 +44,12 @@ namespace BlockBreaker
                     return "inventorySlot.png";
             }
         }
-        public Tool(int durability, string toolType)
+        public Tool(int durability, string toolType, int fitemID)
         {
             _durability = durability;
             _toolType = toolType;
             _toolLevel = 0;
+            itemID = fitemID;
         }
 
 
