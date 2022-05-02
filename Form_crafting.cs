@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,13 @@ namespace BlockBreaker
 {
     public partial class Form_crafting : Form
     {
+        SqlConnection conn = new SqlConnection("Data Source=(LocalDB)/MSSQLLocalDB;AttachDbFilename=C:/Users/RSchuerman/source/repos/BlockBreaker/Database.mdf;Integrated Security=True;");
         
         public Form_crafting()
         {
             InitializeComponent();
+            conn.Open();
+            updateLabels();
         }
 
         private void button_exit_Click(object sender, EventArgs e)
@@ -30,6 +34,7 @@ namespace BlockBreaker
             Environment.Exit(1);
         }
 
+        #region Buttons
         #region Wood buttons
         private void button_oakPlanks_Click(object sender, EventArgs e)
         {
@@ -150,10 +155,17 @@ namespace BlockBreaker
 
         }
         #endregion
+        #endregion
 
+        
         void updateLabels()
         {
-            //label_acaciaPlanks = oakPlanks.amount.ToString();
+            label_oakPlanks.Text = "SELECT amount FROM Items WHERE itemID=1";
+
+        }
+
+        private void button_diamondPickaxe_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

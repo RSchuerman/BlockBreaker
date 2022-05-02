@@ -168,6 +168,7 @@ namespace BlockBreaker
             this.button_diamondPickaxe.TabIndex = 24;
             this.button_diamondPickaxe.Text = "diamond pick";
             this.button_diamondPickaxe.UseVisualStyleBackColor = true;
+            this.button_diamondPickaxe.Click += new System.EventHandler(this.button_diamondPickaxe_Click_1);
             // 
             // button_diamondShovel
             // 
