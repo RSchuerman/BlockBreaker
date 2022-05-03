@@ -371,6 +371,7 @@ namespace BlockBreaker
             this.label_oakPlanks.AutoSize = true;
             this.label_oakPlanks.Location = new System.Drawing.Point(87, 76);
             this.label_oakPlanks.Name = "label_oakPlanks";
+            this.label_oakPlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_oakPlanks.Size = new System.Drawing.Size(13, 13);
             this.label_oakPlanks.TabIndex = 67;
             this.label_oakPlanks.Text = "0";
@@ -380,6 +381,7 @@ namespace BlockBreaker
             this.label_birchPlanks.AutoSize = true;
             this.label_birchPlanks.Location = new System.Drawing.Point(157, 76);
             this.label_birchPlanks.Name = "label_birchPlanks";
+            this.label_birchPlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_birchPlanks.Size = new System.Drawing.Size(13, 13);
             this.label_birchPlanks.TabIndex = 68;
             this.label_birchPlanks.Text = "0";
@@ -389,6 +391,7 @@ namespace BlockBreaker
             this.label_junglePlanks.AutoSize = true;
             this.label_junglePlanks.Location = new System.Drawing.Point(157, 146);
             this.label_junglePlanks.Name = "label_junglePlanks";
+            this.label_junglePlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_junglePlanks.Size = new System.Drawing.Size(13, 13);
             this.label_junglePlanks.TabIndex = 70;
             this.label_junglePlanks.Text = "0";
@@ -398,6 +401,7 @@ namespace BlockBreaker
             this.label_sprucePlanks.AutoSize = true;
             this.label_sprucePlanks.Location = new System.Drawing.Point(87, 146);
             this.label_sprucePlanks.Name = "label_sprucePlanks";
+            this.label_sprucePlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_sprucePlanks.Size = new System.Drawing.Size(13, 13);
             this.label_sprucePlanks.TabIndex = 69;
             this.label_sprucePlanks.Text = "0";
@@ -407,6 +411,7 @@ namespace BlockBreaker
             this.label_darkOakPlanks.AutoSize = true;
             this.label_darkOakPlanks.Location = new System.Drawing.Point(157, 216);
             this.label_darkOakPlanks.Name = "label_darkOakPlanks";
+            this.label_darkOakPlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_darkOakPlanks.Size = new System.Drawing.Size(13, 13);
             this.label_darkOakPlanks.TabIndex = 72;
             this.label_darkOakPlanks.Text = "0";
@@ -416,6 +421,7 @@ namespace BlockBreaker
             this.label_acaciaPlanks.AutoSize = true;
             this.label_acaciaPlanks.Location = new System.Drawing.Point(87, 216);
             this.label_acaciaPlanks.Name = "label_acaciaPlanks";
+            this.label_acaciaPlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_acaciaPlanks.Size = new System.Drawing.Size(13, 13);
             this.label_acaciaPlanks.TabIndex = 71;
             this.label_acaciaPlanks.Text = "0";
@@ -425,6 +431,7 @@ namespace BlockBreaker
             this.label_woodenPickaxe.AutoSize = true;
             this.label_woodenPickaxe.Location = new System.Drawing.Point(297, 76);
             this.label_woodenPickaxe.Name = "label_woodenPickaxe";
+            this.label_woodenPickaxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_woodenPickaxe.Size = new System.Drawing.Size(13, 13);
             this.label_woodenPickaxe.TabIndex = 74;
             this.label_woodenPickaxe.Text = "0";
@@ -434,6 +441,7 @@ namespace BlockBreaker
             this.label_haybale.AutoSize = true;
             this.label_haybale.Location = new System.Drawing.Point(227, 76);
             this.label_haybale.Name = "label_haybale";
+            this.label_haybale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_haybale.Size = new System.Drawing.Size(13, 13);
             this.label_haybale.TabIndex = 73;
             this.label_haybale.Text = "0";
@@ -443,6 +451,7 @@ namespace BlockBreaker
             this.label_woodenAxe.AutoSize = true;
             this.label_woodenAxe.Location = new System.Drawing.Point(297, 146);
             this.label_woodenAxe.Name = "label_woodenAxe";
+            this.label_woodenAxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_woodenAxe.Size = new System.Drawing.Size(13, 13);
             this.label_woodenAxe.TabIndex = 76;
             this.label_woodenAxe.Text = "0";
@@ -452,6 +461,7 @@ namespace BlockBreaker
             this.label_wheat.AutoSize = true;
             this.label_wheat.Location = new System.Drawing.Point(227, 146);
             this.label_wheat.Name = "label_wheat";
+            this.label_wheat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_wheat.Size = new System.Drawing.Size(13, 13);
             this.label_wheat.TabIndex = 75;
             this.label_wheat.Text = "0";
@@ -461,6 +471,7 @@ namespace BlockBreaker
             this.label_woodenShovel.AutoSize = true;
             this.label_woodenShovel.Location = new System.Drawing.Point(297, 216);
             this.label_woodenShovel.Name = "label_woodenShovel";
+            this.label_woodenShovel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_woodenShovel.Size = new System.Drawing.Size(13, 13);
             this.label_woodenShovel.TabIndex = 78;
             this.label_woodenShovel.Text = "0";
@@ -470,6 +481,7 @@ namespace BlockBreaker
             this.label_bread.AutoSize = true;
             this.label_bread.Location = new System.Drawing.Point(227, 216);
             this.label_bread.Name = "label_bread";
+            this.label_bread.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_bread.Size = new System.Drawing.Size(13, 13);
             this.label_bread.TabIndex = 77;
             this.label_bread.Text = "0";
@@ -479,6 +491,7 @@ namespace BlockBreaker
             this.label_ironPickaxe.AutoSize = true;
             this.label_ironPickaxe.Location = new System.Drawing.Point(437, 76);
             this.label_ironPickaxe.Name = "label_ironPickaxe";
+            this.label_ironPickaxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_ironPickaxe.Size = new System.Drawing.Size(13, 13);
             this.label_ironPickaxe.TabIndex = 80;
             this.label_ironPickaxe.Text = "0";
@@ -488,6 +501,7 @@ namespace BlockBreaker
             this.label_stonePickaxe.AutoSize = true;
             this.label_stonePickaxe.Location = new System.Drawing.Point(367, 76);
             this.label_stonePickaxe.Name = "label_stonePickaxe";
+            this.label_stonePickaxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_stonePickaxe.Size = new System.Drawing.Size(13, 13);
             this.label_stonePickaxe.TabIndex = 79;
             this.label_stonePickaxe.Text = "0";
@@ -497,6 +511,7 @@ namespace BlockBreaker
             this.label_ironAxe.AutoSize = true;
             this.label_ironAxe.Location = new System.Drawing.Point(437, 146);
             this.label_ironAxe.Name = "label_ironAxe";
+            this.label_ironAxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_ironAxe.Size = new System.Drawing.Size(13, 13);
             this.label_ironAxe.TabIndex = 82;
             this.label_ironAxe.Text = "0";
@@ -506,6 +521,7 @@ namespace BlockBreaker
             this.label_stoneAxe.AutoSize = true;
             this.label_stoneAxe.Location = new System.Drawing.Point(367, 146);
             this.label_stoneAxe.Name = "label_stoneAxe";
+            this.label_stoneAxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_stoneAxe.Size = new System.Drawing.Size(13, 13);
             this.label_stoneAxe.TabIndex = 81;
             this.label_stoneAxe.Text = "0";
@@ -515,6 +531,7 @@ namespace BlockBreaker
             this.label_ironShovel.AutoSize = true;
             this.label_ironShovel.Location = new System.Drawing.Point(437, 216);
             this.label_ironShovel.Name = "label_ironShovel";
+            this.label_ironShovel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_ironShovel.Size = new System.Drawing.Size(13, 13);
             this.label_ironShovel.TabIndex = 84;
             this.label_ironShovel.Text = "0";
@@ -524,6 +541,7 @@ namespace BlockBreaker
             this.label_stoneShovel.AutoSize = true;
             this.label_stoneShovel.Location = new System.Drawing.Point(367, 216);
             this.label_stoneShovel.Name = "label_stoneShovel";
+            this.label_stoneShovel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_stoneShovel.Size = new System.Drawing.Size(13, 13);
             this.label_stoneShovel.TabIndex = 83;
             this.label_stoneShovel.Text = "0";
@@ -533,6 +551,7 @@ namespace BlockBreaker
             this.label_stoneHoe.AutoSize = true;
             this.label_stoneHoe.Location = new System.Drawing.Point(367, 286);
             this.label_stoneHoe.Name = "label_stoneHoe";
+            this.label_stoneHoe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_stoneHoe.Size = new System.Drawing.Size(13, 13);
             this.label_stoneHoe.TabIndex = 86;
             this.label_stoneHoe.Text = "0";
@@ -542,6 +561,7 @@ namespace BlockBreaker
             this.label_woodenHoe.AutoSize = true;
             this.label_woodenHoe.Location = new System.Drawing.Point(297, 286);
             this.label_woodenHoe.Name = "label_woodenHoe";
+            this.label_woodenHoe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_woodenHoe.Size = new System.Drawing.Size(13, 13);
             this.label_woodenHoe.TabIndex = 85;
             this.label_woodenHoe.Text = "0";
@@ -551,6 +571,7 @@ namespace BlockBreaker
             this.label_diamondHoe.AutoSize = true;
             this.label_diamondHoe.Location = new System.Drawing.Point(507, 286);
             this.label_diamondHoe.Name = "label_diamondHoe";
+            this.label_diamondHoe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_diamondHoe.Size = new System.Drawing.Size(13, 13);
             this.label_diamondHoe.TabIndex = 88;
             this.label_diamondHoe.Text = "0";
@@ -560,6 +581,7 @@ namespace BlockBreaker
             this.label_ironHoe.AutoSize = true;
             this.label_ironHoe.Location = new System.Drawing.Point(437, 286);
             this.label_ironHoe.Name = "label_ironHoe";
+            this.label_ironHoe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_ironHoe.Size = new System.Drawing.Size(13, 13);
             this.label_ironHoe.TabIndex = 87;
             this.label_ironHoe.Text = "0";
@@ -569,6 +591,7 @@ namespace BlockBreaker
             this.label_diamondShovel.AutoSize = true;
             this.label_diamondShovel.Location = new System.Drawing.Point(507, 216);
             this.label_diamondShovel.Name = "label_diamondShovel";
+            this.label_diamondShovel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_diamondShovel.Size = new System.Drawing.Size(13, 13);
             this.label_diamondShovel.TabIndex = 90;
             this.label_diamondShovel.Text = "0";
@@ -578,6 +601,7 @@ namespace BlockBreaker
             this.label_stick.AutoSize = true;
             this.label_stick.Location = new System.Drawing.Point(87, 286);
             this.label_stick.Name = "label_stick";
+            this.label_stick.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_stick.Size = new System.Drawing.Size(13, 13);
             this.label_stick.TabIndex = 89;
             this.label_stick.Text = "0";
@@ -587,6 +611,7 @@ namespace BlockBreaker
             this.label_diamondAxe.AutoSize = true;
             this.label_diamondAxe.Location = new System.Drawing.Point(507, 146);
             this.label_diamondAxe.Name = "label_diamondAxe";
+            this.label_diamondAxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_diamondAxe.Size = new System.Drawing.Size(13, 13);
             this.label_diamondAxe.TabIndex = 91;
             this.label_diamondAxe.Text = "0";
@@ -596,6 +621,7 @@ namespace BlockBreaker
             this.label_diamondPickaxe.AutoSize = true;
             this.label_diamondPickaxe.Location = new System.Drawing.Point(507, 76);
             this.label_diamondPickaxe.Name = "label_diamondPickaxe";
+            this.label_diamondPickaxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_diamondPickaxe.Size = new System.Drawing.Size(13, 13);
             this.label_diamondPickaxe.TabIndex = 92;
             this.label_diamondPickaxe.Text = "0";
@@ -660,6 +686,7 @@ namespace BlockBreaker
             this.Controls.Add(this.button_exit);
             this.Controls.Add(this.button_oakPlanks);
             this.Name = "Form_crafting";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "Crafting";
             this.ResumeLayout(false);
             this.PerformLayout();

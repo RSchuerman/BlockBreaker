@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Timers;
+using System.Threading;
 
 namespace BlockBreaker
 {
@@ -44,12 +45,12 @@ namespace BlockBreaker
         public static Block redstoneOre = new Block(24, 15, "pickaxe", -1, 3, "ores/redstoneOre.png");
         public static Block emeraldOre = new Block(25, 15, "pickaxe", 1, 3, "ores/emeraldOre.png");
 
-        public static Block oakLeaves = new Block(26, 0.3, "hoe", 1, 0, "leaves/oakLeaves.png");
-        public static Block birchLeaves = new Block(27, 0.3, "hoe", 1, 0, "leaves/birchLeaves.png");
-        public static Block spruceLeaves = new Block(28, 0.3, "hoe", 1, 0, "leaves/spruceLeaves.png");
-        public static Block jungleLeaves = new Block(29, 0.3, "hoe", 1, 0, "leaves/jungleLeaves.png");
-        public static Block acaciaLeaves = new Block(30, 0.3, "hoe", 1, 0, "leaves/acaciaLeaves.png");
-        public static Block darkOakLeaves = new Block(31, 0.3, "hoe", 1, 0, "leaves/darkOakLeaves.png");
+        public static Block oakLeaves = new Block(26, 0.3, "hoe", 0, 0, "leaves/oakLeaves.png");
+        public static Block birchLeaves = new Block(27, 0.3, "hoe", 0, 0, "leaves/birchLeaves.png");
+        public static Block spruceLeaves = new Block(28, 0.3, "hoe", 0, 0, "leaves/spruceLeaves.png");
+        public static Block jungleLeaves = new Block(29, 0.3, "hoe", 0, 0, "leaves/jungleLeaves.png");
+        public static Block acaciaLeaves = new Block(30, 0.3, "hoe", 0, 0, "leaves/acaciaLeaves.png");
+        public static Block darkOakLeaves = new Block(31, 0.3, "hoe", 0, 0, "leaves/darkOakLeaves.png");
         public static Block haybale = new Block(32, 0.75, "hoe", 1, 0, "haybale.png");
 
         Dictionary<int, Block> blocks = new Dictionary<int, Block>()
@@ -106,6 +107,7 @@ namespace BlockBreaker
         public static Item diamond = new Item(46, "diamond.png");
         public static Item lapis = new Item(47, "lapis.png");
         public static Item redstone = new Item(48, "redstone.png");
+        public static Item emerald = new Item(49, "emerald.png");
         #endregion
 
         public Form_main()
@@ -114,6 +116,8 @@ namespace BlockBreaker
             updateBlocks();
             displayBlock();
             displayTools();
+            panel_plus1.Visible = false;
+            //progressBar_breaking.Visible = true;
         }
 
         private void button_breakBlock_CLICK(object sender, EventArgs e)
@@ -122,6 +126,7 @@ namespace BlockBreaker
         }
         void displayBlock()
         {
+            progressBar_breaking2.Visible = false;
             Random rnd = new Random();
             currentBlock = rnd.Next(availableBlocks.Count());
             button_breakBlock.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/blocks/" + availableBlocks[currentBlock].imageName);
@@ -129,9 +134,19 @@ namespace BlockBreaker
         }
         void breakBlock()
         {
-            //System.Timers.Timer timer = new System.Timers.Timer(availableBlocks[currentBlock].breakTime*1000);
-            //timer.Start();
-            
+            progressBar_breaking2.Visible = true;
+            progressBar_breaking2.Maximum = (int)availableBlocks[currentBlock].breakTime;
+            progressBar_breaking2.Minimum = 1;
+            progressBar_breaking.Minimum = 0;
+            progressBar_breaking.Maximum = 100;
+            progressBar_breaking.Value = 0;
+            progressBar_breaking2.Value = 1;
+            while (progressBar_breaking2.Value != progressBar_breaking2.Maximum)
+            {
+                Thread.Sleep(1);
+                progressBar_breaking2.Value++;
+                progressBar_breaking.Value = (int)((progressBar_breaking2.Value / progressBar_breaking2.Maximum) * 100);
+            }
             
             if (availableBlocks[currentBlock].breakLevel <= tools[availableBlocks[currentBlock].preferredTool].toolLevel)
             {
@@ -147,20 +162,48 @@ namespace BlockBreaker
                     redstone.amount += redstoneOre.dropAmount;
                 else if (availableBlocks[currentBlock] == grassBlock)
                     dirt.amount += dirt.dropAmount;
+                else if (availableBlocks[currentBlock] == emeraldOre)
+                    emerald.amount += emeraldOre.dropAmount;
                 else
                     availableBlocks[currentBlock].amount += availableBlocks[currentBlock].dropAmount;
+                if(tools[availableBlocks[currentBlock].preferredTool].toolLevel > 0)
+                    tools[availableBlocks[currentBlock].preferredTool].durability--;
             }
+            if (availableBlocks[currentBlock].dropAmount > 0)
+            {
+                pictureBox_plus1.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/plus1Images/" + availableBlocks[currentBlock].imageName);
+                label_plus1.Text = "+" + availableBlocks[currentBlock].dropAmount;
+                panel_plus1.Visible = true;
+            }
+            else
+                panel_plus1.Visible = false;
+            displayTools();
+            updateBlocks();
             displayBlock();
+            
         }
         void displayTools()
         {
+            if (pickaxe.durability == 0)
+                pickaxe.toolLevel = 0;
+            if (axe.durability == 0)
+                axe.toolLevel = 0;
+            if (shovel.durability == 0)
+                shovel.toolLevel = 0;
+            if (hoe.durability == 0)
+                hoe.toolLevel = 0;
             pictureBox_pickaxe.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/tools/pickaxes/" + pickaxe.imageName);
             pictureBox_axe.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/tools/axes/" + axe.imageName);
             pictureBox_shovel.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/tools/shovels/" + shovel.imageName);
             pictureBox_hoe.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/tools/hoes/" + hoe.imageName);
+            label_pickaxe.Text = pickaxe.durability.ToString();
+            label_axe.Text = axe.durability.ToString();
+            label_shovel.Text = shovel.durability.ToString();
+            label_hoe.Text = hoe.durability.ToString();
         }
         void updateBlocks()
         {
+            availableBlocks.Clear();
             #region Pickaxe Break Times
             if (pickaxe.toolLevel == 4)
             {
@@ -169,6 +212,7 @@ namespace BlockBreaker
                 granite.breakTime = 0.3;
                 diorite.breakTime = 0.3;
                 ironOre.breakTime = 0.6;
+                goldOre.breakTime = 0.6;
                 coalOre.breakTime = 0.6;
                 lapisOre.breakTime = 0.6;
                 redstoneOre.breakTime = 0.6;
@@ -193,6 +237,7 @@ namespace BlockBreaker
                 granite.breakTime = 0.4;
                 diorite.breakTime = 0.4;
                 ironOre.breakTime = 0.75;
+                goldOre.breakTime = 0.75;
                 coalOre.breakTime = 0.75;
                 lapisOre.breakTime = 0.75;
                 redstoneOre.breakTime = 0.75;
@@ -217,6 +262,7 @@ namespace BlockBreaker
                 granite.breakTime = 0.6;
                 diorite.breakTime = 0.6;
                 ironOre.breakTime = 1.15;
+                goldOre.breakTime = 3.75;
                 coalOre.breakTime = 1.15;
                 lapisOre.breakTime = 1.15;
                 redstoneOre.breakTime = 3.75;
@@ -237,6 +283,7 @@ namespace BlockBreaker
                 granite.breakTime = 1.15;
                 diorite.breakTime = 1.15;
                 ironOre.breakTime = 7.5;
+                goldOre.breakTime = 7.5;
                 coalOre.breakTime = 2.25;
                 lapisOre.breakTime = 7.5;
                 redstoneOre.breakTime = 7.5;
@@ -255,6 +302,7 @@ namespace BlockBreaker
                 granite.breakTime = 7.5;
                 diorite.breakTime = 7.5;
                 ironOre.breakTime = 15;
+                goldOre.breakTime = 15;
                 coalOre.breakTime = 15;
                 lapisOre.breakTime = 15;
                 redstoneOre.breakTime = 15;
@@ -277,38 +325,38 @@ namespace BlockBreaker
             else if (axe.toolLevel == 3)
             {
                 oakLog.breakTime = 0.5;
-                birchLog.breakTime = 0.4;
-                spruceLog.breakTime = 0.4;
-                acaciaLog.breakTime = 0.4;
-                jungleLog.breakTime = 0.4;
-                darkOakLog.breakTime = 0.4;
+                birchLog.breakTime = 0.5;
+                spruceLog.breakTime = 0.5;
+                acaciaLog.breakTime = 0.5;
+                jungleLog.breakTime = 0.5;
+                darkOakLog.breakTime = 0.5;
             }
             else if (axe.toolLevel == 2)
             {
                 oakLog.breakTime = 0.75;
-                birchLog.breakTime = 0.4;
-                spruceLog.breakTime = 0.4;
-                acaciaLog.breakTime = 0.4;
-                jungleLog.breakTime = 0.4;
-                darkOakLog.breakTime = 0.4;
+                birchLog.breakTime = 0.75;
+                spruceLog.breakTime = 0.75;
+                acaciaLog.breakTime = 0.75;
+                jungleLog.breakTime = 0.75;
+                darkOakLog.breakTime = 0.75;
             }
             else if (axe.toolLevel == 1)
             {
                 oakLog.breakTime = 1.5;
-                birchLog.breakTime = 0.4;
-                spruceLog.breakTime = 0.4;
-                acaciaLog.breakTime = 0.4;
-                jungleLog.breakTime = 0.4;
-                darkOakLog.breakTime = 0.4;
+                birchLog.breakTime = 1.5;
+                spruceLog.breakTime = 1.5;
+                acaciaLog.breakTime = 1.5;
+                jungleLog.breakTime = 1.5;
+                darkOakLog.breakTime = 1.5;
             }
             else
             {
                 oakLog.breakTime = 3;
-                birchLog.breakTime = 0.4;
-                spruceLog.breakTime = 0.4;
-                acaciaLog.breakTime = 0.4;
-                jungleLog.breakTime = 0.4;
-                darkOakLog.breakTime = 0.4;
+                birchLog.breakTime = 3;
+                spruceLog.breakTime = 3;
+                acaciaLog.breakTime = 3;
+                jungleLog.breakTime = 3;
+                darkOakLog.breakTime = 3;
             }
             availableBlocks.Add(oakLog);
             availableBlocks.Add(birchLog);
@@ -419,6 +467,7 @@ namespace BlockBreaker
             availableBlocks.Add(acaciaLeaves);
             availableBlocks.Add(darkOakLeaves);
             #endregion
+            label_emerald.Text = emerald.amount.ToString();
         }
 
         private void button_crafting_Click(object sender, EventArgs e)
@@ -446,5 +495,6 @@ namespace BlockBreaker
             inventoryForm.Show();
             this.Hide();
         }
+
     }
 }

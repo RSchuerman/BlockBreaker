@@ -15,7 +15,7 @@ namespace BlockBreaker
 
         public double breakTime
         {
-            get { return _breakTime; }
+            get { return _breakTime * 1000; }
             set { _breakTime = value; }
         }
         public string preferredTool

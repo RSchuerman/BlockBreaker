@@ -210,6 +210,7 @@ namespace BlockBreaker
             this.label_oakLog.AutoSize = true;
             this.label_oakLog.Location = new System.Drawing.Point(63, 63);
             this.label_oakLog.Name = "label_oakLog";
+            this.label_oakLog.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_oakLog.Size = new System.Drawing.Size(13, 13);
             this.label_oakLog.TabIndex = 1;
             this.label_oakLog.Text = "0";
@@ -219,6 +220,7 @@ namespace BlockBreaker
             this.label_oakPlanks.AutoSize = true;
             this.label_oakPlanks.Location = new System.Drawing.Point(133, 63);
             this.label_oakPlanks.Name = "label_oakPlanks";
+            this.label_oakPlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_oakPlanks.Size = new System.Drawing.Size(13, 13);
             this.label_oakPlanks.TabIndex = 3;
             this.label_oakPlanks.Text = "0";
@@ -237,6 +239,7 @@ namespace BlockBreaker
             this.label_stick.AutoSize = true;
             this.label_stick.Location = new System.Drawing.Point(203, 63);
             this.label_stick.Name = "label_stick";
+            this.label_stick.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_stick.Size = new System.Drawing.Size(13, 13);
             this.label_stick.TabIndex = 5;
             this.label_stick.Text = "0";
@@ -255,6 +258,7 @@ namespace BlockBreaker
             this.label_ironIngot.AutoSize = true;
             this.label_ironIngot.Location = new System.Drawing.Point(273, 63);
             this.label_ironIngot.Name = "label_ironIngot";
+            this.label_ironIngot.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_ironIngot.Size = new System.Drawing.Size(13, 13);
             this.label_ironIngot.TabIndex = 7;
             this.label_ironIngot.Text = "0";
@@ -273,6 +277,7 @@ namespace BlockBreaker
             this.label_dirt.AutoSize = true;
             this.label_dirt.Location = new System.Drawing.Point(343, 63);
             this.label_dirt.Name = "label_dirt";
+            this.label_dirt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_dirt.Size = new System.Drawing.Size(13, 13);
             this.label_dirt.TabIndex = 9;
             this.label_dirt.Text = "0";
@@ -291,6 +296,7 @@ namespace BlockBreaker
             this.label_cobblestone.AutoSize = true;
             this.label_cobblestone.Location = new System.Drawing.Point(413, 63);
             this.label_cobblestone.Name = "label_cobblestone";
+            this.label_cobblestone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_cobblestone.Size = new System.Drawing.Size(13, 13);
             this.label_cobblestone.TabIndex = 11;
             this.label_cobblestone.Text = "0";
@@ -312,6 +318,7 @@ namespace BlockBreaker
             this.label7.Size = new System.Drawing.Size(13, 13);
             this.label7.TabIndex = 13;
             this.label7.Text = "0";
+            this.label7.Visible = false;
             // 
             // pictureBox7
             // 
@@ -320,6 +327,7 @@ namespace BlockBreaker
             this.pictureBox7.Size = new System.Drawing.Size(64, 64);
             this.pictureBox7.TabIndex = 12;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
             // 
             // label8
             // 
@@ -329,6 +337,7 @@ namespace BlockBreaker
             this.label8.Size = new System.Drawing.Size(13, 13);
             this.label8.TabIndex = 15;
             this.label8.Text = "0";
+            this.label8.Visible = false;
             // 
             // pictureBox8
             // 
@@ -337,6 +346,7 @@ namespace BlockBreaker
             this.pictureBox8.Size = new System.Drawing.Size(64, 64);
             this.pictureBox8.TabIndex = 14;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
             // 
             // label9
             // 
@@ -346,6 +356,7 @@ namespace BlockBreaker
             this.label9.Size = new System.Drawing.Size(13, 13);
             this.label9.TabIndex = 17;
             this.label9.Text = "0";
+            this.label9.Visible = false;
             // 
             // pictureBox9
             // 
@@ -354,6 +365,7 @@ namespace BlockBreaker
             this.pictureBox9.Size = new System.Drawing.Size(64, 64);
             this.pictureBox9.TabIndex = 16;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Visible = false;
             // 
             // button_end
             // 
@@ -383,6 +395,7 @@ namespace BlockBreaker
             this.label10.Size = new System.Drawing.Size(13, 13);
             this.label10.TabIndex = 37;
             this.label10.Text = "0";
+            this.label10.Visible = false;
             // 
             // pictureBox10
             // 
@@ -391,6 +404,7 @@ namespace BlockBreaker
             this.pictureBox10.Size = new System.Drawing.Size(64, 64);
             this.pictureBox10.TabIndex = 36;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Visible = false;
             // 
             // label11
             // 
@@ -400,6 +414,7 @@ namespace BlockBreaker
             this.label11.Size = new System.Drawing.Size(13, 13);
             this.label11.TabIndex = 35;
             this.label11.Text = "0";
+            this.label11.Visible = false;
             // 
             // pictureBox11
             // 
@@ -408,6 +423,7 @@ namespace BlockBreaker
             this.pictureBox11.Size = new System.Drawing.Size(64, 64);
             this.pictureBox11.TabIndex = 34;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Visible = false;
             // 
             // label12
             // 
@@ -417,6 +433,7 @@ namespace BlockBreaker
             this.label12.Size = new System.Drawing.Size(13, 13);
             this.label12.TabIndex = 33;
             this.label12.Text = "0";
+            this.label12.Visible = false;
             // 
             // pictureBox12
             // 
@@ -425,12 +442,14 @@ namespace BlockBreaker
             this.pictureBox12.Size = new System.Drawing.Size(64, 64);
             this.pictureBox12.TabIndex = 32;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Visible = false;
             // 
             // label_andesite
             // 
             this.label_andesite.AutoSize = true;
             this.label_andesite.Location = new System.Drawing.Point(413, 133);
             this.label_andesite.Name = "label_andesite";
+            this.label_andesite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_andesite.Size = new System.Drawing.Size(13, 13);
             this.label_andesite.TabIndex = 31;
             this.label_andesite.Text = "0";
@@ -449,6 +468,7 @@ namespace BlockBreaker
             this.label_gravel.AutoSize = true;
             this.label_gravel.Location = new System.Drawing.Point(343, 133);
             this.label_gravel.Name = "label_gravel";
+            this.label_gravel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_gravel.Size = new System.Drawing.Size(13, 13);
             this.label_gravel.TabIndex = 29;
             this.label_gravel.Text = "0";
@@ -467,6 +487,7 @@ namespace BlockBreaker
             this.label_ironOre.AutoSize = true;
             this.label_ironOre.Location = new System.Drawing.Point(273, 133);
             this.label_ironOre.Name = "label_ironOre";
+            this.label_ironOre.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_ironOre.Size = new System.Drawing.Size(13, 13);
             this.label_ironOre.TabIndex = 27;
             this.label_ironOre.Text = "0";
@@ -485,6 +506,7 @@ namespace BlockBreaker
             this.label_haybale.AutoSize = true;
             this.label_haybale.Location = new System.Drawing.Point(203, 133);
             this.label_haybale.Name = "label_haybale";
+            this.label_haybale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_haybale.Size = new System.Drawing.Size(13, 13);
             this.label_haybale.TabIndex = 25;
             this.label_haybale.Text = "0";
@@ -503,6 +525,7 @@ namespace BlockBreaker
             this.label_birchPlanks.AutoSize = true;
             this.label_birchPlanks.Location = new System.Drawing.Point(133, 133);
             this.label_birchPlanks.Name = "label_birchPlanks";
+            this.label_birchPlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_birchPlanks.Size = new System.Drawing.Size(13, 13);
             this.label_birchPlanks.TabIndex = 23;
             this.label_birchPlanks.Text = "0";
@@ -521,6 +544,7 @@ namespace BlockBreaker
             this.label_birchLog.AutoSize = true;
             this.label_birchLog.Location = new System.Drawing.Point(63, 133);
             this.label_birchLog.Name = "label_birchLog";
+            this.label_birchLog.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_birchLog.Size = new System.Drawing.Size(13, 13);
             this.label_birchLog.TabIndex = 21;
             this.label_birchLog.Text = "0";
@@ -542,6 +566,7 @@ namespace BlockBreaker
             this.label19.Size = new System.Drawing.Size(13, 13);
             this.label19.TabIndex = 55;
             this.label19.Text = "0";
+            this.label19.Visible = false;
             // 
             // pictureBox19
             // 
@@ -550,6 +575,7 @@ namespace BlockBreaker
             this.pictureBox19.Size = new System.Drawing.Size(64, 64);
             this.pictureBox19.TabIndex = 54;
             this.pictureBox19.TabStop = false;
+            this.pictureBox19.Visible = false;
             // 
             // label20
             // 
@@ -559,6 +585,7 @@ namespace BlockBreaker
             this.label20.Size = new System.Drawing.Size(13, 13);
             this.label20.TabIndex = 53;
             this.label20.Text = "0";
+            this.label20.Visible = false;
             // 
             // pictureBox20
             // 
@@ -567,6 +594,7 @@ namespace BlockBreaker
             this.pictureBox20.Size = new System.Drawing.Size(64, 64);
             this.pictureBox20.TabIndex = 52;
             this.pictureBox20.TabStop = false;
+            this.pictureBox20.Visible = false;
             // 
             // label21
             // 
@@ -576,6 +604,7 @@ namespace BlockBreaker
             this.label21.Size = new System.Drawing.Size(13, 13);
             this.label21.TabIndex = 51;
             this.label21.Text = "0";
+            this.label21.Visible = false;
             // 
             // pictureBox21
             // 
@@ -584,12 +613,14 @@ namespace BlockBreaker
             this.pictureBox21.Size = new System.Drawing.Size(64, 64);
             this.pictureBox21.TabIndex = 50;
             this.pictureBox21.TabStop = false;
+            this.pictureBox21.Visible = false;
             // 
             // label_granite
             // 
             this.label_granite.AutoSize = true;
             this.label_granite.Location = new System.Drawing.Point(413, 203);
             this.label_granite.Name = "label_granite";
+            this.label_granite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_granite.Size = new System.Drawing.Size(13, 13);
             this.label_granite.TabIndex = 49;
             this.label_granite.Text = "0";
@@ -608,6 +639,7 @@ namespace BlockBreaker
             this.label_sand.AutoSize = true;
             this.label_sand.Location = new System.Drawing.Point(343, 203);
             this.label_sand.Name = "label_sand";
+            this.label_sand.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_sand.Size = new System.Drawing.Size(13, 13);
             this.label_sand.TabIndex = 47;
             this.label_sand.Text = "0";
@@ -626,6 +658,7 @@ namespace BlockBreaker
             this.label_goldIngot.AutoSize = true;
             this.label_goldIngot.Location = new System.Drawing.Point(273, 203);
             this.label_goldIngot.Name = "label_goldIngot";
+            this.label_goldIngot.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_goldIngot.Size = new System.Drawing.Size(13, 13);
             this.label_goldIngot.TabIndex = 45;
             this.label_goldIngot.Text = "0";
@@ -644,6 +677,7 @@ namespace BlockBreaker
             this.label_wheat.AutoSize = true;
             this.label_wheat.Location = new System.Drawing.Point(203, 203);
             this.label_wheat.Name = "label_wheat";
+            this.label_wheat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_wheat.Size = new System.Drawing.Size(13, 13);
             this.label_wheat.TabIndex = 43;
             this.label_wheat.Text = "0";
@@ -662,6 +696,7 @@ namespace BlockBreaker
             this.label_sprucePlanks.AutoSize = true;
             this.label_sprucePlanks.Location = new System.Drawing.Point(133, 203);
             this.label_sprucePlanks.Name = "label_sprucePlanks";
+            this.label_sprucePlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_sprucePlanks.Size = new System.Drawing.Size(13, 13);
             this.label_sprucePlanks.TabIndex = 41;
             this.label_sprucePlanks.Text = "0";
@@ -680,6 +715,7 @@ namespace BlockBreaker
             this.label_spruceLog.AutoSize = true;
             this.label_spruceLog.Location = new System.Drawing.Point(63, 203);
             this.label_spruceLog.Name = "label_spruceLog";
+            this.label_spruceLog.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_spruceLog.Size = new System.Drawing.Size(13, 13);
             this.label_spruceLog.TabIndex = 39;
             this.label_spruceLog.Text = "0";
@@ -701,6 +737,7 @@ namespace BlockBreaker
             this.label28.Size = new System.Drawing.Size(13, 13);
             this.label28.TabIndex = 73;
             this.label28.Text = "0";
+            this.label28.Visible = false;
             // 
             // pictureBox28
             // 
@@ -709,6 +746,7 @@ namespace BlockBreaker
             this.pictureBox28.Size = new System.Drawing.Size(64, 64);
             this.pictureBox28.TabIndex = 72;
             this.pictureBox28.TabStop = false;
+            this.pictureBox28.Visible = false;
             // 
             // label29
             // 
@@ -718,6 +756,7 @@ namespace BlockBreaker
             this.label29.Size = new System.Drawing.Size(13, 13);
             this.label29.TabIndex = 71;
             this.label29.Text = "0";
+            this.label29.Visible = false;
             // 
             // pictureBox29
             // 
@@ -726,6 +765,7 @@ namespace BlockBreaker
             this.pictureBox29.Size = new System.Drawing.Size(64, 64);
             this.pictureBox29.TabIndex = 70;
             this.pictureBox29.TabStop = false;
+            this.pictureBox29.Visible = false;
             // 
             // label30
             // 
@@ -735,6 +775,7 @@ namespace BlockBreaker
             this.label30.Size = new System.Drawing.Size(13, 13);
             this.label30.TabIndex = 69;
             this.label30.Text = "0";
+            this.label30.Visible = false;
             // 
             // pictureBox30
             // 
@@ -743,12 +784,14 @@ namespace BlockBreaker
             this.pictureBox30.Size = new System.Drawing.Size(64, 64);
             this.pictureBox30.TabIndex = 68;
             this.pictureBox30.TabStop = false;
+            this.pictureBox30.Visible = false;
             // 
             // label_diorite
             // 
             this.label_diorite.AutoSize = true;
             this.label_diorite.Location = new System.Drawing.Point(413, 273);
             this.label_diorite.Name = "label_diorite";
+            this.label_diorite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_diorite.Size = new System.Drawing.Size(13, 13);
             this.label_diorite.TabIndex = 67;
             this.label_diorite.Text = "0";
@@ -770,6 +813,7 @@ namespace BlockBreaker
             this.label32.Size = new System.Drawing.Size(13, 13);
             this.label32.TabIndex = 65;
             this.label32.Text = "0";
+            this.label32.Visible = false;
             // 
             // pictureBox32
             // 
@@ -778,12 +822,14 @@ namespace BlockBreaker
             this.pictureBox32.Size = new System.Drawing.Size(64, 64);
             this.pictureBox32.TabIndex = 64;
             this.pictureBox32.TabStop = false;
+            this.pictureBox32.Visible = false;
             // 
             // label_goldOre
             // 
             this.label_goldOre.AutoSize = true;
             this.label_goldOre.Location = new System.Drawing.Point(273, 273);
             this.label_goldOre.Name = "label_goldOre";
+            this.label_goldOre.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_goldOre.Size = new System.Drawing.Size(13, 13);
             this.label_goldOre.TabIndex = 63;
             this.label_goldOre.Text = "0";
@@ -802,6 +848,7 @@ namespace BlockBreaker
             this.label_bread.AutoSize = true;
             this.label_bread.Location = new System.Drawing.Point(203, 273);
             this.label_bread.Name = "label_bread";
+            this.label_bread.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_bread.Size = new System.Drawing.Size(13, 13);
             this.label_bread.TabIndex = 61;
             this.label_bread.Text = "0";
@@ -820,6 +867,7 @@ namespace BlockBreaker
             this.label_junglePlanks.AutoSize = true;
             this.label_junglePlanks.Location = new System.Drawing.Point(133, 273);
             this.label_junglePlanks.Name = "label_junglePlanks";
+            this.label_junglePlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_junglePlanks.Size = new System.Drawing.Size(13, 13);
             this.label_junglePlanks.TabIndex = 59;
             this.label_junglePlanks.Text = "0";
@@ -838,6 +886,7 @@ namespace BlockBreaker
             this.label_jungleLog.AutoSize = true;
             this.label_jungleLog.Location = new System.Drawing.Point(63, 273);
             this.label_jungleLog.Name = "label_jungleLog";
+            this.label_jungleLog.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_jungleLog.Size = new System.Drawing.Size(13, 13);
             this.label_jungleLog.TabIndex = 57;
             this.label_jungleLog.Text = "0";
@@ -859,6 +908,7 @@ namespace BlockBreaker
             this.label37.Size = new System.Drawing.Size(13, 13);
             this.label37.TabIndex = 91;
             this.label37.Text = "0";
+            this.label37.Visible = false;
             // 
             // pictureBox37
             // 
@@ -867,6 +917,7 @@ namespace BlockBreaker
             this.pictureBox37.Size = new System.Drawing.Size(64, 64);
             this.pictureBox37.TabIndex = 90;
             this.pictureBox37.TabStop = false;
+            this.pictureBox37.Visible = false;
             // 
             // label38
             // 
@@ -876,6 +927,7 @@ namespace BlockBreaker
             this.label38.Size = new System.Drawing.Size(13, 13);
             this.label38.TabIndex = 89;
             this.label38.Text = "0";
+            this.label38.Visible = false;
             // 
             // pictureBox38
             // 
@@ -884,6 +936,7 @@ namespace BlockBreaker
             this.pictureBox38.Size = new System.Drawing.Size(64, 64);
             this.pictureBox38.TabIndex = 88;
             this.pictureBox38.TabStop = false;
+            this.pictureBox38.Visible = false;
             // 
             // label39
             // 
@@ -893,6 +946,7 @@ namespace BlockBreaker
             this.label39.Size = new System.Drawing.Size(13, 13);
             this.label39.TabIndex = 87;
             this.label39.Text = "0";
+            this.label39.Visible = false;
             // 
             // pictureBox39
             // 
@@ -901,12 +955,14 @@ namespace BlockBreaker
             this.pictureBox39.Size = new System.Drawing.Size(64, 64);
             this.pictureBox39.TabIndex = 86;
             this.pictureBox39.TabStop = false;
+            this.pictureBox39.Visible = false;
             // 
             // label_axe
             // 
             this.label_axe.AutoSize = true;
             this.label_axe.Location = new System.Drawing.Point(413, 343);
             this.label_axe.Name = "label_axe";
+            this.label_axe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_axe.Size = new System.Drawing.Size(13, 13);
             this.label_axe.TabIndex = 85;
             this.label_axe.Text = "0";
@@ -925,6 +981,7 @@ namespace BlockBreaker
             this.label_pickaxe.AutoSize = true;
             this.label_pickaxe.Location = new System.Drawing.Point(343, 343);
             this.label_pickaxe.Name = "label_pickaxe";
+            this.label_pickaxe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_pickaxe.Size = new System.Drawing.Size(13, 13);
             this.label_pickaxe.TabIndex = 83;
             this.label_pickaxe.Text = "0";
@@ -943,6 +1000,7 @@ namespace BlockBreaker
             this.label_redstone.AutoSize = true;
             this.label_redstone.Location = new System.Drawing.Point(273, 343);
             this.label_redstone.Name = "label_redstone";
+            this.label_redstone.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_redstone.Size = new System.Drawing.Size(13, 13);
             this.label_redstone.TabIndex = 81;
             this.label_redstone.Text = "0";
@@ -961,6 +1019,7 @@ namespace BlockBreaker
             this.label_coal.AutoSize = true;
             this.label_coal.Location = new System.Drawing.Point(203, 343);
             this.label_coal.Name = "label_coal";
+            this.label_coal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_coal.Size = new System.Drawing.Size(13, 13);
             this.label_coal.TabIndex = 79;
             this.label_coal.Text = "0";
@@ -979,6 +1038,7 @@ namespace BlockBreaker
             this.label_acaciaPlanks.AutoSize = true;
             this.label_acaciaPlanks.Location = new System.Drawing.Point(133, 343);
             this.label_acaciaPlanks.Name = "label_acaciaPlanks";
+            this.label_acaciaPlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_acaciaPlanks.Size = new System.Drawing.Size(13, 13);
             this.label_acaciaPlanks.TabIndex = 77;
             this.label_acaciaPlanks.Text = "0";
@@ -997,6 +1057,7 @@ namespace BlockBreaker
             this.label_acaciaLog.AutoSize = true;
             this.label_acaciaLog.Location = new System.Drawing.Point(63, 343);
             this.label_acaciaLog.Name = "label_acaciaLog";
+            this.label_acaciaLog.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_acaciaLog.Size = new System.Drawing.Size(13, 13);
             this.label_acaciaLog.TabIndex = 75;
             this.label_acaciaLog.Text = "0";
@@ -1018,6 +1079,7 @@ namespace BlockBreaker
             this.label46.Size = new System.Drawing.Size(13, 13);
             this.label46.TabIndex = 109;
             this.label46.Text = "0";
+            this.label46.Visible = false;
             // 
             // pictureBox46
             // 
@@ -1026,6 +1088,7 @@ namespace BlockBreaker
             this.pictureBox46.Size = new System.Drawing.Size(64, 64);
             this.pictureBox46.TabIndex = 108;
             this.pictureBox46.TabStop = false;
+            this.pictureBox46.Visible = false;
             // 
             // label47
             // 
@@ -1035,6 +1098,7 @@ namespace BlockBreaker
             this.label47.Size = new System.Drawing.Size(13, 13);
             this.label47.TabIndex = 107;
             this.label47.Text = "0";
+            this.label47.Visible = false;
             // 
             // pictureBox47
             // 
@@ -1043,6 +1107,7 @@ namespace BlockBreaker
             this.pictureBox47.Size = new System.Drawing.Size(64, 64);
             this.pictureBox47.TabIndex = 106;
             this.pictureBox47.TabStop = false;
+            this.pictureBox47.Visible = false;
             // 
             // label48
             // 
@@ -1052,6 +1117,7 @@ namespace BlockBreaker
             this.label48.Size = new System.Drawing.Size(13, 13);
             this.label48.TabIndex = 105;
             this.label48.Text = "0";
+            this.label48.Visible = false;
             // 
             // pictureBox48
             // 
@@ -1060,12 +1126,14 @@ namespace BlockBreaker
             this.pictureBox48.Size = new System.Drawing.Size(64, 64);
             this.pictureBox48.TabIndex = 104;
             this.pictureBox48.TabStop = false;
+            this.pictureBox48.Visible = false;
             // 
             // label_hoe
             // 
             this.label_hoe.AutoSize = true;
             this.label_hoe.Location = new System.Drawing.Point(413, 413);
             this.label_hoe.Name = "label_hoe";
+            this.label_hoe.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_hoe.Size = new System.Drawing.Size(13, 13);
             this.label_hoe.TabIndex = 103;
             this.label_hoe.Text = "0";
@@ -1084,6 +1152,7 @@ namespace BlockBreaker
             this.label_shovel.AutoSize = true;
             this.label_shovel.Location = new System.Drawing.Point(343, 413);
             this.label_shovel.Name = "label_shovel";
+            this.label_shovel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_shovel.Size = new System.Drawing.Size(13, 13);
             this.label_shovel.TabIndex = 101;
             this.label_shovel.Text = "0";
@@ -1102,6 +1171,7 @@ namespace BlockBreaker
             this.label_lapis.AutoSize = true;
             this.label_lapis.Location = new System.Drawing.Point(273, 413);
             this.label_lapis.Name = "label_lapis";
+            this.label_lapis.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_lapis.Size = new System.Drawing.Size(13, 13);
             this.label_lapis.TabIndex = 99;
             this.label_lapis.Text = "0";
@@ -1120,6 +1190,7 @@ namespace BlockBreaker
             this.label_diamond.AutoSize = true;
             this.label_diamond.Location = new System.Drawing.Point(203, 413);
             this.label_diamond.Name = "label_diamond";
+            this.label_diamond.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_diamond.Size = new System.Drawing.Size(13, 13);
             this.label_diamond.TabIndex = 97;
             this.label_diamond.Text = "0";
@@ -1138,6 +1209,7 @@ namespace BlockBreaker
             this.label_darkOakPlanks.AutoSize = true;
             this.label_darkOakPlanks.Location = new System.Drawing.Point(133, 413);
             this.label_darkOakPlanks.Name = "label_darkOakPlanks";
+            this.label_darkOakPlanks.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_darkOakPlanks.Size = new System.Drawing.Size(13, 13);
             this.label_darkOakPlanks.TabIndex = 95;
             this.label_darkOakPlanks.Text = "0";
@@ -1156,6 +1228,7 @@ namespace BlockBreaker
             this.label_darkOakLog.AutoSize = true;
             this.label_darkOakLog.Location = new System.Drawing.Point(63, 413);
             this.label_darkOakLog.Name = "label_darkOakLog";
+            this.label_darkOakLog.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_darkOakLog.Size = new System.Drawing.Size(13, 13);
             this.label_darkOakLog.TabIndex = 93;
             this.label_darkOakLog.Text = "0";

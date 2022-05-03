@@ -73,6 +73,7 @@ namespace BlockBreaker
             this.label_ironIngot.AutoSize = true;
             this.label_ironIngot.Location = new System.Drawing.Point(96, 82);
             this.label_ironIngot.Name = "label_ironIngot";
+            this.label_ironIngot.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_ironIngot.Size = new System.Drawing.Size(13, 13);
             this.label_ironIngot.TabIndex = 20;
             this.label_ironIngot.Text = "0";
@@ -82,6 +83,7 @@ namespace BlockBreaker
             this.label_goldIngot.AutoSize = true;
             this.label_goldIngot.Location = new System.Drawing.Point(166, 82);
             this.label_goldIngot.Name = "label_goldIngot";
+            this.label_goldIngot.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label_goldIngot.Size = new System.Drawing.Size(13, 13);
             this.label_goldIngot.TabIndex = 22;
             this.label_goldIngot.Text = "0";
