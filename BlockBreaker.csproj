@@ -67,6 +67,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Form_inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_inventory.Designer.cs">
+      <DependentUpon>Form_inventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item.cs" />
     <Compile Include="Form_crafting.cs">
       <SubType>Form</SubType>
@@ -94,6 +100,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_inventory.resx">
+      <DependentUpon>Form_inventory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_main.resx">
       <DependentUpon>Form_main.cs</DependentUpon>
     </EmbeddedResource>

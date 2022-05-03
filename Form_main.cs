@@ -349,5 +349,12 @@ namespace BlockBreaker
             smeltingForm.Show();
             this.Hide();
         }
+
+        private void button_inventory_Click(object sender, EventArgs e)
+        {
+            Form_inventory inventoryForm = new Form_inventory();
+            inventoryForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -108,6 +108,7 @@ namespace BlockBreaker
             this.button_inventory.Size = new System.Drawing.Size(64, 64);
             this.button_inventory.TabIndex = 7;
             this.button_inventory.UseVisualStyleBackColor = true;
+            this.button_inventory.Click += new System.EventHandler(this.button_inventory_Click);
             // 
             // button_crafting
             // 
