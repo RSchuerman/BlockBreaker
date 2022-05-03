@@ -56,80 +56,77 @@ namespace BlockBreaker
             // 
             // button_pickaxe
             // 
-            this.button_pickaxe.Location = new System.Drawing.Point(125, 30);
+            this.button_pickaxe.Image = ((System.Drawing.Image)(resources.GetObject("button_pickaxe.Image")));
+            this.button_pickaxe.Location = new System.Drawing.Point(125, 13);
             this.button_pickaxe.Name = "button_pickaxe";
             this.button_pickaxe.Size = new System.Drawing.Size(128, 128);
             this.button_pickaxe.TabIndex = 0;
-            this.button_pickaxe.Text = "pickaxe";
             this.button_pickaxe.UseVisualStyleBackColor = true;
             this.button_pickaxe.Click += new System.EventHandler(this.button_pickaxe_Click);
             // 
             // button_axe
             // 
-            this.button_axe.Location = new System.Drawing.Point(259, 30);
+            this.button_axe.Image = ((System.Drawing.Image)(resources.GetObject("button_axe.Image")));
+            this.button_axe.Location = new System.Drawing.Point(259, 13);
             this.button_axe.Name = "button_axe";
             this.button_axe.Size = new System.Drawing.Size(128, 128);
             this.button_axe.TabIndex = 1;
-            this.button_axe.Text = "axe";
             this.button_axe.UseVisualStyleBackColor = true;
             this.button_axe.Click += new System.EventHandler(this.button_axe_Click);
             // 
             // button_shovel
             // 
-            this.button_shovel.Location = new System.Drawing.Point(393, 30);
+            this.button_shovel.Image = ((System.Drawing.Image)(resources.GetObject("button_shovel.Image")));
+            this.button_shovel.Location = new System.Drawing.Point(393, 13);
             this.button_shovel.Name = "button_shovel";
             this.button_shovel.Size = new System.Drawing.Size(128, 128);
             this.button_shovel.TabIndex = 2;
-            this.button_shovel.Text = "shovel";
             this.button_shovel.UseVisualStyleBackColor = true;
             this.button_shovel.Click += new System.EventHandler(this.button_shovel_Click);
             // 
             // button_fortune
             // 
-            this.button_fortune.Location = new System.Drawing.Point(195, 164);
+            this.button_fortune.Location = new System.Drawing.Point(191, 13);
             this.button_fortune.Name = "button_fortune";
             this.button_fortune.Size = new System.Drawing.Size(128, 128);
             this.button_fortune.TabIndex = 3;
-            this.button_fortune.Text = "fortune";
             this.button_fortune.UseVisualStyleBackColor = true;
             this.button_fortune.Visible = false;
             this.button_fortune.Click += new System.EventHandler(this.button_fortune_Click);
             // 
             // button_unbreaking
             // 
-            this.button_unbreaking.Location = new System.Drawing.Point(329, 164);
+            this.button_unbreaking.Location = new System.Drawing.Point(325, 13);
             this.button_unbreaking.Name = "button_unbreaking";
             this.button_unbreaking.Size = new System.Drawing.Size(128, 128);
             this.button_unbreaking.TabIndex = 4;
-            this.button_unbreaking.Text = "unbreaking";
             this.button_unbreaking.UseVisualStyleBackColor = true;
             this.button_unbreaking.Visible = false;
             this.button_unbreaking.Click += new System.EventHandler(this.button_unbreaking_Click);
             // 
             // button_efficiency
             // 
-            this.button_efficiency.Location = new System.Drawing.Point(463, 164);
+            this.button_efficiency.Location = new System.Drawing.Point(459, 13);
             this.button_efficiency.Name = "button_efficiency";
             this.button_efficiency.Size = new System.Drawing.Size(128, 128);
             this.button_efficiency.TabIndex = 5;
-            this.button_efficiency.Text = "efficiency";
             this.button_efficiency.UseVisualStyleBackColor = true;
             this.button_efficiency.Visible = false;
             this.button_efficiency.Click += new System.EventHandler(this.button_efficiency_Click);
             // 
             // button_hoe
             // 
-            this.button_hoe.Location = new System.Drawing.Point(527, 30);
+            this.button_hoe.Image = ((System.Drawing.Image)(resources.GetObject("button_hoe.Image")));
+            this.button_hoe.Location = new System.Drawing.Point(527, 13);
             this.button_hoe.Name = "button_hoe";
             this.button_hoe.Size = new System.Drawing.Size(128, 128);
             this.button_hoe.TabIndex = 6;
-            this.button_hoe.Text = "hoe";
             this.button_hoe.UseVisualStyleBackColor = true;
             this.button_hoe.Click += new System.EventHandler(this.button_hoe_Click);
             // 
             // button_back
             // 
-            this.button_back.Location = new System.Drawing.Point(33, 164);
+            this.button_back.Location = new System.Drawing.Point(13, 83);
             this.button_back.Name = "button_back";
             this.button_back.Size = new System.Drawing.Size(75, 69);
             this.button_back.TabIndex = 7;
@@ -179,7 +176,7 @@ namespace BlockBreaker
             // label_emeraldFortune
             // 
             this.label_emeraldFortune.AutoSize = true;
-            this.label_emeraldFortune.Location = new System.Drawing.Point(310, 348);
+            this.label_emeraldFortune.Location = new System.Drawing.Point(306, 197);
             this.label_emeraldFortune.Name = "label_emeraldFortune";
             this.label_emeraldFortune.Size = new System.Drawing.Size(13, 13);
             this.label_emeraldFortune.TabIndex = 22;
@@ -189,7 +186,7 @@ namespace BlockBreaker
             // pictureBox_emeraldFortune
             // 
             this.pictureBox_emeraldFortune.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_emeraldFortune.Image")));
-            this.pictureBox_emeraldFortune.Location = new System.Drawing.Point(259, 298);
+            this.pictureBox_emeraldFortune.Location = new System.Drawing.Point(255, 147);
             this.pictureBox_emeraldFortune.Name = "pictureBox_emeraldFortune";
             this.pictureBox_emeraldFortune.Size = new System.Drawing.Size(64, 64);
             this.pictureBox_emeraldFortune.TabIndex = 21;
@@ -199,7 +196,7 @@ namespace BlockBreaker
             // label_emeraldUnbreaking
             // 
             this.label_emeraldUnbreaking.AutoSize = true;
-            this.label_emeraldUnbreaking.Location = new System.Drawing.Point(444, 348);
+            this.label_emeraldUnbreaking.Location = new System.Drawing.Point(440, 197);
             this.label_emeraldUnbreaking.Name = "label_emeraldUnbreaking";
             this.label_emeraldUnbreaking.Size = new System.Drawing.Size(13, 13);
             this.label_emeraldUnbreaking.TabIndex = 24;
@@ -209,7 +206,7 @@ namespace BlockBreaker
             // pictureBox_emeraldUnbreaking
             // 
             this.pictureBox_emeraldUnbreaking.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_emeraldUnbreaking.Image")));
-            this.pictureBox_emeraldUnbreaking.Location = new System.Drawing.Point(393, 298);
+            this.pictureBox_emeraldUnbreaking.Location = new System.Drawing.Point(389, 147);
             this.pictureBox_emeraldUnbreaking.Name = "pictureBox_emeraldUnbreaking";
             this.pictureBox_emeraldUnbreaking.Size = new System.Drawing.Size(64, 64);
             this.pictureBox_emeraldUnbreaking.TabIndex = 23;
@@ -219,7 +216,7 @@ namespace BlockBreaker
             // label_emeraldEfficiency
             // 
             this.label_emeraldEfficiency.AutoSize = true;
-            this.label_emeraldEfficiency.Location = new System.Drawing.Point(578, 348);
+            this.label_emeraldEfficiency.Location = new System.Drawing.Point(574, 197);
             this.label_emeraldEfficiency.Name = "label_emeraldEfficiency";
             this.label_emeraldEfficiency.Size = new System.Drawing.Size(13, 13);
             this.label_emeraldEfficiency.TabIndex = 26;
@@ -229,7 +226,7 @@ namespace BlockBreaker
             // pictureBox_emeraldEfficiency
             // 
             this.pictureBox_emeraldEfficiency.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_emeraldEfficiency.Image")));
-            this.pictureBox_emeraldEfficiency.Location = new System.Drawing.Point(527, 298);
+            this.pictureBox_emeraldEfficiency.Location = new System.Drawing.Point(523, 147);
             this.pictureBox_emeraldEfficiency.Name = "pictureBox_emeraldEfficiency";
             this.pictureBox_emeraldEfficiency.Size = new System.Drawing.Size(64, 64);
             this.pictureBox_emeraldEfficiency.TabIndex = 25;
@@ -240,7 +237,7 @@ namespace BlockBreaker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 235);
             this.Controls.Add(this.label_emeraldEfficiency);
             this.Controls.Add(this.pictureBox_emeraldEfficiency);
             this.Controls.Add(this.label_emeraldUnbreaking);

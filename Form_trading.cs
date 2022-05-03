@@ -13,11 +13,11 @@ namespace BlockBreaker
     public partial class Form_trading : Form
     {
         string selectedTool = null;
-        string selectedEnchant = null;
 
         public Form_trading()
         {
             InitializeComponent();
+            changeVisibilityBack();
         }
 
         #region tool buttons
@@ -61,27 +61,52 @@ namespace BlockBreaker
         #region enchantment buttons
         private void button_fortune_Click(object sender, EventArgs e)
         {
-            selectedEnchant = "fortune";
-            Form_main.tools[selectedTool].fortuneLevel++;
-            Form_main.emerald.amount -= int.Parse(label_emeraldFortune.Text);
+            if (Form_main.emerald.amount >= int.Parse(label_emeraldFortune.Text))
+            {
+                Form_main.tools[selectedTool].fortuneLevel++;
+                Form_main.emerald.amount -= int.Parse(label_emeraldFortune.Text);
+                changeVisibilityBack();
+            }
         }
 
         private void button_unbreaking_Click(object sender, EventArgs e)
         {
-            selectedEnchant = "unbreaking";
-            Form_main.tools[selectedTool].unbreakingLevel++;
-            Form_main.emerald.amount -= int.Parse(label_emeraldUnbreaking.Text);
+            if (Form_main.emerald.amount >= int.Parse(label_emeraldUnbreaking.Text))
+            {
+                Form_main.tools[selectedTool].unbreakingLevel++;
+                Form_main.emerald.amount -= int.Parse(label_emeraldUnbreaking.Text);
+                changeVisibilityBack();
+            }
         }
 
         private void button_efficiency_Click(object sender, EventArgs e)
         {
-            selectedEnchant = "efficiency";
-            Form_main.tools[selectedTool].efficiencyLevel++;
-            Form_main.emerald.amount -= int.Parse(label_emeraldEfficiency.Text);
+            if (Form_main.emerald.amount >= int.Parse(label_emeraldEfficiency.Text))
+            {
+                Form_main.tools[selectedTool].efficiencyLevel++;
+                Form_main.emerald.amount -= int.Parse(label_emeraldEfficiency.Text);
+                changeVisibilityBack();
+            }
         }
         #endregion
 
         private void button_back_Click(object sender, EventArgs e)
+        {
+            changeVisibilityBack();
+        }
+        private void button_exit_Click(object sender, EventArgs e)
+        {
+            Form_main mainForm = new Form_main();
+            mainForm.Show();
+            this.Hide();
+        }
+
+        private void button_end_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }
+
+        private void changeVisibilityBack()
         {
             button_fortune.Visible = false;
             button_unbreaking.Visible = false;
@@ -100,19 +125,8 @@ namespace BlockBreaker
             button_axe.Visible = true;
             button_hoe.Visible = true;
             button_back.Visible = false;
+            label_emerald.Text = Form_main.emerald.amount.ToString();
         }
-        private void button_exit_Click(object sender, EventArgs e)
-        {
-            Form_main mainForm = new Form_main();
-            mainForm.Show();
-            this.Hide();
-        }
-
-        private void button_end_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(1);
-        }
-
         private void changeVisibility()
         {
             if (Form_main.tools[selectedTool].fortuneLevel == 2)
@@ -129,7 +143,7 @@ namespace BlockBreaker
                 label_emeraldFortune.Visible = true;
                 pictureBox_emeraldFortune.Visible = true;
             }
-            else
+            else if (Form_main.tools[selectedTool].fortuneLevel == 0)
             {
                 button_fortune.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/enchants/fortune1.png");
                 button_fortune.Visible = true;
@@ -152,7 +166,7 @@ namespace BlockBreaker
                 label_emeraldUnbreaking.Visible = true;
                 pictureBox_emeraldUnbreaking.Visible = true;
             }
-            else
+            else if (Form_main.tools[selectedTool].unbreakingLevel == 0)
             {
                 button_unbreaking.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/enchants/unbreaking1.png");
                 button_unbreaking.Visible = true;
@@ -189,7 +203,7 @@ namespace BlockBreaker
                 label_emeraldEfficiency.Visible = true;
                 pictureBox_emeraldEfficiency.Visible = true;
             }
-            else
+            else if (Form_main.tools[selectedTool].efficiencyLevel == 0)
             {
                 button_efficiency.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/enchants/efficiency1.png");
                 button_efficiency.Visible = true;

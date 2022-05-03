@@ -502,5 +502,10 @@ namespace BlockBreaker
             tradingForm.Show();
             this.Hide();
         }
+
+        private void pictureBox_emerald_Click(object sender, EventArgs e)
+        {
+            emerald.amount++;
+        }
     }
 }
