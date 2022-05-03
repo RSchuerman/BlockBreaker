@@ -11,10 +11,28 @@ namespace BlockBreaker
         private int _durability;
         private string _toolType;
         private int _toolLevel;
+        private int _fortuneLevel;
+        private int _unbreakingLevel;
+        private int _efficiencyLevel;
         public int durability
         {
             get { return _durability; }
             set { _durability = value; }
+        }
+        public int fortuneLevel
+        {
+            get { return _fortuneLevel; }
+            set { _fortuneLevel = value; }
+        }
+        public int unbreakingLevel
+        {
+            get { return _unbreakingLevel; }
+            set { _unbreakingLevel = value; }
+        }
+        public int efficiencyLevel
+        {
+            get { return _efficiencyLevel; }
+            set { _efficiencyLevel = value; }
         }
         public string toolType
         {
@@ -50,6 +68,9 @@ namespace BlockBreaker
             _toolType = toolType;
             _toolLevel = 0;
             itemID = fitemID;
+            _fortuneLevel = 0;
+            _unbreakingLevel = 0;
+            _efficiencyLevel = 0;
         }
 
 

@@ -32,14 +32,6 @@ namespace BlockBreaker
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.button_breakBlock = new System.Windows.Forms.Button();
             this.progressBar_breaking = new System.Windows.Forms.ProgressBar();
-            this.pictureBox_pickaxe = new System.Windows.Forms.PictureBox();
-            this.pictureBox_axe = new System.Windows.Forms.PictureBox();
-            this.pictureBox_shovel = new System.Windows.Forms.PictureBox();
-            this.pictureBox_hoe = new System.Windows.Forms.PictureBox();
-            this.button_inventory = new System.Windows.Forms.Button();
-            this.button_crafting = new System.Windows.Forms.Button();
-            this.button_smelting = new System.Windows.Forms.Button();
-            this.button_trading = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_hoe = new System.Windows.Forms.Label();
             this.label_shovel = new System.Windows.Forms.Label();
@@ -48,20 +40,28 @@ namespace BlockBreaker
             this.panel2 = new System.Windows.Forms.Panel();
             this.button_end = new System.Windows.Forms.Button();
             this.label_plus1 = new System.Windows.Forms.Label();
-            this.pictureBox_plus1 = new System.Windows.Forms.PictureBox();
             this.panel_plus1 = new System.Windows.Forms.Panel();
             this.progressBar_breaking2 = new System.Windows.Forms.ProgressBar();
-            this.pictureBox_emerald = new System.Windows.Forms.PictureBox();
             this.label_emerald = new System.Windows.Forms.Label();
+            this.pictureBox_emerald = new System.Windows.Forms.PictureBox();
+            this.pictureBox_plus1 = new System.Windows.Forms.PictureBox();
+            this.button_crafting = new System.Windows.Forms.Button();
+            this.button_smelting = new System.Windows.Forms.Button();
+            this.button_trading = new System.Windows.Forms.Button();
+            this.pictureBox_pickaxe = new System.Windows.Forms.PictureBox();
+            this.pictureBox_axe = new System.Windows.Forms.PictureBox();
+            this.pictureBox_shovel = new System.Windows.Forms.PictureBox();
+            this.pictureBox_hoe = new System.Windows.Forms.PictureBox();
+            this.button_inventory = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel_plus1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emerald)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_plus1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickaxe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_axe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_shovel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_hoe)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_plus1)).BeginInit();
-            this.panel_plus1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emerald)).BeginInit();
             this.SuspendLayout();
             // 
             // button_breakBlock
@@ -81,77 +81,6 @@ namespace BlockBreaker
             this.progressBar_breaking.Size = new System.Drawing.Size(256, 23);
             this.progressBar_breaking.TabIndex = 2;
             this.progressBar_breaking.Visible = false;
-            // 
-            // pictureBox_pickaxe
-            // 
-            this.pictureBox_pickaxe.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox_pickaxe.Name = "pictureBox_pickaxe";
-            this.pictureBox_pickaxe.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_pickaxe.TabIndex = 3;
-            this.pictureBox_pickaxe.TabStop = false;
-            // 
-            // pictureBox_axe
-            // 
-            this.pictureBox_axe.Location = new System.Drawing.Point(73, 3);
-            this.pictureBox_axe.Name = "pictureBox_axe";
-            this.pictureBox_axe.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_axe.TabIndex = 4;
-            this.pictureBox_axe.TabStop = false;
-            // 
-            // pictureBox_shovel
-            // 
-            this.pictureBox_shovel.Location = new System.Drawing.Point(143, 3);
-            this.pictureBox_shovel.Name = "pictureBox_shovel";
-            this.pictureBox_shovel.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_shovel.TabIndex = 5;
-            this.pictureBox_shovel.TabStop = false;
-            // 
-            // pictureBox_hoe
-            // 
-            this.pictureBox_hoe.Location = new System.Drawing.Point(213, 3);
-            this.pictureBox_hoe.Name = "pictureBox_hoe";
-            this.pictureBox_hoe.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_hoe.TabIndex = 6;
-            this.pictureBox_hoe.TabStop = false;
-            // 
-            // button_inventory
-            // 
-            this.button_inventory.Image = ((System.Drawing.Image)(resources.GetObject("button_inventory.Image")));
-            this.button_inventory.Location = new System.Drawing.Point(26, 353);
-            this.button_inventory.Name = "button_inventory";
-            this.button_inventory.Size = new System.Drawing.Size(64, 64);
-            this.button_inventory.TabIndex = 7;
-            this.button_inventory.UseVisualStyleBackColor = true;
-            this.button_inventory.Click += new System.EventHandler(this.button_inventory_Click);
-            // 
-            // button_crafting
-            // 
-            this.button_crafting.Image = ((System.Drawing.Image)(resources.GetObject("button_crafting.Image")));
-            this.button_crafting.Location = new System.Drawing.Point(0, 3);
-            this.button_crafting.Name = "button_crafting";
-            this.button_crafting.Size = new System.Drawing.Size(64, 64);
-            this.button_crafting.TabIndex = 8;
-            this.button_crafting.UseVisualStyleBackColor = true;
-            this.button_crafting.Click += new System.EventHandler(this.button_crafting_Click);
-            // 
-            // button_smelting
-            // 
-            this.button_smelting.Image = ((System.Drawing.Image)(resources.GetObject("button_smelting.Image")));
-            this.button_smelting.Location = new System.Drawing.Point(0, 73);
-            this.button_smelting.Name = "button_smelting";
-            this.button_smelting.Size = new System.Drawing.Size(64, 64);
-            this.button_smelting.TabIndex = 9;
-            this.button_smelting.UseVisualStyleBackColor = true;
-            this.button_smelting.Click += new System.EventHandler(this.button_smelting_Click);
-            // 
-            // button_trading
-            // 
-            this.button_trading.Image = ((System.Drawing.Image)(resources.GetObject("button_trading.Image")));
-            this.button_trading.Location = new System.Drawing.Point(0, 143);
-            this.button_trading.Name = "button_trading";
-            this.button_trading.Size = new System.Drawing.Size(64, 128);
-            this.button_trading.TabIndex = 10;
-            this.button_trading.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -237,14 +166,6 @@ namespace BlockBreaker
             this.label_plus1.TabIndex = 16;
             this.label_plus1.Text = "+1";
             // 
-            // pictureBox_plus1
-            // 
-            this.pictureBox_plus1.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox_plus1.Name = "pictureBox_plus1";
-            this.pictureBox_plus1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_plus1.TabIndex = 17;
-            this.pictureBox_plus1.TabStop = false;
-            // 
             // panel_plus1
             // 
             this.panel_plus1.Controls.Add(this.pictureBox_plus1);
@@ -262,6 +183,15 @@ namespace BlockBreaker
             this.progressBar_breaking2.TabIndex = 19;
             this.progressBar_breaking2.Visible = false;
             // 
+            // label_emerald
+            // 
+            this.label_emerald.AutoSize = true;
+            this.label_emerald.Location = new System.Drawing.Point(416, 113);
+            this.label_emerald.Name = "label_emerald";
+            this.label_emerald.Size = new System.Drawing.Size(13, 13);
+            this.label_emerald.TabIndex = 21;
+            this.label_emerald.Text = "0";
+            // 
             // pictureBox_emerald
             // 
             this.pictureBox_emerald.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_emerald.Image")));
@@ -271,14 +201,85 @@ namespace BlockBreaker
             this.pictureBox_emerald.TabIndex = 20;
             this.pictureBox_emerald.TabStop = false;
             // 
-            // label_emerald
+            // pictureBox_plus1
             // 
-            this.label_emerald.AutoSize = true;
-            this.label_emerald.Location = new System.Drawing.Point(416, 113);
-            this.label_emerald.Name = "label_emerald";
-            this.label_emerald.Size = new System.Drawing.Size(13, 13);
-            this.label_emerald.TabIndex = 21;
-            this.label_emerald.Text = "0";
+            this.pictureBox_plus1.Location = new System.Drawing.Point(0, 1);
+            this.pictureBox_plus1.Name = "pictureBox_plus1";
+            this.pictureBox_plus1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_plus1.TabIndex = 17;
+            this.pictureBox_plus1.TabStop = false;
+            // 
+            // button_crafting
+            // 
+            this.button_crafting.Image = ((System.Drawing.Image)(resources.GetObject("button_crafting.Image")));
+            this.button_crafting.Location = new System.Drawing.Point(0, 3);
+            this.button_crafting.Name = "button_crafting";
+            this.button_crafting.Size = new System.Drawing.Size(64, 64);
+            this.button_crafting.TabIndex = 8;
+            this.button_crafting.UseVisualStyleBackColor = true;
+            this.button_crafting.Click += new System.EventHandler(this.button_crafting_Click);
+            // 
+            // button_smelting
+            // 
+            this.button_smelting.Image = ((System.Drawing.Image)(resources.GetObject("button_smelting.Image")));
+            this.button_smelting.Location = new System.Drawing.Point(0, 73);
+            this.button_smelting.Name = "button_smelting";
+            this.button_smelting.Size = new System.Drawing.Size(64, 64);
+            this.button_smelting.TabIndex = 9;
+            this.button_smelting.UseVisualStyleBackColor = true;
+            this.button_smelting.Click += new System.EventHandler(this.button_smelting_Click);
+            // 
+            // button_trading
+            // 
+            this.button_trading.Image = ((System.Drawing.Image)(resources.GetObject("button_trading.Image")));
+            this.button_trading.Location = new System.Drawing.Point(0, 143);
+            this.button_trading.Name = "button_trading";
+            this.button_trading.Size = new System.Drawing.Size(64, 128);
+            this.button_trading.TabIndex = 10;
+            this.button_trading.UseVisualStyleBackColor = true;
+            this.button_trading.Click += new System.EventHandler(this.button_trading_Click);
+            // 
+            // pictureBox_pickaxe
+            // 
+            this.pictureBox_pickaxe.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox_pickaxe.Name = "pictureBox_pickaxe";
+            this.pictureBox_pickaxe.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_pickaxe.TabIndex = 3;
+            this.pictureBox_pickaxe.TabStop = false;
+            // 
+            // pictureBox_axe
+            // 
+            this.pictureBox_axe.Location = new System.Drawing.Point(73, 3);
+            this.pictureBox_axe.Name = "pictureBox_axe";
+            this.pictureBox_axe.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_axe.TabIndex = 4;
+            this.pictureBox_axe.TabStop = false;
+            // 
+            // pictureBox_shovel
+            // 
+            this.pictureBox_shovel.Location = new System.Drawing.Point(143, 3);
+            this.pictureBox_shovel.Name = "pictureBox_shovel";
+            this.pictureBox_shovel.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_shovel.TabIndex = 5;
+            this.pictureBox_shovel.TabStop = false;
+            // 
+            // pictureBox_hoe
+            // 
+            this.pictureBox_hoe.Location = new System.Drawing.Point(213, 3);
+            this.pictureBox_hoe.Name = "pictureBox_hoe";
+            this.pictureBox_hoe.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_hoe.TabIndex = 6;
+            this.pictureBox_hoe.TabStop = false;
+            // 
+            // button_inventory
+            // 
+            this.button_inventory.Image = ((System.Drawing.Image)(resources.GetObject("button_inventory.Image")));
+            this.button_inventory.Location = new System.Drawing.Point(26, 353);
+            this.button_inventory.Name = "button_inventory";
+            this.button_inventory.Size = new System.Drawing.Size(64, 64);
+            this.button_inventory.TabIndex = 7;
+            this.button_inventory.UseVisualStyleBackColor = true;
+            this.button_inventory.Click += new System.EventHandler(this.button_inventory_Click);
             // 
             // Form_main
             // 
@@ -297,17 +298,17 @@ namespace BlockBreaker
             this.Controls.Add(this.button_breakBlock);
             this.Name = "Form_main";
             this.Text = "Form1";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel_plus1.ResumeLayout(false);
+            this.panel_plus1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emerald)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_plus1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickaxe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_axe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_shovel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_hoe)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_plus1)).EndInit();
-            this.panel_plus1.ResumeLayout(false);
-            this.panel_plus1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_emerald)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

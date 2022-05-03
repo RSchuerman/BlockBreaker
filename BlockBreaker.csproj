@@ -73,6 +73,12 @@
     <Compile Include="Form_inventory.Designer.cs">
       <DependentUpon>Form_inventory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_trading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_trading.Designer.cs">
+      <DependentUpon>Form_trading.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item.cs" />
     <Compile Include="Form_crafting.cs">
       <SubType>Form</SubType>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_crafting.resx">
       <DependentUpon>Form_crafting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_trading.resx">
+      <DependentUpon>Form_trading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

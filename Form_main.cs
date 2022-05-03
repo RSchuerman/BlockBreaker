@@ -81,7 +81,7 @@ namespace BlockBreaker
         public static Tool shovel = new Tool(0, "shovel", 3);
         public static Tool hoe = new Tool(0, "hoe", 4);
 
-        Dictionary<string, Tool> tools = new Dictionary<string, Tool>()
+        public static Dictionary<string, Tool> tools = new Dictionary<string, Tool>()
         {
             {"pickaxe", pickaxe},
             {"axe", axe},
@@ -496,5 +496,11 @@ namespace BlockBreaker
             this.Hide();
         }
 
+        private void button_trading_Click(object sender, EventArgs e)
+        {
+            Form_trading tradingForm = new Form_trading();
+            tradingForm.Show();
+            this.Hide();
+        }
     }
 }
