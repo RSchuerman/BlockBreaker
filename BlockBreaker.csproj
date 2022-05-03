@@ -79,6 +79,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Form_smelting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_smelting.Designer.cs">
+      <DependentUpon>Form_smelting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tool.cs" />
     <Compile Include="Form_main.cs">
       <SubType>Form</SubType>
@@ -104,6 +110,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Form_smelting.resx">
+      <DependentUpon>Form_smelting.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>

@@ -29,6 +29,7 @@ namespace BlockBreaker
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_main));
             this.button_breakBlock = new System.Windows.Forms.Button();
             this.progressBar_breaking = new System.Windows.Forms.ProgressBar();
             this.pictureBox_pickaxe = new System.Windows.Forms.PictureBox();
@@ -39,10 +40,8 @@ namespace BlockBreaker
             this.button_crafting = new System.Windows.Forms.Button();
             this.button_smelting = new System.Windows.Forms.Button();
             this.button_trading = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button_end = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickaxe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_axe)).BeginInit();
@@ -103,49 +102,41 @@ namespace BlockBreaker
             // 
             // button_inventory
             // 
+            this.button_inventory.Image = ((System.Drawing.Image)(resources.GetObject("button_inventory.Image")));
             this.button_inventory.Location = new System.Drawing.Point(26, 353);
             this.button_inventory.Name = "button_inventory";
             this.button_inventory.Size = new System.Drawing.Size(64, 64);
             this.button_inventory.TabIndex = 7;
-            this.button_inventory.Text = "INVENTORY";
             this.button_inventory.UseVisualStyleBackColor = true;
             // 
             // button_crafting
             // 
+            this.button_crafting.Image = ((System.Drawing.Image)(resources.GetObject("button_crafting.Image")));
             this.button_crafting.Location = new System.Drawing.Point(0, 3);
             this.button_crafting.Name = "button_crafting";
             this.button_crafting.Size = new System.Drawing.Size(64, 64);
             this.button_crafting.TabIndex = 8;
-            this.button_crafting.Text = "CRAFTING";
             this.button_crafting.UseVisualStyleBackColor = true;
             this.button_crafting.Click += new System.EventHandler(this.button_crafting_Click);
             // 
             // button_smelting
             // 
+            this.button_smelting.Image = ((System.Drawing.Image)(resources.GetObject("button_smelting.Image")));
             this.button_smelting.Location = new System.Drawing.Point(0, 73);
             this.button_smelting.Name = "button_smelting";
             this.button_smelting.Size = new System.Drawing.Size(64, 64);
             this.button_smelting.TabIndex = 9;
-            this.button_smelting.Text = "SMELTING";
             this.button_smelting.UseVisualStyleBackColor = true;
+            this.button_smelting.Click += new System.EventHandler(this.button_smelting_Click);
             // 
             // button_trading
             // 
+            this.button_trading.Image = ((System.Drawing.Image)(resources.GetObject("button_trading.Image")));
             this.button_trading.Location = new System.Drawing.Point(0, 143);
             this.button_trading.Name = "button_trading";
-            this.button_trading.Size = new System.Drawing.Size(64, 64);
+            this.button_trading.Size = new System.Drawing.Size(64, 128);
             this.button_trading.TabIndex = 10;
-            this.button_trading.Text = "TRADING";
             this.button_trading.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(0, 213);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(64, 64);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -162,23 +153,15 @@ namespace BlockBreaker
             // 
             this.panel2.Controls.Add(this.button_crafting);
             this.panel2.Controls.Add(this.button_smelting);
-            this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button_trading);
             this.panel2.Location = new System.Drawing.Point(33, 33);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(67, 279);
             this.panel2.TabIndex = 13;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(369, 268);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 14;
-            // 
             // button_end
             // 
-            this.button_end.Location = new System.Drawing.Point(498, 30);
+            this.button_end.Location = new System.Drawing.Point(379, 12);
             this.button_end.Name = "button_end";
             this.button_end.Size = new System.Drawing.Size(41, 43);
             this.button_end.TabIndex = 15;
@@ -190,9 +173,8 @@ namespace BlockBreaker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 451);
+            this.ClientSize = new System.Drawing.Size(436, 451);
             this.Controls.Add(this.button_end);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button_inventory);
@@ -207,7 +189,6 @@ namespace BlockBreaker
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -223,10 +204,8 @@ namespace BlockBreaker
         private System.Windows.Forms.Button button_crafting;
         private System.Windows.Forms.Button button_smelting;
         private System.Windows.Forms.Button button_trading;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button_end;
     }
 }

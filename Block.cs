@@ -30,7 +30,7 @@ namespace BlockBreaker
                 if (_dropAmount == -1)
                 {
                     Random rnd = new Random();
-                    return rnd.Next(4, 5);
+                    return rnd.Next(4, 9);
                 }
                 else
                     return _dropAmount;

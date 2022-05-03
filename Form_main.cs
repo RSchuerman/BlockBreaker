@@ -20,23 +20,31 @@ namespace BlockBreaker
         //Block(ItemID, BreakTime, Tool, DropAmount, BreakLevel, ImageName)
         //BreakLevel - 0=fist 1=wood 2=stone 3=iron 4=diamond
         //DropAmount - = amount or -1 if random in a range
-        static Block oakLog = new Block(5, 3, "axe", 1, 0, "logs/oakLog.png");
-        static Block birchLog = new Block(6, 3, "axe", 1, 0, "logs/birchLog.png");
-        static Block spruceLog = new Block(7, 3, "axe", 1, 0, "logs/spruceLog.png");
-        static Block acaciaLog = new Block(8, 3, "axe", 1, 0, "logs/acaciaLog.png");
-        static Block jungleLog = new Block(9, 3, "axe", 1, 0, "logs/jungleLog.png");
-        static Block darkOakLog = new Block(10, 3, "axe", 1, 0, "logs/darkOakLog.png");
+        public static Block oakLog = new Block(5, 3, "axe", 1, 0, "logs/oakLog.png");
+        public static Block birchLog = new Block(6, 3, "axe", 1, 0, "logs/birchLog.png");
+        public static Block spruceLog = new Block(7, 3, "axe", 1, 0, "logs/spruceLog.png");
+        public static Block acaciaLog = new Block(8, 3, "axe", 1, 0, "logs/acaciaLog.png");
+        public static Block jungleLog = new Block(9, 3, "axe", 1, 0, "logs/jungleLog.png");
+        public static Block darkOakLog = new Block(10, 3, "axe", 1, 0, "logs/darkOakLog.png");
 
-        static Block dirt = new Block(11, 0.75, "shovel", 1, 0, "dirt.png");
+        public static Block dirt = new Block(11, 0.75, "shovel", 1, 0, "dirt.png");
 
-        static Block stone = new Block(12, 7.5, "pickaxe", 1, 1, "stone.png");
-        static Block ironOre = new Block(13, 15, "pickaxe", 1, 2, "ores/ironOre.png");
-        static Block coalOre = new Block(14, 15, "pickaxe", 1, 1, "ores/coalOre.png");
-        static Block goldOre = new Block(15, 15, "pickaxe", 1, 3, "ores/goldOre.png");
-        static Block diamondOre = new Block(16, 15, "pickaxe", 1, 3, "ores/diamondOre.png");
-        static Block lapisOre = new Block(17, 15, "pickaxe", -1, 2, "ores/lapisOre.png");
-        static Block redstoneOre = new Block(18, 15, "pickaxe", -1, 3, "ores/redstoneOre.png");
-        static Block emeraldOre = new Block(19, 15, "pickaxe", 1, 3, "ores/emeraldOre.png");
+        public static Block stone = new Block(12, 7.5, "pickaxe", 1, 1, "stone.png");
+        public static Block ironOre = new Block(13, 15, "pickaxe", 1, 2, "ores/ironOre.png");
+        public static Block coalOre = new Block(14, 15, "pickaxe", 1, 1, "ores/coalOre.png");
+        public static Block goldOre = new Block(15, 15, "pickaxe", 1, 3, "ores/goldOre.png");
+        public static Block diamondOre = new Block(16, 15, "pickaxe", 1, 3, "ores/diamondOre.png");
+        public static Block lapisOre = new Block(17, 15, "pickaxe", -1, 2, "ores/lapisOre.png");
+        public static Block redstoneOre = new Block(18, 15, "pickaxe", -1, 3, "ores/redstoneOre.png");
+        public static Block emeraldOre = new Block(19, 15, "pickaxe", 1, 3, "ores/emeraldOre.png");
+
+        public static Block oakLeaves = new Block(20, 1, "hoe", 1, 3, "oakLeaves.png");
+        public static Block birchLeaves = new Block(21, 1, "hoe", 1, 3, "oakLeaves.png");
+        public static Block spruceLeaves = new Block(22, 1, "hoe", 1, 3, "oakLeaves.png");
+        public static Block jungleLeaves = new Block(23, 1, "hoe", 1, 3, "oakLeaves.png");
+        public static Block acaciaLeaves = new Block(24, 1, "hoe", 1, 3, "oakLeaves.png");
+        public static Block darkOakLeaves = new Block(25, 1, "hoe", 1, 3, "oakLeaves.png");
+        public static Block haybale = new Block(26, 1, "hoe", 1, 3, "oakLeaves.png");
 
         Dictionary<int, Block> blocks = new Dictionary<int, Block>()
         {
@@ -61,10 +69,10 @@ namespace BlockBreaker
         #region Initialize Tools
         //Tool(Durability, ToolType, ToolLevel)
         //ToolLevel - 0=fist 1=wood 2=stone 3=iron 4=diamond
-        static Tool pickaxe = new Tool(0, "pickaxe", 1);
-        static Tool axe = new Tool(0, "axe", 2);
-        static Tool shovel = new Tool(0, "shovel", 3);
-        static Tool hoe = new Tool(0, "hoe", 4);
+        public static Tool pickaxe = new Tool(0, "pickaxe", 1);
+        public static Tool axe = new Tool(0, "axe", 2);
+        public static Tool shovel = new Tool(0, "shovel", 3);
+        public static Tool hoe = new Tool(0, "hoe", 4);
 
         Dictionary<string, Tool> tools = new Dictionary<string, Tool>()
         {
@@ -76,15 +84,22 @@ namespace BlockBreaker
         #endregion
 
         #region Initialize Items
-        public static Item oakPlanks = new Item(20, "planks/oakPlanks.png");
-        static Item birchPlanks = new Item(21, "planks/birchPlanks.png");
-        static Item sprucePlanks = new Item(22, "planks/sprucePlanks.png");
-        static Item junglePlanks = new Item(23, "planks/junglePlanks.png");
-        static Item acaciaPlanks = new Item(24, "planks/acaciaPlanks.png");
-        static Item darkOakPlanks = new Item(25, "planks/darkOakPlanks.png");
-        static Item stick = new Item(26, "stick.png");
-        static Item wheat = new Item(27, "wheat.png");
-        static Item bread = new Item(28, "bread.png");
+        public static Item oakPlanks = new Item(27, "planks/oakPlanks.png");
+        public static Item birchPlanks = new Item(28, "planks/birchPlanks.png");
+        public static Item sprucePlanks = new Item(29, "planks/sprucePlanks.png");
+        public static Item junglePlanks = new Item(30, "planks/junglePlanks.png");
+        public static Item acaciaPlanks = new Item(31, "planks/acaciaPlanks.png");
+        public static Item darkOakPlanks = new Item(32, "planks/darkOakPlanks.png");
+        public static Item stick = new Item(33, "stick.png");
+        public static Item wheat = new Item(34, "wheat.png");
+        public static Item bread = new Item(35, "bread.png");
+        public static Item cobblestone = new Item(36, "cobblestone.png");
+        public static Item coal = new Item(37, "coal.png");
+        public static Item ironIngot = new Item(38, "ironIngot.png");
+        public static Item goldIngot = new Item(39, "goldIngot.png");
+        public static Item diamond = new Item(40, "diamond.png");
+        public static Item lapis = new Item(41, "lapis.png");
+        public static Item redstone = new Item(42, "redstone.png");
         #endregion
 
         public Form_main()
@@ -104,17 +119,28 @@ namespace BlockBreaker
             Random rnd = new Random();
             currentBlock = rnd.Next(availableBlocks.Count());
             button_breakBlock.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/blocks/" + availableBlocks[currentBlock].imageName);
-            textBox1.Text = (availableBlocks[currentBlock].amount).ToString();
+            
         }
         void breakBlock()
         {
             //System.Timers.Timer timer = new System.Timers.Timer(availableBlocks[currentBlock].breakTime*1000);
             //timer.Start();
             
-            textBox1.Text = (availableBlocks[currentBlock].amount).ToString();
+            
             if (availableBlocks[currentBlock].breakLevel == tools[availableBlocks[currentBlock].preferredTool].toolLevel)
             {
-                availableBlocks[currentBlock].amount += availableBlocks[currentBlock].dropAmount;
+                if (availableBlocks[currentBlock] == stone)
+                    cobblestone.amount += stone.dropAmount;
+                else if (availableBlocks[currentBlock] == coalOre)
+                    coal.amount += coalOre.dropAmount;
+                else if (availableBlocks[currentBlock] == diamondOre)
+                    diamond.amount += diamondOre.dropAmount;
+                else if (availableBlocks[currentBlock] == lapisOre)
+                    lapis.amount += lapisOre.dropAmount;
+                else if (availableBlocks[currentBlock] == redstoneOre)
+                    redstone.amount += redstoneOre.dropAmount;
+                else
+                    availableBlocks[currentBlock].amount += availableBlocks[currentBlock].dropAmount;
             }
             displayBlock();
         }
@@ -133,12 +159,28 @@ namespace BlockBreaker
                 stone.breakTime = 0.3;
                 ironOre.breakTime = 0.6;
                 coalOre.breakTime = 0.6;
+                lapisOre.breakTime = 0.6;
+                redstoneOre.breakTime = 0.6;
+                diamondOre.breakTime = 0.6;
+                emeraldOre.breakTime = 0.6;
+                availableBlocks.Add(stone);
+                availableBlocks.Add(coalOre);
+                availableBlocks.Add(ironOre);
+                availableBlocks.Add(goldOre);
+                availableBlocks.Add(lapisOre);
+                availableBlocks.Add(redstoneOre);
+                availableBlocks.Add(diamondOre);
+                availableBlocks.Add(emeraldOre);
             }
             else if (pickaxe.toolLevel == 3)
             {
                 stone.breakTime = 0.4;
                 ironOre.breakTime = 0.75;
                 coalOre.breakTime = 0.75;
+                lapisOre.breakTime = 0.75;
+                redstoneOre.breakTime = 0.75;
+                diamondOre.breakTime = 0.75;
+                emeraldOre.breakTime = 0.75;
                 availableBlocks.Add(stone);
                 availableBlocks.Add(coalOre);
                 availableBlocks.Add(ironOre);
@@ -153,6 +195,10 @@ namespace BlockBreaker
                 stone.breakTime = 0.6;
                 ironOre.breakTime = 1.15;
                 coalOre.breakTime = 1.15;
+                lapisOre.breakTime = 1.15;
+                redstoneOre.breakTime = 3.75;
+                diamondOre.breakTime = 3.75;
+                emeraldOre.breakTime = 3.75;
                 availableBlocks.Add(stone);
                 availableBlocks.Add(coalOre);
                 availableBlocks.Add(ironOre);
@@ -163,6 +209,10 @@ namespace BlockBreaker
                 stone.breakTime = 1.15;
                 ironOre.breakTime = 7.5;
                 coalOre.breakTime = 2.25;
+                lapisOre.breakTime = 7.5;
+                redstoneOre.breakTime = 7.5;
+                diamondOre.breakTime = 7.5;
+                emeraldOre.breakTime = 7.5;
                 availableBlocks.Add(stone);
                 availableBlocks.Add(coalOre);
             }
@@ -171,6 +221,10 @@ namespace BlockBreaker
                 stone.breakTime = 7.5;
                 ironOre.breakTime = 15;
                 coalOre.breakTime = 15;
+                lapisOre.breakTime = 15;
+                redstoneOre.breakTime = 15;
+                diamondOre.breakTime = 15;
+                emeraldOre.breakTime = 15;
             }
             #endregion
 
@@ -232,51 +286,47 @@ namespace BlockBreaker
             #region Shovel Break Times
             if (shovel.toolLevel == 4)
             {
-                oakLog.breakTime = 0.4;
-                availableBlocks.Add(dirt);
+                dirt.breakTime = 0.1;
             }
             else if (shovel.toolLevel == 3)
             {
-                oakLog.breakTime = 0.5;
-                availableBlocks.Add(dirt);
+                dirt.breakTime = 0.15;
             }
             else if (shovel.toolLevel == 2)
             {
-                oakLog.breakTime = 0.75;
-                availableBlocks.Add(dirt);
+                dirt.breakTime = 0.2;
             }
             else if (shovel.toolLevel == 1)
             {
-                oakLog.breakTime = 1.5;
-                availableBlocks.Add(dirt);
+                dirt.breakTime = 0.4;
             }
             else
             {
-                oakLog.breakTime = 3;
-                availableBlocks.Add(dirt);
+                dirt.breakTime = 0.75;
             }
+            availableBlocks.Add(dirt);
             #endregion
 
             #region Hoe Break Times
             if (hoe.toolLevel == 4)
             {
-                oakLog.breakTime = 0.4;
+                haybale.breakTime = 0.1;
             }
             else if (hoe.toolLevel == 3)
             {
-                oakLog.breakTime = 0.5;
+                haybale.breakTime = 0.15;
             }
             else if (hoe.toolLevel == 2)
             {
-                oakLog.breakTime = 0.75;
+                haybale.breakTime = 0.2;
             }
             else if (hoe.toolLevel == 1)
             {
-                oakLog.breakTime = 1.5;
+                haybale.breakTime = 0.4;
             }
             else
             {
-                oakLog.breakTime = 3;
+                haybale.breakTime = 0.75;
             }
             #endregion
         }
@@ -291,6 +341,13 @@ namespace BlockBreaker
         private void button_end_Click(object sender, EventArgs e)
         {
             Environment.Exit(1);
+        }
+
+        private void button_smelting_Click(object sender, EventArgs e)
+        {
+            Form_smelting smeltingForm = new Form_smelting();
+            smeltingForm.Show();
+            this.Hide();
         }
     }
 }

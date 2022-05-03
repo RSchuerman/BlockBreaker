@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlockBreaker
 {
-    class Tool : Item
+    public class Tool : Item
     {
         private int _durability;
         private string _toolType;
