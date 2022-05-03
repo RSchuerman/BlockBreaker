@@ -27,24 +27,30 @@ namespace BlockBreaker
         public static Block jungleLog = new Block(9, 3, "axe", 1, 0, "logs/jungleLog.png");
         public static Block darkOakLog = new Block(10, 3, "axe", 1, 0, "logs/darkOakLog.png");
 
-        public static Block dirt = new Block(11, 0.75, "shovel", 1, 0, "dirt.png");
+        public static Block dirt = new Block(11, 0.75, "shovel", 1, 0, "soils/dirt.png");
+        public static Block grassBlock = new Block(12, 0.9, "shovel", 1, 0, "soils/grassBlock.png");
+        public static Block sand = new Block(13, 0.75, "shovel", 1, 0, "soils/sand.png");
+        public static Block gravel = new Block(14, 0.9, "shovel", 1, 0, "soils/gravel.png");
 
-        public static Block stone = new Block(12, 7.5, "pickaxe", 1, 1, "stone.png");
-        public static Block ironOre = new Block(13, 15, "pickaxe", 1, 2, "ores/ironOre.png");
-        public static Block coalOre = new Block(14, 15, "pickaxe", 1, 1, "ores/coalOre.png");
-        public static Block goldOre = new Block(15, 15, "pickaxe", 1, 3, "ores/goldOre.png");
-        public static Block diamondOre = new Block(16, 15, "pickaxe", 1, 3, "ores/diamondOre.png");
-        public static Block lapisOre = new Block(17, 15, "pickaxe", -1, 2, "ores/lapisOre.png");
-        public static Block redstoneOre = new Block(18, 15, "pickaxe", -1, 3, "ores/redstoneOre.png");
-        public static Block emeraldOre = new Block(19, 15, "pickaxe", 1, 3, "ores/emeraldOre.png");
+        public static Block stone = new Block(15, 7.5, "pickaxe", 1, 1, "stones/stone.png");
+        public static Block andesite = new Block(16, 7.5, "pickaxe", 1, 1, "stones/andesite.png");
+        public static Block granite = new Block(17, 7.5, "pickaxe", 1, 1, "stones/granite.png");
+        public static Block diorite = new Block(18, 7.5, "pickaxe", 1, 1, "stones/diorite.png");
+        public static Block ironOre = new Block(19, 15, "pickaxe", 1, 2, "ores/ironOre.png");
+        public static Block coalOre = new Block(20, 15, "pickaxe", 1, 1, "ores/coalOre.png");
+        public static Block goldOre = new Block(21, 15, "pickaxe", 1, 3, "ores/goldOre.png");
+        public static Block diamondOre = new Block(22, 15, "pickaxe", 1, 3, "ores/diamondOre.png");
+        public static Block lapisOre = new Block(23, 15, "pickaxe", -1, 2, "ores/lapisOre.png");
+        public static Block redstoneOre = new Block(24, 15, "pickaxe", -1, 3, "ores/redstoneOre.png");
+        public static Block emeraldOre = new Block(25, 15, "pickaxe", 1, 3, "ores/emeraldOre.png");
 
-        public static Block oakLeaves = new Block(20, 1, "hoe", 1, 3, "oakLeaves.png");
-        public static Block birchLeaves = new Block(21, 1, "hoe", 1, 3, "oakLeaves.png");
-        public static Block spruceLeaves = new Block(22, 1, "hoe", 1, 3, "oakLeaves.png");
-        public static Block jungleLeaves = new Block(23, 1, "hoe", 1, 3, "oakLeaves.png");
-        public static Block acaciaLeaves = new Block(24, 1, "hoe", 1, 3, "oakLeaves.png");
-        public static Block darkOakLeaves = new Block(25, 1, "hoe", 1, 3, "oakLeaves.png");
-        public static Block haybale = new Block(26, 1, "hoe", 1, 3, "oakLeaves.png");
+        public static Block oakLeaves = new Block(26, 0.3, "hoe", 1, 0, "leaves/oakLeaves.png");
+        public static Block birchLeaves = new Block(27, 0.3, "hoe", 1, 0, "leaves/birchLeaves.png");
+        public static Block spruceLeaves = new Block(28, 0.3, "hoe", 1, 0, "leaves/spruceLeaves.png");
+        public static Block jungleLeaves = new Block(29, 0.3, "hoe", 1, 0, "leaves/jungleLeaves.png");
+        public static Block acaciaLeaves = new Block(30, 0.3, "hoe", 1, 0, "leaves/acaciaLeaves.png");
+        public static Block darkOakLeaves = new Block(31, 0.3, "hoe", 1, 0, "leaves/darkOakLeaves.png");
+        public static Block haybale = new Block(32, 0.75, "hoe", 1, 0, "haybale.png");
 
         Dictionary<int, Block> blocks = new Dictionary<int, Block>()
         {
@@ -84,22 +90,22 @@ namespace BlockBreaker
         #endregion
 
         #region Initialize Items
-        public static Item oakPlanks = new Item(27, "planks/oakPlanks.png");
-        public static Item birchPlanks = new Item(28, "planks/birchPlanks.png");
-        public static Item sprucePlanks = new Item(29, "planks/sprucePlanks.png");
-        public static Item junglePlanks = new Item(30, "planks/junglePlanks.png");
-        public static Item acaciaPlanks = new Item(31, "planks/acaciaPlanks.png");
-        public static Item darkOakPlanks = new Item(32, "planks/darkOakPlanks.png");
-        public static Item stick = new Item(33, "stick.png");
-        public static Item wheat = new Item(34, "wheat.png");
-        public static Item bread = new Item(35, "bread.png");
-        public static Item cobblestone = new Item(36, "cobblestone.png");
-        public static Item coal = new Item(37, "coal.png");
-        public static Item ironIngot = new Item(38, "ironIngot.png");
-        public static Item goldIngot = new Item(39, "goldIngot.png");
-        public static Item diamond = new Item(40, "diamond.png");
-        public static Item lapis = new Item(41, "lapis.png");
-        public static Item redstone = new Item(42, "redstone.png");
+        public static Item oakPlanks = new Item(33, "planks/oakPlanks.png");
+        public static Item birchPlanks = new Item(34, "planks/birchPlanks.png");
+        public static Item sprucePlanks = new Item(35, "planks/sprucePlanks.png");
+        public static Item junglePlanks = new Item(36, "planks/junglePlanks.png");
+        public static Item acaciaPlanks = new Item(37, "planks/acaciaPlanks.png");
+        public static Item darkOakPlanks = new Item(38, "planks/darkOakPlanks.png");
+        public static Item stick = new Item(39, "stick.png");
+        public static Item wheat = new Item(40, "wheat.png");
+        public static Item bread = new Item(41, "bread.png");
+        public static Item cobblestone = new Item(42, "cobblestone.png");
+        public static Item coal = new Item(43, "coal.png");
+        public static Item ironIngot = new Item(44, "ironIngot.png");
+        public static Item goldIngot = new Item(45, "goldIngot.png");
+        public static Item diamond = new Item(46, "diamond.png");
+        public static Item lapis = new Item(47, "lapis.png");
+        public static Item redstone = new Item(48, "redstone.png");
         #endregion
 
         public Form_main()
@@ -127,7 +133,7 @@ namespace BlockBreaker
             //timer.Start();
             
             
-            if (availableBlocks[currentBlock].breakLevel == tools[availableBlocks[currentBlock].preferredTool].toolLevel)
+            if (availableBlocks[currentBlock].breakLevel <= tools[availableBlocks[currentBlock].preferredTool].toolLevel)
             {
                 if (availableBlocks[currentBlock] == stone)
                     cobblestone.amount += stone.dropAmount;
@@ -139,6 +145,8 @@ namespace BlockBreaker
                     lapis.amount += lapisOre.dropAmount;
                 else if (availableBlocks[currentBlock] == redstoneOre)
                     redstone.amount += redstoneOre.dropAmount;
+                else if (availableBlocks[currentBlock] == grassBlock)
+                    dirt.amount += dirt.dropAmount;
                 else
                     availableBlocks[currentBlock].amount += availableBlocks[currentBlock].dropAmount;
             }
@@ -157,6 +165,9 @@ namespace BlockBreaker
             if (pickaxe.toolLevel == 4)
             {
                 stone.breakTime = 0.3;
+                andesite.breakTime = 0.3;
+                granite.breakTime = 0.3;
+                diorite.breakTime = 0.3;
                 ironOre.breakTime = 0.6;
                 coalOre.breakTime = 0.6;
                 lapisOre.breakTime = 0.6;
@@ -164,6 +175,9 @@ namespace BlockBreaker
                 diamondOre.breakTime = 0.6;
                 emeraldOre.breakTime = 0.6;
                 availableBlocks.Add(stone);
+                availableBlocks.Add(andesite);
+                availableBlocks.Add(granite);
+                availableBlocks.Add(diorite);
                 availableBlocks.Add(coalOre);
                 availableBlocks.Add(ironOre);
                 availableBlocks.Add(goldOre);
@@ -175,6 +189,9 @@ namespace BlockBreaker
             else if (pickaxe.toolLevel == 3)
             {
                 stone.breakTime = 0.4;
+                andesite.breakTime = 0.4;
+                granite.breakTime = 0.4;
+                diorite.breakTime = 0.4;
                 ironOre.breakTime = 0.75;
                 coalOre.breakTime = 0.75;
                 lapisOre.breakTime = 0.75;
@@ -182,6 +199,9 @@ namespace BlockBreaker
                 diamondOre.breakTime = 0.75;
                 emeraldOre.breakTime = 0.75;
                 availableBlocks.Add(stone);
+                availableBlocks.Add(andesite);
+                availableBlocks.Add(granite);
+                availableBlocks.Add(diorite);
                 availableBlocks.Add(coalOre);
                 availableBlocks.Add(ironOre);
                 availableBlocks.Add(goldOre);
@@ -193,6 +213,9 @@ namespace BlockBreaker
             else if (pickaxe.toolLevel == 2)
             {
                 stone.breakTime = 0.6;
+                andesite.breakTime = 0.6;
+                granite.breakTime = 0.6;
+                diorite.breakTime = 0.6;
                 ironOre.breakTime = 1.15;
                 coalOre.breakTime = 1.15;
                 lapisOre.breakTime = 1.15;
@@ -200,6 +223,9 @@ namespace BlockBreaker
                 diamondOre.breakTime = 3.75;
                 emeraldOre.breakTime = 3.75;
                 availableBlocks.Add(stone);
+                availableBlocks.Add(andesite);
+                availableBlocks.Add(granite);
+                availableBlocks.Add(diorite);
                 availableBlocks.Add(coalOre);
                 availableBlocks.Add(ironOre);
                 availableBlocks.Add(lapisOre);
@@ -207,6 +233,9 @@ namespace BlockBreaker
             else if (pickaxe.toolLevel == 1)
             {
                 stone.breakTime = 1.15;
+                andesite.breakTime = 1.15;
+                granite.breakTime = 1.15;
+                diorite.breakTime = 1.15;
                 ironOre.breakTime = 7.5;
                 coalOre.breakTime = 2.25;
                 lapisOre.breakTime = 7.5;
@@ -214,11 +243,17 @@ namespace BlockBreaker
                 diamondOre.breakTime = 7.5;
                 emeraldOre.breakTime = 7.5;
                 availableBlocks.Add(stone);
+                availableBlocks.Add(andesite);
+                availableBlocks.Add(granite);
+                availableBlocks.Add(diorite);
                 availableBlocks.Add(coalOre);
             }
             else
             {
                 stone.breakTime = 7.5;
+                andesite.breakTime = 7.5;
+                granite.breakTime = 7.5;
+                diorite.breakTime = 7.5;
                 ironOre.breakTime = 15;
                 coalOre.breakTime = 15;
                 lapisOre.breakTime = 15;
@@ -287,47 +322,102 @@ namespace BlockBreaker
             if (shovel.toolLevel == 4)
             {
                 dirt.breakTime = 0.1;
+                grassBlock.breakTime = 0.15;
+                sand.breakTime = 0.1;
+                gravel.breakTime = 0.15;
             }
             else if (shovel.toolLevel == 3)
             {
                 dirt.breakTime = 0.15;
+                grassBlock.breakTime = 0.15;
+                sand.breakTime = 0.15;
+                gravel.breakTime = 0.15;
             }
             else if (shovel.toolLevel == 2)
             {
                 dirt.breakTime = 0.2;
+                grassBlock.breakTime = 0.25;
+                sand.breakTime = 0.2;
+                gravel.breakTime = 0.25;
             }
             else if (shovel.toolLevel == 1)
             {
                 dirt.breakTime = 0.4;
+                grassBlock.breakTime = 0.45;
+                sand.breakTime = 0.4;
+                gravel.breakTime = 0.45;
             }
             else
             {
                 dirt.breakTime = 0.75;
+                grassBlock.breakTime = 0.9;
+                sand.breakTime = 0.75;
+                gravel.breakTime = 0.9;
             }
             availableBlocks.Add(dirt);
+            availableBlocks.Add(grassBlock);
+            availableBlocks.Add(sand);
+            availableBlocks.Add(gravel);
             #endregion
 
             #region Hoe Break Times
             if (hoe.toolLevel == 4)
             {
                 haybale.breakTime = 0.1;
+                oakLeaves.breakTime = 0.05;
+                birchLeaves.breakTime = 0.05;
+                spruceLeaves.breakTime = 0.05;
+                jungleLeaves.breakTime = 0.05;
+                acaciaLeaves.breakTime = 0.05;
+                darkOakLeaves.breakTime = 0.05;
             }
             else if (hoe.toolLevel == 3)
             {
                 haybale.breakTime = 0.15;
+                oakLeaves.breakTime = 0.05;
+                birchLeaves.breakTime = 0.05;
+                spruceLeaves.breakTime = 0.05;
+                jungleLeaves.breakTime = 0.05;
+                acaciaLeaves.breakTime = 0.05;
+                darkOakLeaves.breakTime = 0.05;
             }
             else if (hoe.toolLevel == 2)
             {
                 haybale.breakTime = 0.2;
+                oakLeaves.breakTime = 0.1;
+                birchLeaves.breakTime = 0.1;
+                spruceLeaves.breakTime = 0.1;
+                jungleLeaves.breakTime = 0.1;
+                acaciaLeaves.breakTime = 0.1;
+                darkOakLeaves.breakTime = 0.1;
             }
             else if (hoe.toolLevel == 1)
             {
                 haybale.breakTime = 0.4;
+                oakLeaves.breakTime = 0.15;
+                birchLeaves.breakTime = 0.15;
+                spruceLeaves.breakTime = 0.15;
+                jungleLeaves.breakTime = 0.15;
+                acaciaLeaves.breakTime = 0.15;
+                darkOakLeaves.breakTime = 0.15;
             }
             else
             {
                 haybale.breakTime = 0.75;
+                oakLeaves.breakTime = 0.3;
+                birchLeaves.breakTime = 0.3;
+                spruceLeaves.breakTime = 0.3;
+                jungleLeaves.breakTime = 0.3;
+                acaciaLeaves.breakTime = 0.3;
+                darkOakLeaves.breakTime = 0.3;
             }
+            availableBlocks.Add(haybale);
+            availableBlocks.Add(oakLeaves);
+            availableBlocks.Add(birchLeaves);
+            availableBlocks.Add(spruceLeaves);
+            availableBlocks.Add(jungleLeaves);
+            availableBlocks.Add(acaciaLeaves);
+            availableBlocks.Add(darkOakLeaves);
             #endregion
         }
 

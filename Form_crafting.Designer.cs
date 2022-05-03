@@ -29,6 +29,7 @@ namespace BlockBreaker
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_crafting));
             this.button_oakPlanks = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
             this.button_end = new System.Windows.Forms.Button();
@@ -87,11 +88,11 @@ namespace BlockBreaker
             // 
             // button_oakPlanks
             // 
+            this.button_oakPlanks.Image = ((System.Drawing.Image)(resources.GetObject("button_oakPlanks.Image")));
             this.button_oakPlanks.Location = new System.Drawing.Point(36, 25);
             this.button_oakPlanks.Name = "button_oakPlanks";
             this.button_oakPlanks.Size = new System.Drawing.Size(64, 64);
             this.button_oakPlanks.TabIndex = 0;
-            this.button_oakPlanks.Text = "OakPlanks";
             this.button_oakPlanks.UseVisualStyleBackColor = true;
             this.button_oakPlanks.Click += new System.EventHandler(this.button_oakPlanks_Click);
             // 
@@ -117,251 +118,251 @@ namespace BlockBreaker
             // 
             // button_sprucePlanks
             // 
+            this.button_sprucePlanks.Image = ((System.Drawing.Image)(resources.GetObject("button_sprucePlanks.Image")));
             this.button_sprucePlanks.Location = new System.Drawing.Point(36, 95);
             this.button_sprucePlanks.Name = "button_sprucePlanks";
             this.button_sprucePlanks.Size = new System.Drawing.Size(64, 64);
             this.button_sprucePlanks.TabIndex = 17;
-            this.button_sprucePlanks.Text = "spruce planks";
             this.button_sprucePlanks.UseVisualStyleBackColor = true;
             this.button_sprucePlanks.Click += new System.EventHandler(this.button_sprucePlanks_Click);
             // 
             // button_acaciaPlanks
             // 
+            this.button_acaciaPlanks.Image = ((System.Drawing.Image)(resources.GetObject("button_acaciaPlanks.Image")));
             this.button_acaciaPlanks.Location = new System.Drawing.Point(36, 165);
             this.button_acaciaPlanks.Name = "button_acaciaPlanks";
             this.button_acaciaPlanks.Size = new System.Drawing.Size(64, 64);
             this.button_acaciaPlanks.TabIndex = 18;
-            this.button_acaciaPlanks.Text = "acacia planks";
             this.button_acaciaPlanks.UseVisualStyleBackColor = true;
             this.button_acaciaPlanks.Click += new System.EventHandler(this.button_acaciaPlanks_Click);
             // 
             // button_stick
             // 
+            this.button_stick.Image = ((System.Drawing.Image)(resources.GetObject("button_stick.Image")));
             this.button_stick.Location = new System.Drawing.Point(36, 235);
             this.button_stick.Name = "button_stick";
             this.button_stick.Size = new System.Drawing.Size(64, 64);
             this.button_stick.TabIndex = 19;
-            this.button_stick.Text = "stick";
             this.button_stick.UseVisualStyleBackColor = true;
             this.button_stick.Click += new System.EventHandler(this.button_stick_Click);
             // 
             // button_stonePickaxe
             // 
+            this.button_stonePickaxe.Image = ((System.Drawing.Image)(resources.GetObject("button_stonePickaxe.Image")));
             this.button_stonePickaxe.Location = new System.Drawing.Point(316, 25);
             this.button_stonePickaxe.Name = "button_stonePickaxe";
             this.button_stonePickaxe.Size = new System.Drawing.Size(64, 64);
             this.button_stonePickaxe.TabIndex = 20;
-            this.button_stonePickaxe.Text = "stone pick";
             this.button_stonePickaxe.UseVisualStyleBackColor = true;
             this.button_stonePickaxe.Click += new System.EventHandler(this.button_stonePickaxe_Click);
             // 
             // button_stoneShovel
             // 
+            this.button_stoneShovel.Image = ((System.Drawing.Image)(resources.GetObject("button_stoneShovel.Image")));
             this.button_stoneShovel.Location = new System.Drawing.Point(316, 165);
             this.button_stoneShovel.Name = "button_stoneShovel";
             this.button_stoneShovel.Size = new System.Drawing.Size(64, 64);
             this.button_stoneShovel.TabIndex = 21;
-            this.button_stoneShovel.Text = "stone shovel";
             this.button_stoneShovel.UseVisualStyleBackColor = true;
             this.button_stoneShovel.Click += new System.EventHandler(this.button_stoneShovel_Click);
             // 
             // button_diamondPickaxe
             // 
+            this.button_diamondPickaxe.Image = ((System.Drawing.Image)(resources.GetObject("button_diamondPickaxe.Image")));
             this.button_diamondPickaxe.Location = new System.Drawing.Point(456, 25);
             this.button_diamondPickaxe.Name = "button_diamondPickaxe";
             this.button_diamondPickaxe.Size = new System.Drawing.Size(64, 64);
             this.button_diamondPickaxe.TabIndex = 24;
-            this.button_diamondPickaxe.Text = "diamond pick";
             this.button_diamondPickaxe.UseVisualStyleBackColor = true;
             this.button_diamondPickaxe.Click += new System.EventHandler(this.button_diamondPickaxe_Click);
             // 
             // button_diamondShovel
             // 
+            this.button_diamondShovel.Image = ((System.Drawing.Image)(resources.GetObject("button_diamondShovel.Image")));
             this.button_diamondShovel.Location = new System.Drawing.Point(456, 165);
             this.button_diamondShovel.Name = "button_diamondShovel";
             this.button_diamondShovel.Size = new System.Drawing.Size(64, 64);
             this.button_diamondShovel.TabIndex = 25;
-            this.button_diamondShovel.Text = "diamond shovel";
             this.button_diamondShovel.UseVisualStyleBackColor = true;
             this.button_diamondShovel.Click += new System.EventHandler(this.button_diamondShovel_Click);
             // 
             // button_diamondHoe
             // 
+            this.button_diamondHoe.Image = ((System.Drawing.Image)(resources.GetObject("button_diamondHoe.Image")));
             this.button_diamondHoe.Location = new System.Drawing.Point(456, 235);
             this.button_diamondHoe.Name = "button_diamondHoe";
             this.button_diamondHoe.Size = new System.Drawing.Size(64, 64);
             this.button_diamondHoe.TabIndex = 40;
-            this.button_diamondHoe.Text = "diamond hoe";
             this.button_diamondHoe.UseVisualStyleBackColor = true;
             this.button_diamondHoe.Click += new System.EventHandler(this.button_diamondHoe_Click);
             // 
             // button_diamondAxe
             // 
+            this.button_diamondAxe.Image = ((System.Drawing.Image)(resources.GetObject("button_diamondAxe.Image")));
             this.button_diamondAxe.Location = new System.Drawing.Point(456, 95);
             this.button_diamondAxe.Name = "button_diamondAxe";
             this.button_diamondAxe.Size = new System.Drawing.Size(64, 64);
             this.button_diamondAxe.TabIndex = 39;
-            this.button_diamondAxe.Text = "diamond axe";
             this.button_diamondAxe.UseVisualStyleBackColor = true;
             this.button_diamondAxe.Click += new System.EventHandler(this.button_diamondAxe_Click);
             // 
             // button_stoneHoe
             // 
+            this.button_stoneHoe.Image = ((System.Drawing.Image)(resources.GetObject("button_stoneHoe.Image")));
             this.button_stoneHoe.Location = new System.Drawing.Point(316, 235);
             this.button_stoneHoe.Name = "button_stoneHoe";
             this.button_stoneHoe.Size = new System.Drawing.Size(64, 64);
             this.button_stoneHoe.TabIndex = 36;
-            this.button_stoneHoe.Text = "stone hoe";
             this.button_stoneHoe.UseVisualStyleBackColor = true;
             this.button_stoneHoe.Click += new System.EventHandler(this.button_stoneHoe_Click);
             // 
             // button_stoneAxe
             // 
+            this.button_stoneAxe.Image = ((System.Drawing.Image)(resources.GetObject("button_stoneAxe.Image")));
             this.button_stoneAxe.Location = new System.Drawing.Point(316, 95);
             this.button_stoneAxe.Name = "button_stoneAxe";
             this.button_stoneAxe.Size = new System.Drawing.Size(64, 64);
             this.button_stoneAxe.TabIndex = 35;
-            this.button_stoneAxe.Text = "stone axe";
             this.button_stoneAxe.UseVisualStyleBackColor = true;
             this.button_stoneAxe.Click += new System.EventHandler(this.button_stoneAxe_Click);
             // 
             // button_wheat
             // 
+            this.button_wheat.Image = ((System.Drawing.Image)(resources.GetObject("button_wheat.Image")));
             this.button_wheat.Location = new System.Drawing.Point(176, 95);
             this.button_wheat.Name = "button_wheat";
             this.button_wheat.Size = new System.Drawing.Size(64, 64);
             this.button_wheat.TabIndex = 34;
-            this.button_wheat.Text = "wheat";
             this.button_wheat.UseVisualStyleBackColor = true;
             this.button_wheat.Click += new System.EventHandler(this.button_wheat_Click);
             // 
             // button_darkOakPlanks
             // 
+            this.button_darkOakPlanks.Image = ((System.Drawing.Image)(resources.GetObject("button_darkOakPlanks.Image")));
             this.button_darkOakPlanks.Location = new System.Drawing.Point(106, 165);
             this.button_darkOakPlanks.Name = "button_darkOakPlanks";
             this.button_darkOakPlanks.Size = new System.Drawing.Size(64, 64);
             this.button_darkOakPlanks.TabIndex = 33;
-            this.button_darkOakPlanks.Text = "dark oak planks";
             this.button_darkOakPlanks.UseVisualStyleBackColor = true;
             this.button_darkOakPlanks.Click += new System.EventHandler(this.button_darkOakPlanks_Click);
             // 
             // button_junglePlanks
             // 
+            this.button_junglePlanks.Image = ((System.Drawing.Image)(resources.GetObject("button_junglePlanks.Image")));
             this.button_junglePlanks.Location = new System.Drawing.Point(106, 95);
             this.button_junglePlanks.Name = "button_junglePlanks";
             this.button_junglePlanks.Size = new System.Drawing.Size(64, 64);
             this.button_junglePlanks.TabIndex = 32;
-            this.button_junglePlanks.Text = "jungle planks";
             this.button_junglePlanks.UseVisualStyleBackColor = true;
             this.button_junglePlanks.Click += new System.EventHandler(this.button_junglePlanks_Click);
             // 
             // button_birchPlanks
             // 
+            this.button_birchPlanks.Image = ((System.Drawing.Image)(resources.GetObject("button_birchPlanks.Image")));
             this.button_birchPlanks.Location = new System.Drawing.Point(106, 25);
             this.button_birchPlanks.Name = "button_birchPlanks";
             this.button_birchPlanks.Size = new System.Drawing.Size(64, 64);
             this.button_birchPlanks.TabIndex = 31;
-            this.button_birchPlanks.Text = "birch Planks";
             this.button_birchPlanks.UseVisualStyleBackColor = true;
             this.button_birchPlanks.Click += new System.EventHandler(this.button_birchPlanks_Click);
             // 
             // button_ironShovel
             // 
+            this.button_ironShovel.Image = ((System.Drawing.Image)(resources.GetObject("button_ironShovel.Image")));
             this.button_ironShovel.Location = new System.Drawing.Point(386, 165);
             this.button_ironShovel.Name = "button_ironShovel";
             this.button_ironShovel.Size = new System.Drawing.Size(64, 64);
             this.button_ironShovel.TabIndex = 51;
-            this.button_ironShovel.Text = "iron shovel";
             this.button_ironShovel.UseVisualStyleBackColor = true;
             this.button_ironShovel.Click += new System.EventHandler(this.button_ironShovel_Click);
             // 
             // button_ironPickaxe
             // 
+            this.button_ironPickaxe.Image = ((System.Drawing.Image)(resources.GetObject("button_ironPickaxe.Image")));
             this.button_ironPickaxe.Location = new System.Drawing.Point(386, 25);
             this.button_ironPickaxe.Name = "button_ironPickaxe";
             this.button_ironPickaxe.Size = new System.Drawing.Size(64, 64);
             this.button_ironPickaxe.TabIndex = 50;
-            this.button_ironPickaxe.Text = "iron pick";
             this.button_ironPickaxe.UseVisualStyleBackColor = true;
             this.button_ironPickaxe.Click += new System.EventHandler(this.button_ironPickaxe_Click);
             // 
             // button_bread
             // 
+            this.button_bread.Image = ((System.Drawing.Image)(resources.GetObject("button_bread.Image")));
             this.button_bread.Location = new System.Drawing.Point(176, 165);
             this.button_bread.Name = "button_bread";
             this.button_bread.Size = new System.Drawing.Size(64, 64);
             this.button_bread.TabIndex = 49;
-            this.button_bread.Text = "bread";
             this.button_bread.UseVisualStyleBackColor = true;
             this.button_bread.Click += new System.EventHandler(this.button_bread_Click);
             // 
             // button_woodenShovel
             // 
+            this.button_woodenShovel.Image = ((System.Drawing.Image)(resources.GetObject("button_woodenShovel.Image")));
             this.button_woodenShovel.Location = new System.Drawing.Point(246, 165);
             this.button_woodenShovel.Name = "button_woodenShovel";
             this.button_woodenShovel.Size = new System.Drawing.Size(64, 64);
             this.button_woodenShovel.TabIndex = 47;
-            this.button_woodenShovel.Text = "wood shovel";
             this.button_woodenShovel.UseVisualStyleBackColor = true;
             this.button_woodenShovel.Click += new System.EventHandler(this.button_woodenShovel_Click);
             // 
             // button_woodenPickaxe
             // 
+            this.button_woodenPickaxe.Image = ((System.Drawing.Image)(resources.GetObject("button_woodenPickaxe.Image")));
             this.button_woodenPickaxe.Location = new System.Drawing.Point(246, 25);
             this.button_woodenPickaxe.Name = "button_woodenPickaxe";
             this.button_woodenPickaxe.Size = new System.Drawing.Size(64, 64);
             this.button_woodenPickaxe.TabIndex = 46;
-            this.button_woodenPickaxe.Text = "wood pick";
             this.button_woodenPickaxe.UseVisualStyleBackColor = true;
             this.button_woodenPickaxe.Click += new System.EventHandler(this.button_woodenPickaxe_Click);
             // 
             // button_ironHoe
             // 
+            this.button_ironHoe.Image = ((System.Drawing.Image)(resources.GetObject("button_ironHoe.Image")));
             this.button_ironHoe.Location = new System.Drawing.Point(386, 235);
             this.button_ironHoe.Name = "button_ironHoe";
             this.button_ironHoe.Size = new System.Drawing.Size(64, 64);
             this.button_ironHoe.TabIndex = 66;
-            this.button_ironHoe.Text = "iron hoe";
             this.button_ironHoe.UseVisualStyleBackColor = true;
             this.button_ironHoe.Click += new System.EventHandler(this.button_ironHoe_Click);
             // 
             // button_ironAxe
             // 
+            this.button_ironAxe.Image = ((System.Drawing.Image)(resources.GetObject("button_ironAxe.Image")));
             this.button_ironAxe.Location = new System.Drawing.Point(386, 95);
             this.button_ironAxe.Name = "button_ironAxe";
             this.button_ironAxe.Size = new System.Drawing.Size(64, 64);
             this.button_ironAxe.TabIndex = 65;
-            this.button_ironAxe.Text = "iron axe";
             this.button_ironAxe.UseVisualStyleBackColor = true;
             this.button_ironAxe.Click += new System.EventHandler(this.button_ironAxe_Click);
             // 
             // button_haybale
             // 
+            this.button_haybale.Image = ((System.Drawing.Image)(resources.GetObject("button_haybale.Image")));
             this.button_haybale.Location = new System.Drawing.Point(176, 25);
             this.button_haybale.Name = "button_haybale";
             this.button_haybale.Size = new System.Drawing.Size(64, 64);
             this.button_haybale.TabIndex = 64;
-            this.button_haybale.Text = "haybale";
             this.button_haybale.UseVisualStyleBackColor = true;
             this.button_haybale.Click += new System.EventHandler(this.button_haybale_Click);
             // 
             // button_woodenHoe
             // 
+            this.button_woodenHoe.Image = ((System.Drawing.Image)(resources.GetObject("button_woodenHoe.Image")));
             this.button_woodenHoe.Location = new System.Drawing.Point(246, 235);
             this.button_woodenHoe.Name = "button_woodenHoe";
             this.button_woodenHoe.Size = new System.Drawing.Size(64, 64);
             this.button_woodenHoe.TabIndex = 62;
-            this.button_woodenHoe.Text = "wood hoe";
             this.button_woodenHoe.UseVisualStyleBackColor = true;
             this.button_woodenHoe.Click += new System.EventHandler(this.button_woodenHoe_Click);
             // 
             // button_woodenAxe
             // 
+            this.button_woodenAxe.Image = ((System.Drawing.Image)(resources.GetObject("button_woodenAxe.Image")));
             this.button_woodenAxe.Location = new System.Drawing.Point(246, 95);
             this.button_woodenAxe.Name = "button_woodenAxe";
             this.button_woodenAxe.Size = new System.Drawing.Size(64, 64);
             this.button_woodenAxe.TabIndex = 61;
-            this.button_woodenAxe.Text = "wood axe";
             this.button_woodenAxe.UseVisualStyleBackColor = true;
             this.button_woodenAxe.Click += new System.EventHandler(this.button_woodenAxe_Click);
             // 

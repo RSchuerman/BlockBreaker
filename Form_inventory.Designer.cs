@@ -40,8 +40,8 @@ namespace BlockBreaker
             this.pictureBox_ironIngot = new System.Windows.Forms.PictureBox();
             this.label_dirt = new System.Windows.Forms.Label();
             this.pictureBox_dirt = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label_cobblestone = new System.Windows.Forms.Label();
+            this.pictureBox_cobblestone = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -56,10 +56,10 @@ namespace BlockBreaker
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.label_cobblestone = new System.Windows.Forms.Label();
-            this.pictureBox_cobblestone = new System.Windows.Forms.PictureBox();
+            this.label_andesite = new System.Windows.Forms.Label();
+            this.pictureBox_andesite = new System.Windows.Forms.PictureBox();
+            this.label_gravel = new System.Windows.Forms.Label();
+            this.pictureBox_gravel = new System.Windows.Forms.PictureBox();
             this.label_ironOre = new System.Windows.Forms.Label();
             this.pictureBox_ironOre = new System.Windows.Forms.PictureBox();
             this.label_haybale = new System.Windows.Forms.Label();
@@ -74,10 +74,10 @@ namespace BlockBreaker
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.label_granite = new System.Windows.Forms.Label();
+            this.pictureBox_granite = new System.Windows.Forms.PictureBox();
+            this.label_sand = new System.Windows.Forms.Label();
+            this.pictureBox_sand = new System.Windows.Forms.PictureBox();
             this.label_goldIngot = new System.Windows.Forms.Label();
             this.pictureBox_goldIngot = new System.Windows.Forms.PictureBox();
             this.label_wheat = new System.Windows.Forms.Label();
@@ -92,8 +92,8 @@ namespace BlockBreaker
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.label30 = new System.Windows.Forms.Label();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.label_diorite = new System.Windows.Forms.Label();
+            this.pictureBox_diorite = new System.Windows.Forms.PictureBox();
             this.label32 = new System.Windows.Forms.Label();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.label_goldOre = new System.Windows.Forms.Label();
@@ -110,10 +110,10 @@ namespace BlockBreaker
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.label_axe = new System.Windows.Forms.Label();
+            this.pictureBox_axe = new System.Windows.Forms.PictureBox();
+            this.label_pickaxe = new System.Windows.Forms.Label();
+            this.pictureBox_pickaxe = new System.Windows.Forms.PictureBox();
             this.label_redstone = new System.Windows.Forms.Label();
             this.pictureBox_redstone = new System.Windows.Forms.PictureBox();
             this.label_coal = new System.Windows.Forms.Label();
@@ -128,10 +128,10 @@ namespace BlockBreaker
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
             this.label48 = new System.Windows.Forms.Label();
             this.pictureBox48 = new System.Windows.Forms.PictureBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.pictureBox49 = new System.Windows.Forms.PictureBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.pictureBox50 = new System.Windows.Forms.PictureBox();
+            this.label_hoe = new System.Windows.Forms.Label();
+            this.pictureBox_hoe = new System.Windows.Forms.PictureBox();
+            this.label_shovel = new System.Windows.Forms.Label();
+            this.pictureBox_shovel = new System.Windows.Forms.PictureBox();
             this.label_lapis = new System.Windows.Forms.Label();
             this.pictureBox_lapis = new System.Windows.Forms.PictureBox();
             this.label_diamond = new System.Windows.Forms.Label();
@@ -145,15 +145,15 @@ namespace BlockBreaker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_stick)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ironIngot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dirt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cobblestone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cobblestone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_andesite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_gravel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ironOre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_haybale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_birchPlanks)).BeginInit();
@@ -161,8 +161,8 @@ namespace BlockBreaker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_granite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_sand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_goldIngot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_wheat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_sprucePlanks)).BeginInit();
@@ -170,7 +170,7 @@ namespace BlockBreaker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_diorite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_goldOre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_bread)).BeginInit();
@@ -179,8 +179,8 @@ namespace BlockBreaker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_axe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickaxe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_redstone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_coal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_acaciaPlanks)).BeginInit();
@@ -188,8 +188,8 @@ namespace BlockBreaker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_hoe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_shovel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_lapis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_diamond)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_darkOakPlanks)).BeginInit();
@@ -261,6 +261,7 @@ namespace BlockBreaker
             // 
             // pictureBox_ironIngot
             // 
+            this.pictureBox_ironIngot.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_ironIngot.Image")));
             this.pictureBox_ironIngot.Location = new System.Drawing.Point(222, 12);
             this.pictureBox_ironIngot.Name = "pictureBox_ironIngot";
             this.pictureBox_ironIngot.Size = new System.Drawing.Size(64, 64);
@@ -285,22 +286,23 @@ namespace BlockBreaker
             this.pictureBox_dirt.TabIndex = 8;
             this.pictureBox_dirt.TabStop = false;
             // 
-            // label6
+            // label_cobblestone
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(413, 63);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "0";
+            this.label_cobblestone.AutoSize = true;
+            this.label_cobblestone.Location = new System.Drawing.Point(413, 63);
+            this.label_cobblestone.Name = "label_cobblestone";
+            this.label_cobblestone.Size = new System.Drawing.Size(13, 13);
+            this.label_cobblestone.TabIndex = 11;
+            this.label_cobblestone.Text = "0";
             // 
-            // pictureBox6
+            // pictureBox_cobblestone
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(362, 12);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
+            this.pictureBox_cobblestone.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_cobblestone.Image")));
+            this.pictureBox_cobblestone.Location = new System.Drawing.Point(362, 12);
+            this.pictureBox_cobblestone.Name = "pictureBox_cobblestone";
+            this.pictureBox_cobblestone.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_cobblestone.TabIndex = 10;
+            this.pictureBox_cobblestone.TabStop = false;
             // 
             // label7
             // 
@@ -424,39 +426,41 @@ namespace BlockBreaker
             this.pictureBox12.TabIndex = 32;
             this.pictureBox12.TabStop = false;
             // 
-            // label13
+            // label_andesite
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(413, 133);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(13, 13);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "0";
+            this.label_andesite.AutoSize = true;
+            this.label_andesite.Location = new System.Drawing.Point(413, 133);
+            this.label_andesite.Name = "label_andesite";
+            this.label_andesite.Size = new System.Drawing.Size(13, 13);
+            this.label_andesite.TabIndex = 31;
+            this.label_andesite.Text = "0";
             // 
-            // pictureBox13
+            // pictureBox_andesite
             // 
-            this.pictureBox13.Location = new System.Drawing.Point(362, 82);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox13.TabIndex = 30;
-            this.pictureBox13.TabStop = false;
+            this.pictureBox_andesite.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_andesite.Image")));
+            this.pictureBox_andesite.Location = new System.Drawing.Point(362, 82);
+            this.pictureBox_andesite.Name = "pictureBox_andesite";
+            this.pictureBox_andesite.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_andesite.TabIndex = 30;
+            this.pictureBox_andesite.TabStop = false;
             // 
-            // label_cobblestone
+            // label_gravel
             // 
-            this.label_cobblestone.AutoSize = true;
-            this.label_cobblestone.Location = new System.Drawing.Point(343, 133);
-            this.label_cobblestone.Name = "label_cobblestone";
-            this.label_cobblestone.Size = new System.Drawing.Size(13, 13);
-            this.label_cobblestone.TabIndex = 29;
-            this.label_cobblestone.Text = "0";
+            this.label_gravel.AutoSize = true;
+            this.label_gravel.Location = new System.Drawing.Point(343, 133);
+            this.label_gravel.Name = "label_gravel";
+            this.label_gravel.Size = new System.Drawing.Size(13, 13);
+            this.label_gravel.TabIndex = 29;
+            this.label_gravel.Text = "0";
             // 
-            // pictureBox_cobblestone
+            // pictureBox_gravel
             // 
-            this.pictureBox_cobblestone.Location = new System.Drawing.Point(292, 82);
-            this.pictureBox_cobblestone.Name = "pictureBox_cobblestone";
-            this.pictureBox_cobblestone.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox_cobblestone.TabIndex = 28;
-            this.pictureBox_cobblestone.TabStop = false;
+            this.pictureBox_gravel.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_gravel.Image")));
+            this.pictureBox_gravel.Location = new System.Drawing.Point(292, 82);
+            this.pictureBox_gravel.Name = "pictureBox_gravel";
+            this.pictureBox_gravel.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_gravel.TabIndex = 28;
+            this.pictureBox_gravel.TabStop = false;
             // 
             // label_ironOre
             // 
@@ -581,39 +585,41 @@ namespace BlockBreaker
             this.pictureBox21.TabIndex = 50;
             this.pictureBox21.TabStop = false;
             // 
-            // label22
+            // label_granite
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(413, 203);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(13, 13);
-            this.label22.TabIndex = 49;
-            this.label22.Text = "0";
+            this.label_granite.AutoSize = true;
+            this.label_granite.Location = new System.Drawing.Point(413, 203);
+            this.label_granite.Name = "label_granite";
+            this.label_granite.Size = new System.Drawing.Size(13, 13);
+            this.label_granite.TabIndex = 49;
+            this.label_granite.Text = "0";
             // 
-            // pictureBox22
+            // pictureBox_granite
             // 
-            this.pictureBox22.Location = new System.Drawing.Point(362, 152);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox22.TabIndex = 48;
-            this.pictureBox22.TabStop = false;
+            this.pictureBox_granite.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_granite.Image")));
+            this.pictureBox_granite.Location = new System.Drawing.Point(362, 152);
+            this.pictureBox_granite.Name = "pictureBox_granite";
+            this.pictureBox_granite.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_granite.TabIndex = 48;
+            this.pictureBox_granite.TabStop = false;
             // 
-            // label23
+            // label_sand
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(343, 203);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(13, 13);
-            this.label23.TabIndex = 47;
-            this.label23.Text = "0";
+            this.label_sand.AutoSize = true;
+            this.label_sand.Location = new System.Drawing.Point(343, 203);
+            this.label_sand.Name = "label_sand";
+            this.label_sand.Size = new System.Drawing.Size(13, 13);
+            this.label_sand.TabIndex = 47;
+            this.label_sand.Text = "0";
             // 
-            // pictureBox23
+            // pictureBox_sand
             // 
-            this.pictureBox23.Location = new System.Drawing.Point(292, 152);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox23.TabIndex = 46;
-            this.pictureBox23.TabStop = false;
+            this.pictureBox_sand.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_sand.Image")));
+            this.pictureBox_sand.Location = new System.Drawing.Point(292, 152);
+            this.pictureBox_sand.Name = "pictureBox_sand";
+            this.pictureBox_sand.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_sand.TabIndex = 46;
+            this.pictureBox_sand.TabStop = false;
             // 
             // label_goldIngot
             // 
@@ -626,6 +632,7 @@ namespace BlockBreaker
             // 
             // pictureBox_goldIngot
             // 
+            this.pictureBox_goldIngot.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_goldIngot.Image")));
             this.pictureBox_goldIngot.Location = new System.Drawing.Point(222, 152);
             this.pictureBox_goldIngot.Name = "pictureBox_goldIngot";
             this.pictureBox_goldIngot.Size = new System.Drawing.Size(64, 64);
@@ -737,22 +744,23 @@ namespace BlockBreaker
             this.pictureBox30.TabIndex = 68;
             this.pictureBox30.TabStop = false;
             // 
-            // label31
+            // label_diorite
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(413, 273);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(13, 13);
-            this.label31.TabIndex = 67;
-            this.label31.Text = "0";
+            this.label_diorite.AutoSize = true;
+            this.label_diorite.Location = new System.Drawing.Point(413, 273);
+            this.label_diorite.Name = "label_diorite";
+            this.label_diorite.Size = new System.Drawing.Size(13, 13);
+            this.label_diorite.TabIndex = 67;
+            this.label_diorite.Text = "0";
             // 
-            // pictureBox31
+            // pictureBox_diorite
             // 
-            this.pictureBox31.Location = new System.Drawing.Point(362, 222);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox31.TabIndex = 66;
-            this.pictureBox31.TabStop = false;
+            this.pictureBox_diorite.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_diorite.Image")));
+            this.pictureBox_diorite.Location = new System.Drawing.Point(362, 222);
+            this.pictureBox_diorite.Name = "pictureBox_diorite";
+            this.pictureBox_diorite.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_diorite.TabIndex = 66;
+            this.pictureBox_diorite.TabStop = false;
             // 
             // label32
             // 
@@ -894,39 +902,41 @@ namespace BlockBreaker
             this.pictureBox39.TabIndex = 86;
             this.pictureBox39.TabStop = false;
             // 
-            // label40
+            // label_axe
             // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(413, 343);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(13, 13);
-            this.label40.TabIndex = 85;
-            this.label40.Text = "0";
+            this.label_axe.AutoSize = true;
+            this.label_axe.Location = new System.Drawing.Point(413, 343);
+            this.label_axe.Name = "label_axe";
+            this.label_axe.Size = new System.Drawing.Size(13, 13);
+            this.label_axe.TabIndex = 85;
+            this.label_axe.Text = "0";
             // 
-            // pictureBox40
+            // pictureBox_axe
             // 
-            this.pictureBox40.Location = new System.Drawing.Point(362, 292);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox40.TabIndex = 84;
-            this.pictureBox40.TabStop = false;
+            this.pictureBox_axe.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_axe.Image")));
+            this.pictureBox_axe.Location = new System.Drawing.Point(362, 292);
+            this.pictureBox_axe.Name = "pictureBox_axe";
+            this.pictureBox_axe.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_axe.TabIndex = 84;
+            this.pictureBox_axe.TabStop = false;
             // 
-            // label41
+            // label_pickaxe
             // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(343, 343);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(13, 13);
-            this.label41.TabIndex = 83;
-            this.label41.Text = "0";
+            this.label_pickaxe.AutoSize = true;
+            this.label_pickaxe.Location = new System.Drawing.Point(343, 343);
+            this.label_pickaxe.Name = "label_pickaxe";
+            this.label_pickaxe.Size = new System.Drawing.Size(13, 13);
+            this.label_pickaxe.TabIndex = 83;
+            this.label_pickaxe.Text = "0";
             // 
-            // pictureBox41
+            // pictureBox_pickaxe
             // 
-            this.pictureBox41.Location = new System.Drawing.Point(292, 292);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox41.TabIndex = 82;
-            this.pictureBox41.TabStop = false;
+            this.pictureBox_pickaxe.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_pickaxe.Image")));
+            this.pictureBox_pickaxe.Location = new System.Drawing.Point(292, 292);
+            this.pictureBox_pickaxe.Name = "pictureBox_pickaxe";
+            this.pictureBox_pickaxe.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_pickaxe.TabIndex = 82;
+            this.pictureBox_pickaxe.TabStop = false;
             // 
             // label_redstone
             // 
@@ -939,6 +949,7 @@ namespace BlockBreaker
             // 
             // pictureBox_redstone
             // 
+            this.pictureBox_redstone.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_redstone.Image")));
             this.pictureBox_redstone.Location = new System.Drawing.Point(222, 292);
             this.pictureBox_redstone.Name = "pictureBox_redstone";
             this.pictureBox_redstone.Size = new System.Drawing.Size(64, 64);
@@ -956,6 +967,7 @@ namespace BlockBreaker
             // 
             // pictureBox_coal
             // 
+            this.pictureBox_coal.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_coal.Image")));
             this.pictureBox_coal.Location = new System.Drawing.Point(152, 292);
             this.pictureBox_coal.Name = "pictureBox_coal";
             this.pictureBox_coal.Size = new System.Drawing.Size(64, 64);
@@ -1049,39 +1061,41 @@ namespace BlockBreaker
             this.pictureBox48.TabIndex = 104;
             this.pictureBox48.TabStop = false;
             // 
-            // label49
+            // label_hoe
             // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(413, 413);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(13, 13);
-            this.label49.TabIndex = 103;
-            this.label49.Text = "0";
+            this.label_hoe.AutoSize = true;
+            this.label_hoe.Location = new System.Drawing.Point(413, 413);
+            this.label_hoe.Name = "label_hoe";
+            this.label_hoe.Size = new System.Drawing.Size(13, 13);
+            this.label_hoe.TabIndex = 103;
+            this.label_hoe.Text = "0";
             // 
-            // pictureBox49
+            // pictureBox_hoe
             // 
-            this.pictureBox49.Location = new System.Drawing.Point(362, 362);
-            this.pictureBox49.Name = "pictureBox49";
-            this.pictureBox49.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox49.TabIndex = 102;
-            this.pictureBox49.TabStop = false;
+            this.pictureBox_hoe.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_hoe.Image")));
+            this.pictureBox_hoe.Location = new System.Drawing.Point(362, 362);
+            this.pictureBox_hoe.Name = "pictureBox_hoe";
+            this.pictureBox_hoe.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_hoe.TabIndex = 102;
+            this.pictureBox_hoe.TabStop = false;
             // 
-            // label50
+            // label_shovel
             // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(343, 413);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(13, 13);
-            this.label50.TabIndex = 101;
-            this.label50.Text = "0";
+            this.label_shovel.AutoSize = true;
+            this.label_shovel.Location = new System.Drawing.Point(343, 413);
+            this.label_shovel.Name = "label_shovel";
+            this.label_shovel.Size = new System.Drawing.Size(13, 13);
+            this.label_shovel.TabIndex = 101;
+            this.label_shovel.Text = "0";
             // 
-            // pictureBox50
+            // pictureBox_shovel
             // 
-            this.pictureBox50.Location = new System.Drawing.Point(292, 362);
-            this.pictureBox50.Name = "pictureBox50";
-            this.pictureBox50.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox50.TabIndex = 100;
-            this.pictureBox50.TabStop = false;
+            this.pictureBox_shovel.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_shovel.Image")));
+            this.pictureBox_shovel.Location = new System.Drawing.Point(292, 362);
+            this.pictureBox_shovel.Name = "pictureBox_shovel";
+            this.pictureBox_shovel.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox_shovel.TabIndex = 100;
+            this.pictureBox_shovel.TabStop = false;
             // 
             // label_lapis
             // 
@@ -1094,6 +1108,7 @@ namespace BlockBreaker
             // 
             // pictureBox_lapis
             // 
+            this.pictureBox_lapis.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_lapis.Image")));
             this.pictureBox_lapis.Location = new System.Drawing.Point(222, 362);
             this.pictureBox_lapis.Name = "pictureBox_lapis";
             this.pictureBox_lapis.Size = new System.Drawing.Size(64, 64);
@@ -1111,6 +1126,7 @@ namespace BlockBreaker
             // 
             // pictureBox_diamond
             // 
+            this.pictureBox_diamond.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_diamond.Image")));
             this.pictureBox_diamond.Location = new System.Drawing.Point(152, 362);
             this.pictureBox_diamond.Name = "pictureBox_diamond";
             this.pictureBox_diamond.Size = new System.Drawing.Size(64, 64);
@@ -1164,10 +1180,10 @@ namespace BlockBreaker
             this.Controls.Add(this.pictureBox47);
             this.Controls.Add(this.label48);
             this.Controls.Add(this.pictureBox48);
-            this.Controls.Add(this.label49);
-            this.Controls.Add(this.pictureBox49);
-            this.Controls.Add(this.label50);
-            this.Controls.Add(this.pictureBox50);
+            this.Controls.Add(this.label_hoe);
+            this.Controls.Add(this.pictureBox_hoe);
+            this.Controls.Add(this.label_shovel);
+            this.Controls.Add(this.pictureBox_shovel);
             this.Controls.Add(this.label_lapis);
             this.Controls.Add(this.pictureBox_lapis);
             this.Controls.Add(this.label_diamond);
@@ -1182,10 +1198,10 @@ namespace BlockBreaker
             this.Controls.Add(this.pictureBox38);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.pictureBox39);
-            this.Controls.Add(this.label40);
-            this.Controls.Add(this.pictureBox40);
-            this.Controls.Add(this.label41);
-            this.Controls.Add(this.pictureBox41);
+            this.Controls.Add(this.label_axe);
+            this.Controls.Add(this.pictureBox_axe);
+            this.Controls.Add(this.label_pickaxe);
+            this.Controls.Add(this.pictureBox_pickaxe);
             this.Controls.Add(this.label_redstone);
             this.Controls.Add(this.pictureBox_redstone);
             this.Controls.Add(this.label_coal);
@@ -1200,8 +1216,8 @@ namespace BlockBreaker
             this.Controls.Add(this.pictureBox29);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.pictureBox30);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.pictureBox31);
+            this.Controls.Add(this.label_diorite);
+            this.Controls.Add(this.pictureBox_diorite);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.label_goldOre);
@@ -1218,10 +1234,10 @@ namespace BlockBreaker
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.pictureBox21);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.pictureBox22);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.pictureBox23);
+            this.Controls.Add(this.label_granite);
+            this.Controls.Add(this.pictureBox_granite);
+            this.Controls.Add(this.label_sand);
+            this.Controls.Add(this.pictureBox_sand);
             this.Controls.Add(this.label_goldIngot);
             this.Controls.Add(this.pictureBox_goldIngot);
             this.Controls.Add(this.label_wheat);
@@ -1236,10 +1252,10 @@ namespace BlockBreaker
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.label_cobblestone);
-            this.Controls.Add(this.pictureBox_cobblestone);
+            this.Controls.Add(this.label_andesite);
+            this.Controls.Add(this.pictureBox_andesite);
+            this.Controls.Add(this.label_gravel);
+            this.Controls.Add(this.pictureBox_gravel);
             this.Controls.Add(this.label_ironOre);
             this.Controls.Add(this.pictureBox_ironOre);
             this.Controls.Add(this.label_haybale);
@@ -1256,8 +1272,8 @@ namespace BlockBreaker
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.label_cobblestone);
+            this.Controls.Add(this.pictureBox_cobblestone);
             this.Controls.Add(this.label_dirt);
             this.Controls.Add(this.pictureBox_dirt);
             this.Controls.Add(this.label_ironIngot);
@@ -1275,15 +1291,15 @@ namespace BlockBreaker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_stick)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ironIngot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_dirt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cobblestone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_cobblestone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_andesite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_gravel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ironOre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_haybale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_birchPlanks)).EndInit();
@@ -1291,8 +1307,8 @@ namespace BlockBreaker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_granite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_sand)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_goldIngot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_wheat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_sprucePlanks)).EndInit();
@@ -1300,7 +1316,7 @@ namespace BlockBreaker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_diorite)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_goldOre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_bread)).EndInit();
@@ -1309,8 +1325,8 @@ namespace BlockBreaker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_axe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_pickaxe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_redstone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_coal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_acaciaPlanks)).EndInit();
@@ -1318,8 +1334,8 @@ namespace BlockBreaker
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_hoe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_shovel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_lapis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_diamond)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_darkOakPlanks)).EndInit();
@@ -1341,8 +1357,8 @@ namespace BlockBreaker
         private System.Windows.Forms.PictureBox pictureBox_ironIngot;
         private System.Windows.Forms.Label label_dirt;
         private System.Windows.Forms.PictureBox pictureBox_dirt;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label_cobblestone;
+        private System.Windows.Forms.PictureBox pictureBox_cobblestone;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label8;
@@ -1357,10 +1373,10 @@ namespace BlockBreaker
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Label label_cobblestone;
-        private System.Windows.Forms.PictureBox pictureBox_cobblestone;
+        private System.Windows.Forms.Label label_andesite;
+        private System.Windows.Forms.PictureBox pictureBox_andesite;
+        private System.Windows.Forms.Label label_gravel;
+        private System.Windows.Forms.PictureBox pictureBox_gravel;
         private System.Windows.Forms.Label label_ironOre;
         private System.Windows.Forms.PictureBox pictureBox_ironOre;
         private System.Windows.Forms.Label label_haybale;
@@ -1375,10 +1391,10 @@ namespace BlockBreaker
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.Label label_granite;
+        private System.Windows.Forms.PictureBox pictureBox_granite;
+        private System.Windows.Forms.Label label_sand;
+        private System.Windows.Forms.PictureBox pictureBox_sand;
         private System.Windows.Forms.Label label_goldIngot;
         private System.Windows.Forms.PictureBox pictureBox_goldIngot;
         private System.Windows.Forms.Label label_wheat;
@@ -1393,8 +1409,8 @@ namespace BlockBreaker
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.PictureBox pictureBox30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.PictureBox pictureBox31;
+        private System.Windows.Forms.Label label_diorite;
+        private System.Windows.Forms.PictureBox pictureBox_diorite;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.PictureBox pictureBox32;
         private System.Windows.Forms.Label label_goldOre;
@@ -1411,10 +1427,10 @@ namespace BlockBreaker
         private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.PictureBox pictureBox39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.PictureBox pictureBox40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.PictureBox pictureBox41;
+        private System.Windows.Forms.Label label_axe;
+        private System.Windows.Forms.PictureBox pictureBox_axe;
+        private System.Windows.Forms.Label label_pickaxe;
+        private System.Windows.Forms.PictureBox pictureBox_pickaxe;
         private System.Windows.Forms.Label label_redstone;
         private System.Windows.Forms.PictureBox pictureBox_redstone;
         private System.Windows.Forms.Label label_coal;
@@ -1429,10 +1445,10 @@ namespace BlockBreaker
         private System.Windows.Forms.PictureBox pictureBox47;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.PictureBox pictureBox48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.PictureBox pictureBox49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.PictureBox pictureBox50;
+        private System.Windows.Forms.Label label_hoe;
+        private System.Windows.Forms.PictureBox pictureBox_hoe;
+        private System.Windows.Forms.Label label_shovel;
+        private System.Windows.Forms.PictureBox pictureBox_shovel;
         private System.Windows.Forms.Label label_lapis;
         private System.Windows.Forms.PictureBox pictureBox_lapis;
         private System.Windows.Forms.Label label_diamond;

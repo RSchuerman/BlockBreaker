@@ -95,32 +95,32 @@ namespace BlockBreaker
             if (Form_main.oakPlanks.amount >= 2)
             {
                 Form_main.stick.amount += 4;
-                Form_main.oakPlanks.amount--;
+                Form_main.oakPlanks.amount -= 2;
             }
             else if (Form_main.birchPlanks.amount >= 2)
             {
                 Form_main.stick.amount += 4;
-                Form_main.birchPlanks.amount--;
+                Form_main.birchPlanks.amount -= 2;
             }
             else if (Form_main.sprucePlanks.amount >= 2)
             {
                 Form_main.stick.amount += 4;
-                Form_main.sprucePlanks.amount--;
+                Form_main.sprucePlanks.amount -= 2;
             }
             else if (Form_main.junglePlanks.amount >= 2)
             {
                 Form_main.stick.amount += 4;
-                Form_main.junglePlanks.amount--;
+                Form_main.junglePlanks.amount -= 2;
             }
             else if (Form_main.acaciaPlanks.amount >= 2)
             {
                 Form_main.stick.amount += 4;
-                Form_main.acaciaPlanks.amount--;
+                Form_main.acaciaPlanks.amount -= 2;
             }
             else if (Form_main.darkOakPlanks.amount >= 2)
             {
                 Form_main.stick.amount += 4;
-                Form_main.darkOakPlanks.amount--;
+                Form_main.darkOakPlanks.amount -= 2;
             }
             updateLabels();
         }

@@ -29,6 +29,7 @@ namespace BlockBreaker
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_smelting));
             this.button_end = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
             this.button_ironIngot = new System.Windows.Forms.Button();
@@ -59,11 +60,11 @@ namespace BlockBreaker
             // 
             // button_ironIngot
             // 
+            this.button_ironIngot.Image = ((System.Drawing.Image)(resources.GetObject("button_ironIngot.Image")));
             this.button_ironIngot.Location = new System.Drawing.Point(45, 31);
             this.button_ironIngot.Name = "button_ironIngot";
             this.button_ironIngot.Size = new System.Drawing.Size(64, 64);
             this.button_ironIngot.TabIndex = 19;
-            this.button_ironIngot.Text = "ironIngot";
             this.button_ironIngot.UseVisualStyleBackColor = true;
             this.button_ironIngot.Click += new System.EventHandler(this.button_ironIngot_Click);
             // 
@@ -87,11 +88,11 @@ namespace BlockBreaker
             // 
             // button_goldIngot
             // 
+            this.button_goldIngot.Image = ((System.Drawing.Image)(resources.GetObject("button_goldIngot.Image")));
             this.button_goldIngot.Location = new System.Drawing.Point(115, 31);
             this.button_goldIngot.Name = "button_goldIngot";
             this.button_goldIngot.Size = new System.Drawing.Size(64, 64);
             this.button_goldIngot.TabIndex = 21;
-            this.button_goldIngot.Text = "goldIngot";
             this.button_goldIngot.UseVisualStyleBackColor = true;
             this.button_goldIngot.Click += new System.EventHandler(this.button_goldIngot_Click);
             // 

@@ -15,6 +15,8 @@ namespace BlockBreaker
         public Form_smelting()
         {
             InitializeComponent();
+            label_ironIngot.Text = Form_main.ironIngot.amount.ToString();
+            label_goldIngot.Text = Form_main.goldIngot.amount.ToString();
         }
 
         private void button_exit_Click(object sender, EventArgs e)
@@ -31,7 +33,7 @@ namespace BlockBreaker
 
         private void button_ironIngot_Click(object sender, EventArgs e)
         {
-            if (Form_main.ironOre.amount > 8 && Form_main.coal.amount > 1)
+            if (Form_main.ironOre.amount >= 8 && Form_main.coal.amount >= 1)
             {
                 Form_main.ironIngot.amount += 8;
                 Form_main.ironOre.amount -= 8;
@@ -42,7 +44,7 @@ namespace BlockBreaker
 
         private void button_goldIngot_Click(object sender, EventArgs e)
         {
-            if (Form_main.goldOre.amount > 8 && Form_main.coal.amount > 1)
+            if (Form_main.goldOre.amount >= 8 && Form_main.coal.amount >= 1)
             {
                 Form_main.goldIngot.amount += 8;
                 Form_main.goldOre.amount -= 8;
