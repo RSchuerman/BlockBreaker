@@ -13,12 +13,9 @@ namespace BlockBreaker
 {
     public partial class Form_crafting : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source=(LocalDB)/MSSQLLocalDB;AttachDbFilename=C:/Users/RSchuerman/source/repos/BlockBreaker/Database.mdf;Integrated Security=True;");
-        
         public Form_crafting()
         {
             InitializeComponent();
-            //conn.Open();
             updateLabels();
         }
 

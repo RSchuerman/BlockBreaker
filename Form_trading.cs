@@ -21,15 +21,6 @@ namespace BlockBreaker
         }
 
         #region tool buttons
-        private void button_shovel_Click(object sender, EventArgs e)
-        {
-            selectedTool = "shovel";
-            label_emeraldEfficiency.Text = (1 + Form_main.shovel.efficiencyLevel).ToString();
-            label_emeraldFortune.Text = (1 + Form_main.shovel.fortuneLevel).ToString();
-            label_emeraldUnbreaking.Text = (1 + Form_main.shovel.unbreakingLevel).ToString();
-            changeVisibility();
-        }
-
         private void button_pickaxe_Click(object sender, EventArgs e)
         {
             selectedTool = "pickaxe";
@@ -38,22 +29,28 @@ namespace BlockBreaker
             label_emeraldUnbreaking.Text = (1 + Form_main.pickaxe.unbreakingLevel).ToString();
             changeVisibility();
         }
-
-        private void button_hoe_Click(object sender, EventArgs e)
-        {
-            selectedTool = "hoe";
-            label_emeraldEfficiency.Text = (1 + Form_main.hoe.efficiencyLevel).ToString();
-            label_emeraldFortune.Text = (1 + Form_main.hoe.fortuneLevel).ToString();
-            label_emeraldUnbreaking.Text = (1 + Form_main.hoe.unbreakingLevel).ToString();
-            changeVisibility();
-        }
-
         private void button_axe_Click(object sender, EventArgs e)
         {
             selectedTool = "axe";
             label_emeraldEfficiency.Text = (1 + Form_main.axe.efficiencyLevel).ToString();
             label_emeraldFortune.Text = (1 + Form_main.axe.fortuneLevel).ToString();
             label_emeraldUnbreaking.Text = (1 + Form_main.axe.unbreakingLevel).ToString();
+            changeVisibility();
+        }
+        private void button_shovel_Click(object sender, EventArgs e)
+        {
+            selectedTool = "shovel";
+            label_emeraldEfficiency.Text = (1 + Form_main.shovel.efficiencyLevel).ToString();
+            label_emeraldFortune.Text = (1 + Form_main.shovel.fortuneLevel).ToString();
+            label_emeraldUnbreaking.Text = (1 + Form_main.shovel.unbreakingLevel).ToString();
+            changeVisibility();
+        }
+        private void button_hoe_Click(object sender, EventArgs e)
+        {
+            selectedTool = "hoe";
+            label_emeraldEfficiency.Text = (1 + Form_main.hoe.efficiencyLevel).ToString();
+            label_emeraldFortune.Text = (1 + Form_main.hoe.fortuneLevel).ToString();
+            label_emeraldUnbreaking.Text = (1 + Form_main.hoe.unbreakingLevel).ToString();
             changeVisibility();
         }
         #endregion
@@ -129,6 +126,7 @@ namespace BlockBreaker
         }
         private void changeVisibility()
         {
+            #region fortune
             if (Form_main.tools[selectedTool].fortuneLevel == 2)
             {
                 button_fortune.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/enchants/fortune3.png");
@@ -150,8 +148,8 @@ namespace BlockBreaker
                 label_emeraldFortune.Visible = true;
                 pictureBox_emeraldFortune.Visible = true;
             }
-
-
+            #endregion
+            #region unbreaking
             if (Form_main.tools[selectedTool].unbreakingLevel == 2)
             {
                 button_unbreaking.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/enchants/unbreaking3.png");
@@ -173,8 +171,8 @@ namespace BlockBreaker
                 label_emeraldUnbreaking.Visible = true;
                 pictureBox_emeraldUnbreaking.Visible = true;
             }
-
-
+            #endregion
+            #region efficiency
             if (Form_main.tools[selectedTool].efficiencyLevel == 4)
             {
                 button_efficiency.Image = Image.FromFile("C:/Users/RSchuerman/source/repos/BlockBreaker/images/enchants/efficiency5.png");
@@ -210,11 +208,12 @@ namespace BlockBreaker
                 label_emeraldEfficiency.Visible = true;
                 pictureBox_emeraldEfficiency.Visible = true;
             }
-
+            #endregion
             button_shovel.Visible = false;
             button_pickaxe.Visible = false;
             button_axe.Visible = false;
             button_hoe.Visible = false;
+
             button_back.Visible = true;
         }
 

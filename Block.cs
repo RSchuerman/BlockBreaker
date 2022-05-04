@@ -12,8 +12,8 @@ namespace BlockBreaker
         private string _preferredTool;
         private int _dropAmount;
         private int _breakLevel;
-        
 
+        #region Properties
         public double breakTime
         {
             get 
@@ -108,6 +108,8 @@ namespace BlockBreaker
             get { return _breakLevel; }
             set { _breakLevel = value; }
         }
+        #endregion
+
         public Block(int fitemID, double breakTime, string preferredTool, int dropAmount, int breakLevel, string fimageName)
         {
             itemID = fitemID;

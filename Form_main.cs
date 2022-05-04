@@ -526,6 +526,7 @@ namespace BlockBreaker
 
         private void pictureBox_emerald_Click(object sender, EventArgs e)
         {
+            //easter egg mostly for testing purposes
             emerald.amount++;
         }
     }

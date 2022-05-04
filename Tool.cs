@@ -14,6 +14,8 @@ namespace BlockBreaker
         private int _fortuneLevel;
         private int _unbreakingLevel;
         private int _efficiencyLevel;
+
+        #region Properties
         public int durability
         {
             get { return _durability; }
@@ -62,6 +64,8 @@ namespace BlockBreaker
                     return "inventorySlot.png";
             }
         }
+        #endregion
+
         public Tool(int durability, string toolType, int fitemID)
         {
             _durability = durability;
