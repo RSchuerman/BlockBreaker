@@ -166,8 +166,29 @@ namespace BlockBreaker
                     emerald.amount += emeraldOre.dropAmount;
                 else
                     availableBlocks[currentBlock].amount += availableBlocks[currentBlock].dropAmount;
-                if(tools[availableBlocks[currentBlock].preferredTool].toolLevel > 0)
-                    tools[availableBlocks[currentBlock].preferredTool].durability--;
+                if (tools[availableBlocks[currentBlock].preferredTool].toolLevel > 0)
+                {
+                    if(tools[availableBlocks[currentBlock].preferredTool].unbreakingLevel == 3)
+                    {
+                        Random rnd = new Random();
+                        if(rnd.Next(4) == 3)
+                            tools[availableBlocks[currentBlock].preferredTool].durability--;
+                    }
+                    else if (tools[availableBlocks[currentBlock].preferredTool].unbreakingLevel == 2)
+                    {
+                        Random rnd = new Random();
+                        if (rnd.Next(3) == 2)
+                            tools[availableBlocks[currentBlock].preferredTool].durability--;
+                    }
+                    else if (tools[availableBlocks[currentBlock].preferredTool].unbreakingLevel == 1)
+                    {
+                        Random rnd = new Random();
+                        if (rnd.Next(2) == 1)
+                            tools[availableBlocks[currentBlock].preferredTool].durability--;
+                    }
+                    else
+                        tools[availableBlocks[currentBlock].preferredTool].durability--;
+                }
             }
             if (availableBlocks[currentBlock].dropAmount > 0)
             {

@@ -12,10 +12,35 @@ namespace BlockBreaker
         private string _preferredTool;
         private int _dropAmount;
         private int _breakLevel;
+        
 
         public double breakTime
         {
-            get { return _breakTime * 1000; }
+            get 
+            { 
+                if(Form_main.tools[preferredTool].efficiencyLevel == 5)
+                {
+                    return ((_breakTime * 1000) / 6);
+                }
+                else if (Form_main.tools[preferredTool].efficiencyLevel == 4)
+                {
+                    return ((_breakTime * 1000) / 5);
+                }
+                else if (Form_main.tools[preferredTool].efficiencyLevel == 3)
+                {
+                    return ((_breakTime * 1000) / 4);
+                }
+                else if (Form_main.tools[preferredTool].efficiencyLevel == 2)
+                {
+                    return ((_breakTime * 1000) / 3);
+                }
+                else if (Form_main.tools[preferredTool].efficiencyLevel == 1)
+                {
+                    return ((_breakTime * 1000) / 2);
+                }
+                else
+                    return _breakTime * 1000; 
+            }
             set { _breakTime = value; }
         }
         public string preferredTool
@@ -27,13 +52,54 @@ namespace BlockBreaker
         {
             get 
             {
-                if (_dropAmount == -1)
+                if (Form_main.tools[preferredTool].fortuneLevel == 3)
                 {
-                    Random rnd = new Random();
-                    return rnd.Next(4, 9);
+                    if (_dropAmount == -1)
+                    {
+                        Random rnd = new Random();
+                        return rnd.Next(4, 9) + 3;
+                    }
+                    else if (_dropAmount == 0)
+                        return _dropAmount;
+                    else
+                        return _dropAmount + 3;
+                }
+                else if (Form_main.tools[preferredTool].fortuneLevel == 2)
+                {
+                    if (_dropAmount == -1)
+                    {
+                        Random rnd = new Random();
+                        return rnd.Next(4, 9) + 2;
+                    }
+                    else if (_dropAmount == 0)
+                        return _dropAmount;
+                    else
+                        return _dropAmount + 2;
+                }
+                else if (Form_main.tools[preferredTool].fortuneLevel == 1)
+                {
+                    if (_dropAmount == -1)
+                    {
+                        Random rnd = new Random();
+                        return rnd.Next(4, 9) + 1;
+                    }
+                    else if (_dropAmount == 0)
+                        return _dropAmount;
+                    else
+                        return _dropAmount + 1;
                 }
                 else
-                    return _dropAmount;
+                {
+                    if (_dropAmount == -1)
+                    {
+                        Random rnd = new Random();
+                        return rnd.Next(4, 9);
+                    }
+                    else if (_dropAmount == 0)
+                        return _dropAmount;
+                    else
+                        return _dropAmount;
+                }
             }
             set { _dropAmount = value; }
         }
